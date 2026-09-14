@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; -webkit-tap-highlight-color: transparent; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+    .number-change-highlight { transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .scale-tap { transition: transform 0.12s ease; }
+    .scale-tap:active { transform: scale(0.95); }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-error-container": "#93000a",
+            "surface-container": "#efeeeb",
+            "outline": "#847469",
+            "on-secondary-container": "#686361",
+            "primary": "#7d481c",
+            "on-surface-variant": "#52443b",
+            "on-error": "#ffffff",
+            "tertiary": "#8e3e00",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary-fixed-variant": "#763300",
+            "surface-container-high": "#eae8e5",
+            "primary-container": "#9a6032",
+            "outline-variant": "#d7c3b6",
+            "surface-bright": "#fbf9f6",
+            "on-tertiary": "#ffffff",
+            "on-secondary-fixed": "#1e1b19",
+            "secondary-fixed-dim": "#ccc5c2",
+            "tertiary-fixed-dim": "#ffb68e",
+            "on-secondary": "#ffffff",
+            "inverse-on-surface": "#f2f0ed",
+            "on-surface": "#1b1c1a",
+            "surface-tint": "#885124",
+            "secondary-container": "#e9e1dd",
+            "on-background": "#1b1c1a",
+            "inverse-surface": "#30312f",
+            "error-container": "#ffdad6",
+            "on-primary-fixed": "#301400",
+            "surface-container-highest": "#e4e2df",
+            "surface": "#fbf9f6",
+            "inverse-primary": "#ffb782",
+            "surface-container-low": "#f5f3f0",
+            "surface-dim": "#dbdad7",
+            "primary-fixed": "#ffdcc5",
+            "tertiary-fixed": "#ffdbca",
+            "on-primary": "#ffffff",
+            "error": "#ba1a1a",
+            "primary-fixed-dim": "#ffb782",
+            "on-secondary-fixed-variant": "#4a4643",
+            "surface-variant": "#e4e2df",
+            "on-tertiary-container": "#ffeee7",
+            "background": "#fbf9f6",
+            "secondary": "#625d5b",
+            "on-tertiary-fixed": "#331200",
+            "on-primary-container": "#ffeee4",
+            "secondary-fixed": "#e9e1dd",
+            "on-primary-fixed-variant": "#6c3a0f",
+            "tertiary-container": "#b25207"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          spacing: {
+            "space-md": "1rem",
+            "margin-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem",
+            gutter: "1.5rem",
+            "gutter-mobile": "1rem",
+            margin: "2.5rem",
+            "space-xl": "2.5rem",
+            "space-xs": "0.25rem"
+          },
+          fontFamily: {
+            "headline-md": ["Playfair Display"],
+            "numerical-data": ["Inter"],
+            "title-sm": ["Inter"],
+            "body-md": ["Inter"],
+            "label-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "display-lg": ["Playfair Display"],
+            "display-lg-mobile": ["Playfair Display"],
+            "title-md": ["Inter"],
+            "headline-lg": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "body-lg": ["Inter"],
+            "body-sm": ["Inter"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col max-w-[430px] mx-auto shadow-2xl border-x border-surface-container-low relative">
+<!-- 1. Header Compacto Mobile Especializado iOS / Móvil -->
+<header class="sticky top-0 z-40 bg-surface-bright/95 backdrop-blur-md border-b border-surface-container-low shadow-[0_1px_6px_rgba(28,25,23,0.04)] px-3.5 py-2.5">
+<div class="flex items-center justify-between gap-2">
+<!-- Marca Atelier Humidor y Status Pill -->
+<div class="flex items-center gap-2 flex-shrink-0 cursor-pointer scale-tap select-none" id="brandLogoBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})" role="button" title="Humidor Stock">
+<img alt="Atelier Humidor Logo" class="h-7 w-auto object-contain pointer-events-none" src="https://lh3.googleusercontent.com/aida/AEtjO1VsMlyPfl75yomx9PGtHPPRKFXZ8cqMmBEMQmDxEzutdeWolAk1XmpXDDyMnWVE5OehmHWi9p9565aurEO7hJ-0ptkejxeFLbE-LzqQHdRFfYiK82l91SEHhOJu_Hop3kNqd_PoJUckMnLaEPEQ4eC4noGEG5ab6sWiY9W23H_p1gt965cZSRtEcjvl3bC8dBw61oNPNO6_Vu0ah-pS0X-K79LOwLuuTmLNg3f3FpqGWF5KMeAtF1MY1w"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-sm text-primary tracking-tight font-bold leading-none">Humidor Stock</span>
+<span class="font-label-sm text-[9.5px] uppercase tracking-wider text-on-surface-variant font-semibold mt-0.5 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span> 70% HR · 20°C
+        </span>
+</div>
+</div>
+<!-- Buscador Compacto tipo Pill Elegante & Botón Avatar -->
+<div class="flex items-center gap-1.5 flex-1 justify-end max-w-[210px]">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-outline text-[15px] pointer-events-none">search</span>
+<input autocomplete="off" class="w-full pl-7 pr-6 py-1 bg-surface-container-lowest text-on-surface placeholder:text-outline/70 font-body-sm text-xs rounded-full border border-outline-variant/60 focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary shadow-[0_1px_2px_rgba(28,25,23,0.03)] transition-all h-7" id="searchInput" placeholder="Buscar..." type="text"/>
+<button class="hidden absolute right-1.5 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface p-0.5 rounded-full transition-colors cursor-pointer" id="clearSearchBtn" onclick="window.clearSearchInput()" title="Limpiar" type="button">
+<span class="material-symbols-outlined text-[13px]">close</span>
+</button>
+</div>
+<!-- Avatar Compacto -->
+<div class="relative flex-shrink-0">
+<button class="w-7 h-7 rounded-full bg-primary flex items-center justify-center shadow-xs cursor-pointer active:scale-90 transition-all select-none" id="btnUserCloudAvatar" onclick="window.toggleUserMenu(event)" title="Administrador" type="button">
+<span class="material-symbols-outlined text-on-primary text-[15px] pointer-events-none">person</span>
+</button>
+<!-- Popover de Usuario Mobile -->
+<div class="hidden absolute right-0 mt-1.5 w-60 bg-surface-container-lowest rounded-xl shadow-xl border border-surface-container-low p-2.5 z-50 animate-in fade-in" id="userMenuDropdown">
+<div class="flex items-center gap-2.5 pb-2.5 border-b border-surface-container-low">
+<div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-xs">
+AH
+</div>
+<div>
+<p class="font-title-sm text-on-surface font-semibold text-xs">Admin Humidor</p>
+<p class="text-[10px] text-emerald-700 font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Conectado
+</p>
+</div>
+</div>
+<div class="py-1.5 space-y-0.5">
+<button class="w-full text-left px-2 py-1.5 text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors flex items-center gap-2 cursor-pointer" onclick="window.openSyncModal(); window.closeUserMenu();" type="button">
+<span class="material-symbols-outlined text-[15px] text-primary">devices_other</span> Dispositivos
+</button>
+<button class="w-full text-left px-2 py-1.5 text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors flex items-center gap-2 cursor-pointer" onclick="window.openHistoryModal(); window.closeUserMenu();" type="button">
+<span class="material-symbols-outlined text-[15px] text-primary">history</span> Historial de Lotes
+</button>
+<button class="w-full text-left px-2 py-1.5 text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors flex items-center gap-2 cursor-pointer" onclick="window.exportBackupFile(); window.closeUserMenu();" type="button">
+<span class="material-symbols-outlined text-[15px] text-primary">download</span> Descargar JSON
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="w-full px-3.5 pt-3 pb-24 flex-grow bg-background">
+<div class="flex flex-col w-full">
+<!-- 2. Titular y Barra de Sincronización Compacta -->
+<div class="pt-1 pb-3 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="font-label-sm text-[10px] uppercase tracking-widest text-primary font-bold">ARCHIVO CENTRAL</span>
+<span class="text-outline-variant text-xs">•</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-widest font-semibold">GUARDA &amp; CATA</span>
+</div>
+<!-- Sincronización en vivo pill -->
+<button class="flex items-center gap-1.5 bg-emerald-50/80 px-2 py-0.5 rounded-full border border-emerald-200/80 cursor-pointer active:scale-95 text-[9.5px] font-semibold tracking-wider text-emerald-800 uppercase font-label-sm select-none" id="syncStatusBadge" onclick="window.openSyncModal()" title="Sincronización">
+<span class="relative flex h-1.5 w-1.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" id="syncDotPulse"></span>
+<span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-600" id="syncDotCore"></span>
+</span>
+<span>SYNC ACTIVO</span>
+<span class="text-emerald-600/70 font-numerical-data" id="syncStatusTimestamp">10:42</span>
+</button>
+</div>
+<h1 class="font-headline-lg-mobile text-[23px] leading-tight text-on-surface tracking-tight font-semibold">Inventario de Habanos</h1>
+</div>
+<!-- 3. Tarjetas Métricas Superiores en Cuadrícula Compacta Mobile (2 columnas) -->
+<div class="grid grid-cols-2 gap-2.5 mb-3.5">
+<!-- Tarjeta 1: Total Cajas -->
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-xs border border-surface-container-low flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-[9.5px] uppercase tracking-wider text-on-surface-variant font-bold leading-none">CAJAS ACTIVAS</span>
+<span class="material-symbols-outlined text-[17px] text-primary">inventory_2</span>
+</div>
+<div class="flex items-baseline gap-1 my-0.5">
+<span class="font-numerical-data text-[26px] leading-none text-on-surface font-bold tracking-tight inline-block" id="metricActiveBoxes">104</span>
+<span class="font-body-sm text-[10.5px] text-on-surface-variant font-medium">cajas</span>
+</div>
+<div class="font-label-sm text-[9.5px] text-primary font-semibold truncate flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+<span id="metricTypesCount">4</span> vitolas en humidor
+        </div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-primary/30"></div>
+</div>
+<!-- Tarjeta 2: Valor Total en USD -->
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-xs border border-surface-container-low flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-[9.5px] uppercase tracking-wider text-on-surface-variant font-bold leading-none">VALOR TOTAL</span>
+<span class="material-symbols-outlined text-[17px] text-primary">payments</span>
+</div>
+<div class="flex items-baseline gap-1 my-0.5">
+<span class="font-numerical-data text-[26px] leading-none text-on-surface font-bold tracking-tight inline-block" id="metricTotalValue">$5,204</span>
+<span class="font-body-sm text-[10.5px] text-on-surface-variant font-medium">USD</span>
+</div>
+<div class="font-label-sm text-[9.5px] text-tertiary font-medium truncate flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">trending_up</span>
+<span>Tiempo real</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-primary/30"></div>
+</div>
+</div>
+<!-- 4. Acciones Rápidas Mobile Ergonómicas -->
+<div class="flex flex-col gap-2 mb-3.5">
+<!-- Botón Principal: + Registrar Caja (Marrón Tabaco) -->
+<button class="w-full flex items-center justify-center gap-2 bg-primary text-on-primary py-2.5 px-3 rounded-xl font-title-sm text-xs font-semibold hover:bg-primary-container active:scale-[0.98] transition-all shadow-sm cursor-pointer select-none" id="openAddModalBtn" onclick="window.openNewBoxModal()" type="button">
+<span class="material-symbols-outlined text-[18px] pointer-events-none">add_circle</span>
+<span>+ Registrar Nueva Caja</span>
+</button>
+<!-- Fila de Acciones Secundarias Mobile: Copiar WhatsApp, Historial, Vincular -->
+<div class="grid grid-cols-2 gap-2">
+<!-- Copiar Lista (WhatsApp) Compacto -->
+<button class="flex items-center justify-center gap-1.5 py-2 px-2.5 bg-surface-container-lowest text-primary hover:bg-surface-container-low font-title-sm text-[11.5px] font-semibold rounded-xl border border-outline-variant/60 shadow-2xs active:scale-95 transition-all select-none cursor-pointer" id="btnOpenCopyList" onclick="window.copyWhatsAppCatalog()" title="Copiar catálogo para WhatsApp" type="button">
+<span class="material-symbols-outlined text-[16px] pointer-events-none" id="copyBtnIcon">content_copy</span>
+<span class="truncate" id="copyBtnText">Copiar WhatsApp</span>
+</button>
+<!-- Historial de Movimientos -->
+<button class="flex items-center justify-center gap-1.5 py-2 px-2.5 bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-title-sm text-[11.5px] font-semibold rounded-xl border border-outline-variant/60 shadow-2xs active:scale-95 transition-all select-none cursor-pointer" id="quickHistoryBtn" onclick="window.openHistoryModal()" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary pointer-events-none">history</span>
+<span class="truncate">Historial</span>
+</button>
+</div>
+<!-- Contador de Cajas Mostradas -->
+<div class="flex items-center justify-between px-1 pt-1 text-[10px] text-on-surface-variant font-semibold uppercase tracking-wider">
+<span id="showingCountBadge">MOSTRANDO 4 CAJAS</span>
+<span class="text-primary cursor-pointer hover:underline" onclick="window.openSyncModal()">Vincular Equipos</span>
+</div>
+</div>
+<!-- 5. Listado de Cajas Dinámico Optimizado para Móvil -->
+<div class="flex flex-col gap-2.5" id="cigarListContainer">
+<!-- Generado dinámicamente con handlers instantáneos -->
+</div>
+<!-- Estado vacío de búsqueda -->
+<div class="hidden bg-surface-container-lowest p-6 rounded-xl border border-dashed border-outline-variant text-center flex-col items-center justify-center my-4" id="noResultsState">
+<div class="w-12 h-12 rounded-full bg-surface-container-low text-primary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[24px]">search_off</span>
+</div>
+<h3 class="font-headline-sm text-sm text-on-surface mb-1 font-semibold">Sin coincidencias</h3>
+<p class="font-body-sm text-xs text-on-surface-variant mb-4" id="noResultsMessage">No se encontraron cajas de habanos.</p>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-secondary-container text-on-secondary-fixed font-title-sm text-xs rounded-lg border border-outline-variant/60 transition-all active:scale-95 cursor-pointer" id="resetSearchBtn" onclick="window.clearSearchInput()" type="button">
+<span class="material-symbols-outlined text-[15px]">backspace</span>
+<span>Limpiar búsqueda</span>
+</button>
+</div>
+</div>
+<!-- Toast Flotante Móvil Centrado Inferior -->
+<div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-[80] pointer-events-none transition-all duration-300 transform translate-y-6 opacity-0 w-[90%] max-w-[370px]" id="copyToastNotification">
+<div class="bg-inverse-surface/95 text-inverse-on-surface px-3 py-2.5 rounded-xl shadow-2xl flex items-center gap-2.5 border border-outline/30 backdrop-blur-md">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0" id="toastIconContainer">
+<span class="material-symbols-outlined text-[16px]" id="toastIcon">check</span>
+</div>
+<div class="flex flex-col overflow-hidden">
+<span class="font-title-sm text-xs text-inverse-on-surface font-semibold truncate" id="toastTitle">Lista simplificada copiada</span>
+<span class="font-body-sm text-[10.5px] text-inverse-on-surface/80 truncate" id="toastMessage">Copiado al portapapeles.</span>
+</div>
+</div>
+</div>
+<!-- Modal 1: + Registrar Nueva Caja (Diseñado Mobile Touch) -->
+<div class="fixed inset-0 bg-inverse-surface/60 backdrop-blur-sm z-50 items-end sm:items-center justify-center p-0 sm:p-4 overflow-y-auto hidden" id="newBoxModalBackdrop" onclick="if(event.target===this) window.closeNewBoxModal()">
+<div class="bg-surface-container-lowest w-full max-w-[430px] rounded-t-2xl sm:rounded-2xl shadow-2xl overflow-hidden animate-in slide-in-from-bottom duration-200 border border-surface-container-low max-h-[92vh] flex flex-col">
+<div class="px-4 py-3 border-b border-surface-container-low flex items-center justify-between bg-surface-bright flex-shrink-0">
+<div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">add_box</span>
+<span class="font-label-sm text-[10px] uppercase tracking-wider font-semibold">Humidor Stock</span>
+</div>
+<h2 class="font-headline-sm text-base text-on-surface font-semibold leading-tight">Registrar Nueva Caja</h2>
+</div>
+<button aria-label="Cerrar modal" class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer active:scale-90" id="closeAddModalXBtn" onclick="window.closeNewBoxModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="p-4 space-y-3.5 overflow-y-auto flex-1" id="formNewBox" onsubmit="window.submitNewBoxForm(event)">
+<!-- Nombre de la Vitola -->
+<div>
+<label class="font-title-sm text-xs text-on-surface block mb-1 font-medium" for="inputName">
+              Nombre de la Vitola <span class="text-primary">*</span>
+</label>
+<input class="w-full px-3 py-2 bg-surface-container-lowest text-on-surface border border-outline-variant rounded-lg focus:outline-none focus:ring-1 focus:ring-primary font-body-sm text-xs" id="inputName" placeholder="Ej: Cohiba Siglo VI, Partagás Serie D..." required="" type="text"/>
+</div>
+<!-- Cantidad y Precio por Caja -->
+<div class="grid grid-cols-2 gap-2.5">
+<div>
+<label class="font-title-sm text-xs text-on-surface block mb-1 font-medium" for="inputQuantity">
+                Cajas en Guarda <span class="text-primary">*</span>
+</label>
+<input class="w-full px-3 py-2 bg-surface-container-lowest text-on-surface border border-outline-variant rounded-lg focus:outline-none focus:ring-1 focus:ring-primary font-numerical-data text-xs" id="inputQuantity" min="0" oninput="window.updateFormLotTotal()" placeholder="10" required="" type="number" value="10"/>
+</div>
+<div>
+<label class="font-title-sm text-xs text-on-surface block mb-1 font-medium" for="inputPrice">
+                Precio USD <span class="text-primary">*</span>
+</label>
+<input class="w-full px-3 py-2 bg-surface-container-lowest text-on-surface border border-outline-variant rounded-lg focus:outline-none focus:ring-1 focus:ring-primary font-numerical-data text-xs" id="inputPrice" min="0" oninput="window.updateFormLotTotal()" placeholder="45.00" required="" step="0.5" type="number" value="45.00"/>
+</div>
+</div>
+<!-- Vitola de Galera y Presentación -->
+<div class="grid grid-cols-2 gap-2.5">
+<div>
+<label class="font-title-sm text-xs text-on-surface-variant block mb-1" for="inputFormat">
+                Formato / Cepo
+              </label>
+<input class="w-full px-3 py-2 bg-surface-container-lowest text-on-surface border border-outline-variant rounded-lg focus:outline-none focus:ring-1 focus:ring-primary font-body-sm text-xs" id="inputFormat" placeholder="50 × 124 mm" type="text"/>
+</div>
+<div>
+<label class="font-title-sm text-xs text-on-surface-variant block mb-1" for="inputPresentation">
+                Presentación
+              </label>
+<select class="w-full px-2 py-2 bg-surface-container-lowest text-on-surface border border-outline-variant rounded-lg focus:outline-none focus:ring-1 focus:ring-primary font-body-sm text-xs" id="inputPresentation">
+<option selected="" value="Caja de 25 u.">Caja de 25 u.</option>
+<option value="Caja de 10 u.">Caja de 10 u.</option>
+<option value="Tubo / Caja de 10">Tubo / Caja 10</option>
+<option value="Caja de 50 u.">Caja de 50 u.</option>
+<option value="Petaca de 3 u.">Petaca de 3 u.</option>
+</select>
+</div>
+</div>
+<!-- Fotografía con Previsualización -->
+<div>
+<label class="font-title-sm text-xs text-on-surface-variant block mb-1">
+              Foto de la Caja <span class="text-[10px] text-outline">(opcional)</span>
+</label>
+<div class="border border-dashed border-outline-variant rounded-lg p-2.5 text-center cursor-pointer hover:bg-surface-container transition-colors flex items-center justify-center gap-2" id="photoDropzone" onclick="document.getElementById('photoFileInput').click()">
+<span class="material-symbols-outlined text-[20px] text-primary" id="photoPlaceholderIcon">photo_camera</span>
+<img alt="Preview" class="hidden w-10 h-10 object-cover rounded border border-surface-container" id="photoPreviewImg" src=""/>
+<span class="font-body-sm text-[11px] text-on-surface-variant" id="photoUploadLabel">Toca para añadir foto</span>
+<input accept="image/*" class="hidden" id="photoFileInput" onchange="window.handlePhotoChange(event)" type="file"/>
+</div>
+</div>
+<!-- Notas de cata -->
+<div>
+<label class="font-title-sm text-xs text-on-surface-variant block mb-1" for="inputNotes">
+              Notas de Guarda &amp; Cata
+            </label>
+<textarea class="w-full px-3 py-1.5 bg-surface-container-lowest text-on-surface border border-outline-variant rounded-lg focus:outline-none focus:ring-1 focus:ring-primary font-body-sm text-xs" id="inputNotes" placeholder="Cedro, miel, cacao tostado..." rows="2"></textarea>
+</div>
+<!-- Resumen calculado del lote -->
+<div class="p-2.5 bg-surface-container-low rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">Valor Estimado:</span>
+<span class="font-numerical-data text-xs font-bold text-primary" id="calcLotTotal">$450.00 USD</span>
+</div>
+<div class="flex items-center justify-end gap-2 pt-1">
+<button class="px-3 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm text-xs rounded-lg transition-colors cursor-pointer active:scale-95" id="cancelAddModalBtn" onclick="window.closeNewBoxModal()" type="button">
+              Cancelar
+            </button>
+<button class="px-4 py-2 bg-primary hover:bg-primary-container text-on-primary font-title-sm text-xs rounded-lg transition-all active:scale-95 shadow-xs cursor-pointer flex items-center gap-1 font-semibold" id="submitNewBoxBtn" type="submit">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+<span>Guardar Caja</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Modal 2: Historial de Movimientos Mobile -->
+<div class="fixed inset-0 bg-inverse-surface/60 backdrop-blur-sm z-50 items-end sm:items-center justify-center p-0 sm:p-4 overflow-y-auto hidden" id="historyModalBackdrop" onclick="if(event.target===this) window.closeHistoryModal()">
+<div class="bg-surface-container-lowest w-full max-w-[430px] rounded-t-2xl sm:rounded-2xl shadow-2xl overflow-hidden animate-in slide-in-from-bottom duration-200 border border-surface-container-low max-h-[85vh] flex flex-col">
+<div class="px-4 py-3 border-b border-surface-container-low flex items-start justify-between bg-surface-bright flex-shrink-0">
+<div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">history_edu</span>
+<span class="font-label-sm text-[10px] uppercase tracking-wider font-semibold">Registro Humidor</span>
+</div>
+<h2 class="font-headline-sm text-base text-on-surface font-semibold leading-tight">Movimientos de Stock</h2>
+</div>
+<button aria-label="Cerrar modal" class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer active:scale-90" id="closeHistoryModalBtn" onclick="window.closeHistoryModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="grid grid-cols-2 border-b border-surface-container-low bg-surface-container-low/50 px-4 py-2 text-center text-xs">
+<div class="border-r border-surface-container-low pr-2">
+<span class="font-label-sm text-[9.5px] uppercase tracking-wider text-on-surface-variant block">Total Movimientos</span>
+<span class="font-numerical-data text-xs font-bold text-on-surface" id="histTotalCount">4</span>
+</div>
+<div class="pl-2">
+<span class="font-label-sm text-[9.5px] uppercase tracking-wider text-on-surface-variant block">Último Evento</span>
+<span class="font-body-sm text-[11px] font-semibold text-primary truncate block" id="histLastEventTime">Hoy, 10:42 AM</span>
+</div>
+</div>
+<div class="p-3.5 overflow-y-auto flex-1 flex flex-col gap-2.5 divide-y divide-surface-container-low" id="historyListContainer">
+<!-- Dinámico -->
+</div>
+<div class="p-3 border-t border-surface-container-low bg-surface-bright flex items-center justify-between gap-2 flex-shrink-0">
+<button class="font-label-sm text-[11px] text-tertiary hover:text-error px-2 py-1 rounded hover:bg-error-container/30 transition-colors cursor-pointer font-semibold flex items-center gap-1 active:scale-95" id="clearHistoryBtn" onclick="window.clearEntireHistory()" type="button">
+<span class="material-symbols-outlined text-[14px]">delete_sweep</span> Limpiar
+          </button>
+<button class="px-3.5 py-1.5 bg-primary hover:bg-primary-container text-on-primary font-title-sm text-xs rounded-lg transition-all cursor-pointer shadow-xs active:scale-95 font-semibold" id="closeHistoryModalBtn2" onclick="window.closeHistoryModal()" type="button">
+            Cerrar
+          </button>
+</div>
+</div>
+</div>
+<!-- Modal 3: Vincular Dispositivos Mobile -->
+<div class="fixed inset-0 bg-inverse-surface/60 backdrop-blur-sm z-50 items-end sm:items-center justify-center p-0 sm:p-4 overflow-y-auto hidden" id="cloudSyncModalBackdrop" onclick="if(event.target===this) window.closeSyncModal()">
+<div class="bg-surface-container-lowest w-full max-w-[430px] rounded-t-2xl sm:rounded-2xl shadow-2xl overflow-hidden animate-in slide-in-from-bottom duration-200 border border-surface-container-low max-h-[85vh] flex flex-col">
+<div class="px-4 py-3 border-b border-surface-container-low flex items-start justify-between bg-surface-bright flex-shrink-0">
+<div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">devices_other</span>
+<span class="font-label-sm text-[10px] uppercase tracking-wider font-semibold">Conectividad</span>
+</div>
+<h2 class="font-headline-sm text-base text-on-surface font-semibold leading-tight">Vincular &amp; Respaldo</h2>
+</div>
+<button aria-label="Cerrar modal" class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer active:scale-90" id="closeCloudModalBtn" onclick="window.closeSyncModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-3.5 overflow-y-auto space-y-3 flex-1">
+<!-- Sala -->
+<div class="bg-surface-container-low/80 p-3 rounded-xl border border-surface-container-high space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-xs font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[15px]">wifi_tethering</span> Código de Humidor
+              </span>
+<span class="px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[9px] font-bold uppercase">En Línea</span>
+</div>
+<div class="flex items-center gap-1.5">
+<input class="flex-1 px-2.5 py-1.5 bg-surface-container-lowest rounded-lg border border-outline-variant font-numerical-data font-bold text-primary tracking-wider text-xs select-all" id="roomCodeInput" readonly="" type="text" value="HUMIDOR-SALES-770"/>
+<button class="px-2.5 py-1.5 bg-primary text-on-primary rounded-lg font-title-sm text-[11px] flex items-center gap-1 cursor-pointer active:scale-95 transition-all shadow-2xs font-semibold" id="btnCopyRoomCode" onclick="window.copyRoomCode()" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span> Copiar
+              </button>
+</div>
+</div>
+<!-- Descargar Backup -->
+<div class="bg-surface-container p-3 rounded-xl flex items-center justify-between gap-2 border border-outline-variant/40">
+<div>
+<span class="font-title-sm text-xs font-semibold text-on-surface block leading-tight">Descargar Respaldo</span>
+<span class="text-[10px] text-on-surface-variant">Guarda archivo stock-backup.json</span>
+</div>
+<button class="px-2.5 py-1.5 bg-primary text-on-primary rounded-lg font-title-sm text-xs flex items-center gap-1 cursor-pointer active:scale-95 font-semibold flex-shrink-0" id="btnExportBackup" onclick="window.exportBackupFile()" type="button">
+<span class="material-symbols-outlined text-[15px]">download</span> JSON
+            </button>
+</div>
+<!-- Restaurar Backup -->
+<div class="bg-surface-container-low p-3 rounded-xl flex items-center justify-between gap-2 border border-outline-variant/40">
+<div>
+<span class="font-title-sm text-xs font-semibold text-on-surface block leading-tight">Restaurar Copia</span>
+<span class="text-[10px] text-on-surface-variant">Cargar archivo JSON previo</span>
+</div>
+<input accept=".json" class="hidden" id="importBackupInput" onchange="window.importBackupFile(event)" type="file"/>
+<button class="px-2.5 py-1.5 bg-secondary-container text-on-secondary-fixed rounded-lg font-title-sm text-xs flex items-center gap-1 cursor-pointer active:scale-95 border border-outline-variant/50 font-semibold flex-shrink-0" onclick="document.getElementById('importBackupInput').click()" type="button">
+<span class="material-symbols-outlined text-[15px]">upload_file</span> Cargar
+            </button>
+</div>
+</div>
+<div class="p-3 border-t border-surface-container-low bg-surface-bright flex items-center justify-end flex-shrink-0">
+<button class="px-3.5 py-1.5 bg-primary hover:bg-primary-container text-on-primary font-title-sm text-xs rounded-lg transition-colors cursor-pointer active:scale-95 font-semibold" id="cancelCloudModalBtn" onclick="window.closeSyncModal()" type="button">
+            Listo
+          </button>
+</div>
+</div>
+</div>
+</main>
+<!-- 6. Footer Compacto Mobile -->
+<footer class="w-full bg-surface-container-low px-3.5 py-3 border-t border-surface-container text-center">
+<div class="flex items-center justify-center gap-1 text-[10.5px] text-on-surface-variant font-medium">
+<span class="font-headline-sm text-xs font-semibold text-on-surface-variant">Humidor Stock</span>
+<span>•</span>
+<span>Monitoreo Cedro 70% HR</span>
+<span>•</span>
+<span>© 2024</span>
+</div>
+</footer>
+<!-- 7. Script Blindado e Interactivo Totalmente Funcional -->
+<script>
+  (function () {
+    const STORAGE_KEY_BOXES = 'humidor_stock_db_v2';
+    const STORAGE_KEY_HISTORY = 'humidor_movements_log_v2';
+    const SYNC_CHANNEL_NAME = 'humidor_inventory_sync_v2';
+
+    const DEFAULT_HABANO_IMAGES = [
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuDwiKxrctOg9pZJAolpr5NlOYCtrHtOvAlF-723jRwckexAumRqStXNA0tx0xlJwBEMXdDolqM_l8TxyI7dNRNHXY5iriaASDaIRwYAdVU79G_gDlfvrhhSAuPbw9X8z5d3Bjhb7oG5rVQqW3493dZ0UV0Ng5C2wZ6D3H6tDWyxs-84X0GmCIMzGDv7XgP1jjJE4Im0OjW6L07PXSB2i0EcWAUCOe4GKnXilTIOquGT8LWvgt_522CF',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuA3a9EACuAu1HObrkDb7aLMaF_RBbiYdjsTE_9M7nXOAjLGol7-hLzqtvuCn_TppZKkzkLFjr_ejldF46ZBrpaCsehof2-ixjGaCsX3c_g5tyc5GUFsbxJeLJ63AgGo-e42vEgnUZz73xvPuRsuV39Nwk7uput6uOfYAhTL29cn0VNpGc_WfFuyEP_6LVKkdKlJNrzBHGZJryQAFFGM-o5ongsilu7XrIPGtntHJ9QDm1JkXVemDYhT',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuCrq0nExo1Uk886Ko-1RVu3QtX9rHgkIHgkcjhxhX3yeZq3HMq8vRJHdW4QFBtBgcRo_PqL_cygZTl3OIkbSv3Tn5lM5LsDbCQV_EkK7_wlpFdf6YRhjhkVY5jDKAm0zzLM3q8_dyNaFcFzUnR5zOly7Cg8hi_g8J7kS6sbGg06RfqfYsGaB1vRWU3exTnRkWRmqphDRow9Y6cMI9ncKy65IUePiVBsCCBS6v7jNRkPv4BltD1oYxMI',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuDndlO4H0wNxAo14nAZvOhPl65TWH4Sjz4SHU0E2F_nlbUsUEMBfS6kWe2zIbbjBVSjxYnzSdtKixS1Ce5xOEj7tAauwmF2_6btRGWJSQpeYOsKsMR3-g62tWGRMnT_PKT_rLlCPIxVSRr7b1XY45Z-ksA0VQcSwmORuQXYNEsBAAT3PYYBXbztkNGMArx944Pw14A39kTykEKLpJ3MiD19aBrfq2W8CiBhpBvLlCKiEiFs43VuweE9'
+    ];
+
+    const INITIAL_BOXES = [
+      {
+        id: 'c1',
+        name: 'Cohiba Robusto',
+        brand: 'Cohiba',
+        cepo: '50 × 124 mm',
+        presentation: 'Caja de 25 u.',
+        price: 42.0,
+        stock: 48,
+        min: 10,
+        strength: 'Media a Fuerte',
+        notes: 'Cedro añejado, miel especiada, cuero fino.',
+        img: DEFAULT_HABANO_IMAGES[0]
+      },
+      {
+        id: 'c2',
+        name: 'Cohiba Siglo VI',
+        brand: 'Cohiba',
+        cepo: '52 × 150 mm',
+        presentation: 'Tubo / Caja de 10',
+        price: 68.0,
+        stock: 18,
+        min: 10,
+        strength: 'Media',
+        notes: 'Mantequilla clarificada, flores blancas, cedro noble.',
+        img: DEFAULT_HABANO_IMAGES[1]
+      },
+      {
+        id: 'c3',
+        name: 'Montecristo Wide Edmundo',
+        brand: 'Montecristo',
+        cepo: 'Duke No. 3 (54 × 125 mm)',
+        presentation: 'Caja de 10 u.',
+        price: 34.0,
+        stock: 6,
+        min: 10,
+        strength: 'Media a Fuerte',
+        notes: 'Notas terrosas, granos de café amargo, especias cálidas.',
+        img: DEFAULT_HABANO_IMAGES[2]
+      },
+      {
+        id: 'c4',
+        name: 'Cohiba Lanceros',
+        brand: 'Cohiba',
+        cepo: '38 × 192 mm',
+        presentation: 'Caja de 25 u.',
+        price: 55.0,
+        stock: 32,
+        min: 10,
+        strength: 'Media',
+        notes: 'Hierba fresca, cedro fino, pimienta blanca sutil.',
+        img: DEFAULT_HABANO_IMAGES[3]
+      }
+    ];
+
+    const INITIAL_HISTORY = [
+      {
+        id: 'h1',
+        type: 'in',
+        title: 'Carga de Cajas',
+        cigarName: 'Cohiba Lanceros',
+        delta: '+32 cajas',
+        priceDetail: '$55.00 USD / u. (Total: $1,760 USD)',
+        timestamp: 'Hoy, 10:42 AM'
+      },
+      {
+        id: 'h2',
+        type: 'adjustment_minus',
+        title: 'Ajuste de Stock',
+        cigarName: 'Montecristo Wide Edmundo',
+        delta: '-1 caja',
+        priceDetail: 'Subtotal ajustado a $204 USD',
+        timestamp: 'Hoy, 10:25 AM'
+      },
+      {
+        id: 'h3',
+        type: 'in',
+        title: 'Entrada Vitolas',
+        cigarName: 'Cohiba Siglo VI',
+        delta: '+18 cajas',
+        priceDetail: '$68.00 USD / u. (Total: $1,224 USD)',
+        timestamp: 'Hoy, 09:30 AM'
+      },
+      {
+        id: 'h4',
+        type: 'in',
+        title: 'Entrada Inicial',
+        cigarName: 'Cohiba Robusto',
+        delta: '+48 cajas',
+        priceDetail: '$42.00 USD / u. (Total: $2,016 USD)',
+        timestamp: 'Hoy, 09:15 AM'
+      }
+    ];
+
+    let boxesState = [];
+    let historyState = [];
+    let uploadedImageDataUrl = '';
+    let saveTimeout = null;
+    let syncBroadcastChannel = null;
+
+    function initBroadcastSync() {
+      try {
+        if ('BroadcastChannel' in window) {
+          syncBroadcastChannel = new BroadcastChannel(SYNC_CHANNEL_NAME);
+          syncBroadcastChannel.onmessage = (event) => {
+            if (event.data && event.data.type === 'SYNC_INVENTORY') {
+              loadPersistedData();
+              renderBoxes();
+              renderHistoryList();
+            }
+          };
+        }
+      } catch (err) {
+        console.warn('BroadcastChannel no disponible', err);
+      }
+
+      window.addEventListener('storage', (event) => {
+        if (event.key === STORAGE_KEY_BOXES || event.key === STORAGE_KEY_HISTORY) {
+          loadPersistedData();
+          renderBoxes();
+          renderHistoryList();
+        }
+      });
+    }
+
+    function broadcastStateChange() {
+      if (syncBroadcastChannel) {
+        syncBroadcastChannel.postMessage({
+          type: 'SYNC_INVENTORY',
+          timestamp: Date.now()
+        });
+      }
+    }
+
+    function loadPersistedData() {
+      try {
+        const storedBoxes = localStorage.getItem(STORAGE_KEY_BOXES);
+        if (storedBoxes) {
+          boxesState = JSON.parse(storedBoxes);
+        } else {
+          boxesState = [...INITIAL_BOXES];
+          persistBoxes();
+        }
+      } catch (err) {
+        boxesState = [...INITIAL_BOXES];
+      }
+
+      try {
+        const storedHistory = localStorage.getItem(STORAGE_KEY_HISTORY);
+        if (storedHistory) {
+          historyState = JSON.parse(storedHistory);
+        } else {
+          historyState = [...INITIAL_HISTORY];
+          persistHistory();
+        }
+      } catch (err) {
+        historyState = [...INITIAL_HISTORY];
+      }
+    }
+
+    function persistBoxes() {
+      try {
+        localStorage.setItem(STORAGE_KEY_BOXES, JSON.stringify(boxesState));
+      } catch (e) {
+        console.error('Error guardando en localStorage:', e);
+      }
+    }
+
+    function persistHistory() {
+      try {
+        localStorage.setItem(STORAGE_KEY_HISTORY, JSON.stringify(historyState));
+      } catch (e) {
+        console.error('Error guardando historial:', e);
+      }
+    }
+
+    function triggerSaveIndicator() {
+      const syncDotCore = document.getElementById('syncDotCore');
+      const syncDotPulse = document.getElementById('syncDotPulse');
+      const syncTimestamp = document.getElementById('syncStatusTimestamp');
+
+      if (syncDotCore) syncDotCore.className = 'relative inline-flex rounded-full h-1.5 w-1.5 bg-amber-500';
+      if (syncDotPulse) syncDotPulse.className = 'animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75';
+
+      if (saveTimeout) clearTimeout(saveTimeout);
+      saveTimeout = setTimeout(() => {
+        const now = new Date();
+        const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        if (syncTimestamp) syncTimestamp.textContent = timeStr;
+        if (syncDotCore) syncDotCore.className = 'relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-600';
+        if (syncDotPulse) syncDotPulse.className = 'animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75';
+      }, 250);
+    }
+
+    function formatCurrentTime() {
+      const now = new Date();
+      return 'Hoy, ' + now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
+
+    function showToastNotification(title, message, icon = 'check') {
+      const toast = document.getElementById('copyToastNotification');
+      if (!toast) return;
+
+      const titleElem = document.getElementById('toastTitle');
+      const messageElem = document.getElementById('toastMessage');
+      const iconElem = document.getElementById('toastIcon');
+
+      if (titleElem) titleElem.textContent = title;
+      if (messageElem) messageElem.textContent = message;
+      if (iconElem) iconElem.textContent = icon;
+
+      toast.classList.remove('translate-y-6', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      if (window._toastTimeout) clearTimeout(window._toastTimeout);
+      window._toastTimeout = setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-6', 'opacity-0');
+      }, 2400);
+    }
+    window.showGlobalToast = showToastNotification;
+
+    // Renderizado Mobile Elegante con Stepper Ergonómico Limpio
+    function renderBoxes() {
+      const container = document.getElementById('cigarListContainer');
+      if (!container) return;
+
+      container.innerHTML = '';
+
+      boxesState.forEach((box) => {
+        const qty = parseInt(box.stock, 10) || 0;
+        const minThreshold = box.min || 10;
+        const isOutOfStock = qty === 0;
+        const isLowStock = !isOutOfStock && qty < minThreshold;
+        const subtotal = qty * box.price;
+
+        let statusBadgeHtml = '';
+        if (isOutOfStock) {
+          statusBadgeHtml = `<span class="bg-error-container text-on-error-container text-[10px] px-1.5 py-0.5 rounded font-semibold flex items-center gap-0.5">
+               <span class="material-symbols-outlined text-[12px]">block</span> Agotado
+             </span>`;
+        } else if (isLowStock) {
+          statusBadgeHtml = `<span class="bg-error-container text-on-error-container text-[10px] px-1.5 py-0.5 rounded font-semibold flex items-center gap-0.5">
+               <span class="material-symbols-outlined text-[12px]">warning</span> &lt; ${minThreshold} Reponer
+             </span>`;
+        } else {
+          statusBadgeHtml = `<span class="bg-surface-container text-on-surface-variant text-[10px] px-1.5 py-0.5 rounded font-medium">Óptimo</span>`;
+        }
+
+        const leftBorderHighlight = isOutOfStock
+          ? `<div class="absolute top-0 left-0 bottom-0 w-1 bg-error"></div>`
+          : isLowStock
+            ? `<div class="absolute top-0 left-0 bottom-0 w-1 bg-tertiary"></div>`
+            : '';
+
+        const card = document.createElement('div');
+        card.className = `cigar-card bg-surface-container-lowest p-3 rounded-xl shadow-xs border border-surface-container-low relative overflow-hidden flex flex-col gap-2.5 transition-all ${isOutOfStock ? 'opacity-85 bg-surface-container-low/30' : ''} ${isLowStock ? 'ring-1 ring-tertiary-container/30' : ''}`;
+        card.setAttribute('data-id', box.id);
+        card.setAttribute('data-name', box.name);
+        card.setAttribute('data-brand', box.brand || 'Habano');
+        card.setAttribute('data-cepo', box.cepo || '');
+        card.setAttribute('data-presentation', box.presentation || '');
+        card.setAttribute('data-price', box.price);
+        card.setAttribute('data-stock', qty);
+        card.setAttribute('data-min', minThreshold);
+
+        card.innerHTML = `
+          ${leftBorderHighlight}
+          <!-- Parte Superior: Foto, Detalles y Precios -->
+          <div class="flex items-start gap-2.5 ${isOutOfStock || isLowStock ? 'pl-1' : ''}">
+            <div class="w-14 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-low relative shadow-inner">
+              <img alt="${box.name}" class="w-full h-full object-cover pointer-events-none" src="${box.img || DEFAULT_HABANO_IMAGES[0]}">
+              ${isOutOfStock ? '<div class="absolute inset-0 bg-inverse-surface/65 flex items-center justify-center text-white text-[9px] font-bold uppercase tracking-wider">Agotado</div>' : ''}
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-start justify-between gap-1">
+                <h3 class="font-headline-sm text-sm text-on-surface font-semibold truncate leading-tight ${isOutOfStock ? 'text-on-surface-variant line-through decoration-error/50' : ''}">${box.name}</h3>
+                ${statusBadgeHtml}
+              </div>
+              <div class="font-body-sm text-[11px] text-on-surface-variant flex items-center gap-1 mt-0.5 truncate">
+                <span class="font-semibold text-primary">${box.brand || 'Habano'}</span>
+                <span class="text-outline-variant">•</span>
+                <span class="truncate">${box.cepo || 'Vitola Clásica'}</span>
+              </div>
+              <div class="mt-1 flex items-baseline justify-between">
+                <div class="font-numerical-data text-xs font-semibold text-primary">
+                  <span>$${box.price.toFixed(2)} USD</span> <span class="text-[10px] text-on-surface-variant font-normal">/ caja</span>
+                </div>
+                <div class="text-right">
+                  <span class="text-[10px] text-on-surface-variant uppercase mr-1">Subtotal</span>
+                  <span class="font-numerical-data text-xs font-bold ${isOutOfStock ? 'text-outline' : 'text-on-surface'}">$${Math.round(subtotal).toLocaleString('en-US')}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Parte Inferior Mobile: Controles Táctiles Stepper Limpios y Cómodos -->
+          <div class="flex items-center justify-between gap-2 pt-2 border-t border-surface-container-low ${isOutOfStock || isLowStock ? 'pl-1' : ''}">
+            <div class="flex items-center gap-1 text-[11px] text-on-surface-variant font-medium">
+              <span class="material-symbols-outlined text-[15px] text-outline">tune</span>
+              <span>Existencias</span>
+            </div>
+            <!-- Stepper Touch Ergonómico con botones grandes '-' y '+' -->
+            <div class="bg-surface-container-low p-0.5 rounded-lg flex items-center gap-0.5 shadow-inner">
+              <button aria-label="Restar una caja" class="cursor-pointer w-8 h-8 rounded-md bg-surface-container-lowest text-on-surface hover:bg-surface-container active:scale-90 transition-all select-none flex items-center justify-center shadow-2xs ${isOutOfStock ? 'opacity-40 cursor-not-allowed' : ''}" data-action="decrement" onclick="window.changeCigarStock('${box.id}', -1)" ${isOutOfStock ? 'disabled' : ''} type="button">
+                <span class="material-symbols-outlined text-[17px] pointer-events-none">remove</span>
+              </button>
+              <div class="w-11 text-center">
+                <span class="count-display number-change-highlight font-numerical-data text-sm font-bold inline-block ${isOutOfStock ? 'text-error' : isLowStock ? 'text-tertiary' : 'text-on-surface'}">${qty}</span>
+              </div>
+              <button aria-label="Sumar una caja" class="cursor-pointer w-8 h-8 rounded-md bg-surface-container-lowest text-on-surface hover:bg-surface-container active:scale-90 transition-all select-none flex items-center justify-center shadow-2xs" data-action="increment" onclick="window.changeCigarStock('${box.id}', 1)" type="button">
+                <span class="material-symbols-outlined text-[17px] pointer-events-none">add</span>
+              </button>
+            </div>
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+
+      recalculateMetrics(false);
+    }
+
+    function renderHistoryList() {
+      const container = document.getElementById('historyListContainer');
+      const totalCountElem = document.getElementById('histTotalCount');
+      const lastEventElem = document.getElementById('histLastEventTime');
+      if (!container) return;
+
+      container.innerHTML = '';
+      if (totalCountElem) totalCountElem.textContent = historyState.length;
+      if (lastEventElem && historyState.length > 0) {
+        lastEventElem.textContent = historyState[0].timestamp;
+      }
+
+      if (historyState.length === 0) {
+        container.innerHTML = `
+          <div class="py-8 text-center text-on-surface-variant">
+            <span class="material-symbols-outlined text-3xl text-outline mb-1">history_toggle_off</span>
+            <p class="font-body-md text-xs font-medium">No hay movimientos registrados.</p>
+          </div>
+        `;
+        return;
+      }
+
+      historyState.forEach((item) => {
+        let icon = 'add_circle';
+        let badgeColor = 'bg-primary/10 text-primary';
+        let deltaColor = 'text-primary';
+
+        if (item.type === 'adjustment_minus') {
+          icon = 'remove_circle_outline';
+          badgeColor = 'bg-tertiary/10 text-tertiary';
+          deltaColor = 'text-tertiary font-bold';
+        } else if (item.type === 'adjustment_plus') {
+          icon = 'arrow_upward';
+          badgeColor = 'bg-secondary-container text-on-secondary-fixed';
+          deltaColor = 'text-primary font-bold';
+        } else if (item.type === 'in') {
+          icon = 'inventory';
+          badgeColor = 'bg-primary text-on-primary';
+          deltaColor = 'text-primary font-semibold';
+        }
+
+        const div = document.createElement('div');
+        div.className = 'pt-2 pb-1 flex items-start justify-between gap-2.5';
+        div.innerHTML = `
+          <div class="flex items-start gap-2 min-w-0">
+            <div class="w-7 h-7 rounded-lg ${badgeColor} flex items-center justify-center flex-shrink-0 mt-0.5 shadow-2xs">
+              <span class="material-symbols-outlined text-[15px]">${icon}</span>
+            </div>
+            <div class="flex flex-col min-w-0">
+              <span class="font-title-sm text-xs text-on-surface font-semibold truncate">${item.cigarName}</span>
+              <span class="text-[10px] text-on-surface-variant truncate">${item.title}</span>
+              <span class="text-[9.5px] text-on-surface-variant/80 mt-0.5">${item.timestamp}</span>
+            </div>
+          </div>
+          <div class="text-right flex flex-col items-end flex-shrink-0">
+            <span class="font-numerical-data text-xs ${deltaColor}">${item.delta}</span>
+          </div>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    function addHistoryMovement(type, title, cigarName, delta, priceDetail) {
+      const newEntry = {
+        id: 'h_' + Date.now() + '_' + Math.random().toString(36).substr(2, 4),
+        type: type,
+        title: title,
+        cigarName: cigarName,
+        delta: delta,
+        priceDetail: priceDetail,
+        timestamp: formatCurrentTime()
+      };
+
+      historyState.unshift(newEntry);
+      persistHistory();
+      renderHistoryList();
+    }
+
+    function recalculateMetrics(triggerSaveBadge = false) {
+      let totalBoxes = 0;
+      let totalValueUSD = 0;
+      let countTypes = boxesState.length;
+
+      boxesState.forEach((box) => {
+        const qty = parseInt(box.stock, 10) || 0;
+        const price = parseFloat(box.price) || 0;
+        totalBoxes += qty;
+        totalValueUSD += qty * price;
+      });
+
+      const metricActiveBoxes = document.getElementById('metricActiveBoxes');
+      const metricTypesCount = document.getElementById('metricTypesCount');
+      const metricTotalValue = document.getElementById('metricTotalValue');
+
+      if (metricActiveBoxes) metricActiveBoxes.textContent = totalBoxes;
+      if (metricTypesCount) metricTypesCount.textContent = countTypes;
+      if (metricTotalValue) {
+        metricTotalValue.textContent = '$' + Math.round(totalValueUSD).toLocaleString('en-US');
+      }
+
+      filterInventory();
+
+      if (triggerSaveBadge) {
+        persistBoxes();
+        broadcastStateChange();
+        triggerSaveIndicator();
+      }
+    }
+
+    // Botones '+' y '-' interactivos
+    function changeCigarStock(boxId, delta) {
+      const boxIndex = boxesState.findIndex((b) => String(b.id) === String(boxId));
+      if (boxIndex === -1) return;
+
+      const targetBox = boxesState[boxIndex];
+      let currentQty = parseInt(targetBox.stock, 10) || 0;
+      let newQty = currentQty + delta;
+      if (newQty < 0) newQty = 0;
+
+      if (newQty === currentQty) return;
+
+      targetBox.stock = newQty;
+      const price = targetBox.price || 0;
+      const newSubtotal = newQty * price;
+
+      const movementType = delta > 0 ? 'adjustment_plus' : 'adjustment_minus';
+      const movementTitle = delta > 0 ? `Entrada (+${delta})` : `Salida (${delta})`;
+      const deltaSign = delta > 0 ? `+${delta} caja` : `${delta} caja`;
+      const priceText = `Subtotal: $${Math.round(newSubtotal).toLocaleString('en-US')} USD`;
+
+      addHistoryMovement(movementType, movementTitle, targetBox.name, deltaSign, priceText);
+
+      renderBoxes();
+      recalculateMetrics(true);
+
+      const msg = delta > 0 ? `+1 caja (${targetBox.name})` : `-1 caja (${targetBox.name})`;
+      showToastNotification('Stock Actualizado', msg, delta > 0 ? 'add_circle' : 'remove_circle');
+    }
+    window.changeCigarStock = changeCigarStock;
+
+    // Modales
+    function openNewBoxModal() {
+      const modal = document.getElementById('newBoxModalBackdrop');
+      if (!modal) return;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      updateFormLotTotal();
+      setTimeout(() => {
+        document.getElementById('inputName')?.focus();
+      }, 50);
+    }
+    window.openNewBoxModal = openNewBoxModal;
+
+    function closeNewBoxModal() {
+      const modal = document.getElementById('newBoxModalBackdrop');
+      if (!modal) return;
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+    window.closeNewBoxModal = closeNewBoxModal;
+
+    function openHistoryModal() {
+      const modal = document.getElementById('historyModalBackdrop');
+      if (!modal) return;
+      renderHistoryList();
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+    window.openHistoryModal = openHistoryModal;
+
+    function closeHistoryModal() {
+      const modal = document.getElementById('historyModalBackdrop');
+      if (!modal) return;
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+    window.closeHistoryModal = closeHistoryModal;
+
+    function openSyncModal() {
+      const modal = document.getElementById('cloudSyncModalBackdrop');
+      if (!modal) return;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+    window.openSyncModal = openSyncModal;
+
+    function closeSyncModal() {
+      const modal = document.getElementById('cloudSyncModalBackdrop');
+      if (!modal) return;
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+    window.closeSyncModal = closeSyncModal;
+
+    // Menú de usuario
+    function toggleUserMenu(e) {
+      if (e) e.stopPropagation();
+      const menu = document.getElementById('userMenuDropdown');
+      if (menu) menu.classList.toggle('hidden');
+    }
+    window.toggleUserMenu = toggleUserMenu;
+
+    function closeUserMenu() {
+      const menu = document.getElementById('userMenuDropdown');
+      if (menu) menu.classList.add('hidden');
+    }
+    window.closeUserMenu = closeUserMenu;
+
+    document.addEventListener('click', (e) => {
+      const userBtn = document.getElementById('btnUserCloudAvatar');
+      const menu = document.getElementById('userMenuDropdown');
+      if (menu && !menu.classList.contains('hidden')) {
+        if (userBtn && !userBtn.contains(e.target) && !menu.contains(e.target)) {
+          closeUserMenu();
+        }
+      }
+    });
+
+    // Copiar Lista para WhatsApp
+    function copyWhatsAppCatalog() {
+      const itemsList = [];
+      boxesState.forEach((box) => {
+        const qty = parseInt(box.stock, 10) || 0;
+        if (qty > 0) {
+          itemsList.push(`${box.name} - $${box.price.toFixed(2)} USD`);
+        }
+      });
+
+      const copyText = itemsList.length > 0 ? itemsList.join('\n') : 'No hay cajas con existencias disponibles en el humidor actualmente.';
+      const copyBtn = document.getElementById('btnOpenCopyList');
+      const copyBtnText = document.getElementById('copyBtnText');
+      const copyBtnIcon = document.getElementById('copyBtnIcon');
+
+      function setSuccessButtonState() {
+        if (copyBtnText) copyBtnText.textContent = '¡Copiado!';
+        if (copyBtnIcon) copyBtnIcon.textContent = 'done_all';
+        if (copyBtn) {
+          copyBtn.classList.remove('bg-surface-container-lowest', 'text-primary');
+          copyBtn.classList.add('bg-primary', 'text-on-primary');
+        }
+
+        showToastNotification(
+          '¡Lista para WhatsApp copiada!',
+          'Se copiaron las vitolas disponibles al portapapeles.',
+          'chat'
+        );
+
+        setTimeout(() => {
+          if (copyBtnText) copyBtnText.textContent = 'Copiar WhatsApp';
+          if (copyBtnIcon) copyBtnIcon.textContent = 'content_copy';
+          if (copyBtn) {
+            copyBtn.classList.remove('bg-primary', 'text-on-primary');
+            copyBtn.classList.add('bg-surface-container-lowest', 'text-primary');
+          }
+        }, 2000);
+      }
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(copyText)
+          .then(setSuccessButtonState)
+          .catch(() => fallbackClipboardCopy(copyText, setSuccessButtonState));
+      } else {
+        fallbackClipboardCopy(copyText, setSuccessButtonState);
+      }
+    }
+    window.copyWhatsAppCatalog = copyWhatsAppCatalog;
+
+    function fallbackClipboardCopy(text, callback) {
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed';
+      textArea.style.top = '-9999px';
+      textArea.style.left = '-9999px';
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        if (callback) callback();
+      } catch (err) {
+        showToastNotification('Error al copiar', 'Selecciona el texto.', 'error');
+      }
+      document.body.removeChild(textArea);
+    }
+
+    // Historial: Vaciar
+    function clearEntireHistory() {
+      if (confirm('¿Vaciar el historial de movimientos?')) {
+        historyState = [];
+        persistHistory();
+        renderHistoryList();
+        broadcastStateChange();
+        showToastNotification('Historial Vaciado', 'El registro fue limpiado.', 'delete_sweep');
+      }
+    }
+    window.clearEntireHistory = clearEntireHistory;
+
+    // Vinculación: Copiar Sala, Exportar y Restaurar Backup
+    function copyRoomCode() {
+      const input = document.getElementById('roomCodeInput');
+      const text = input ? input.value : 'HUMIDOR-SALES-770';
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToastNotification('Código Copiado', text, 'wifi_tethering');
+        });
+      } else {
+        fallbackClipboardCopy(text, () => {
+          showToastNotification('Código Copiado', text, 'wifi_tethering');
+        });
+      }
+    }
+    window.copyRoomCode = copyRoomCode;
+
+    function exportBackupFile() {
+      const exportData = {
+        version: '2.0',
+        brand: 'Atelier Humidor Stock',
+        exportedAt: new Date().toISOString(),
+        boxes: boxesState,
+        history: historyState
+      };
+      const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'stock-backup.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      showToastNotification('Backup Descargado', 'Archivo stock-backup.json guardado.', 'download_done');
+    }
+    window.exportBackupFile = exportBackupFile;
+
+    function importBackupFile(event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        try {
+          const imported = JSON.parse(e.target.result);
+          if (Array.isArray(imported.boxes)) {
+            boxesState = imported.boxes;
+            persistBoxes();
+          }
+          if (Array.isArray(imported.history)) {
+            historyState = imported.history;
+            persistHistory();
+          }
+          renderBoxes();
+          renderHistoryList();
+          recalculateMetrics(true);
+          showToastNotification('Backup Restaurado', 'Inventario actualizado desde archivo.', 'cloud_done');
+          closeSyncModal();
+        } catch (err) {
+          showToastNotification('Error al restaurar', 'El archivo no es válido.', 'error');
+        }
+      };
+      reader.readAsText(file);
+      event.target.value = '';
+    }
+    window.importBackupFile = importBackupFile;
+
+    // Buscador Compacto en tiempo real
+    function filterInventory() {
+      const searchInput = document.getElementById('searchInput');
+      const clearSearchBtn = document.getElementById('clearSearchBtn');
+      const noResultsState = document.getElementById('noResultsState');
+      const noResultsMessage = document.getElementById('noResultsMessage');
+      const showingBadge = document.getElementById('showingCountBadge');
+      const query = searchInput ? searchInput.value.trim().toLowerCase() : '';
+
+      if (clearSearchBtn) {
+        if (query.length > 0) clearSearchBtn.classList.remove('hidden');
+        else clearSearchBtn.classList.add('hidden');
+      }
+
+      const cards = document.querySelectorAll('.cigar-card');
+      let visibleCount = 0;
+
+      cards.forEach((card) => {
+        const name = (card.getAttribute('data-name') || '').toLowerCase();
+        const brand = (card.getAttribute('data-brand') || '').toLowerCase();
+        const cepo = (card.getAttribute('data-cepo') || '').toLowerCase();
+        const cardText = card.innerText.toLowerCase();
+
+        const match = !query ||
+          name.includes(query) ||
+          brand.includes(query) ||
+          cepo.includes(query) ||
+          cardText.includes(query);
+
+        if (match) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (showingBadge) {
+        showingBadge.textContent = `MOSTRANDO ${visibleCount} CAJA${visibleCount === 1 ? '' : 'S'}`;
+      }
+
+      if (visibleCount === 0 && query.length > 0) {
+        if (noResultsState) noResultsState.classList.remove('hidden');
+        if (noResultsMessage) noResultsMessage.textContent = `No se encontraron resultados para "${searchInput.value.trim()}".`;
+      } else {
+        if (noResultsState) noResultsState.classList.add('hidden');
+      }
+    }
+    window.filterInventory = filterInventory;
+
+    function clearSearchInput() {
+      const searchInput = document.getElementById('searchInput');
+      if (searchInput) {
+        searchInput.value = '';
+        searchInput.focus();
+        filterInventory();
+      }
+    }
+    window.clearSearchInput = clearSearchInput;
+
+    // Formulario de Nueva Caja
+    function updateFormLotTotal() {
+      const inputQty = document.getElementById('inputQuantity');
+      const inputPrice = document.getElementById('inputPrice');
+      const calcLotTotal = document.getElementById('calcLotTotal');
+      const qty = parseFloat(inputQty?.value) || 0;
+      const price = parseFloat(inputPrice?.value) || 0;
+      const total = qty * price;
+      if (calcLotTotal) {
+        calcLotTotal.textContent = '$' + total.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' USD';
+      }
+    }
+    window.updateFormLotTotal = updateFormLotTotal;
+
+    function handlePhotoChange(event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+      if (!file.type.startsWith('image/')) {
+        showToastNotification('Archivo no válido', 'Sube una imagen.', 'warning');
+        return;
+      }
+
+      const reader = new FileReader();
+      const photoPreviewImg = document.getElementById('photoPreviewImg');
+      const photoPlaceholderIcon = document.getElementById('photoPlaceholderIcon');
+      const photoUploadLabel = document.getElementById('photoUploadLabel');
+
+      reader.onload = function (evt) {
+        uploadedImageDataUrl = evt.target.result;
+        if (photoPreviewImg) {
+          photoPreviewImg.src = uploadedImageDataUrl;
+          photoPreviewImg.classList.remove('hidden');
+        }
+        if (photoPlaceholderIcon) photoPlaceholderIcon.classList.add('hidden');
+        if (photoUploadLabel) photoUploadLabel.textContent = file.name;
+      };
+      reader.readAsDataURL(file);
+    }
+    window.handlePhotoChange = handlePhotoChange;
+
+    function submitNewBoxForm(event) {
+      if (event) event.preventDefault();
+
+      const nameInput = document.getElementById('inputName');
+      const name = nameInput?.value.trim();
+      if (!name) {
+        nameInput?.focus();
+        return;
+      }
+
+      const format = document.getElementById('inputFormat')?.value.trim() || 'Formato Especial';
+      const presentation = document.getElementById('inputPresentation')?.value || 'Caja de 25 u.';
+      const notes = document.getElementById('inputNotes')?.value.trim() || '';
+      const qtyInput = document.getElementById('inputQuantity')?.value;
+      const qty = qtyInput !== '' ? Math.max(0, parseInt(qtyInput, 10)) : 10;
+      const priceInput = document.getElementById('inputPrice')?.value;
+      const price = priceInput !== '' ? Math.max(0, parseFloat(priceInput)) : 45.0;
+
+      const randomFallbackImg = DEFAULT_HABANO_IMAGES[Math.floor(Math.random() * DEFAULT_HABANO_IMAGES.length)];
+      const finalImg = uploadedImageDataUrl || randomFallbackImg;
+      const newId = 'c_' + Date.now();
+
+      const newBox = {
+        id: newId,
+        name: name,
+        brand: 'Habano',
+        cepo: format,
+        presentation: presentation,
+        price: price,
+        stock: qty,
+        min: 10,
+        strength: 'Media',
+        notes: notes || 'Selección humidor',
+        img: finalImg
+      };
+
+      boxesState.unshift(newBox);
+      persistBoxes();
+      renderBoxes();
+
+      addHistoryMovement(
+        'in',
+        'Caja registrada',
+        name,
+        `+${qty} cajas`,
+        `Precio: $${price.toFixed(2)} USD / u.`
+      );
+
+      recalculateMetrics(true);
+      showToastNotification('Caja Registrada', `${name} añadida (+${qty})`, 'check_circle');
+
+      // Limpiar formulario
+      const form = document.getElementById('formNewBox');
+      if (form) form.reset();
+      uploadedImageDataUrl = '';
+      const photoPreviewImg = document.getElementById('photoPreviewImg');
+      const photoPlaceholderIcon = document.getElementById('photoPlaceholderIcon');
+      const photoUploadLabel = document.getElementById('photoUploadLabel');
+      if (photoPreviewImg) {
+        photoPreviewImg.src = '';
+        photoPreviewImg.classList.add('hidden');
+      }
+      if (photoPlaceholderIcon) photoPlaceholderIcon.classList.remove('hidden');
+      if (photoUploadLabel) photoUploadLabel.textContent = 'Toca para añadir foto';
+
+      closeNewBoxModal();
+    }
+    window.submitNewBoxForm = submitNewBoxForm;
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeNewBoxModal();
+        closeHistoryModal();
+        closeSyncModal();
+        closeUserMenu();
+      }
+    });
+
+    function setupSearchInput() {
+      const searchInput = document.getElementById('searchInput');
+      if (searchInput) {
+        searchInput.addEventListener('input', filterInventory);
+      }
+    }
+
+    function init() {
+      loadPersistedData();
+      initBroadcastSync();
+      renderBoxes();
+      renderHistoryList();
+      setupSearchInput();
+      recalculateMetrics(false);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>
+</body></html>

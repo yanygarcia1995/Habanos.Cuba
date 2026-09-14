@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error-container":"#93000a","surface-container":"#efeeeb","outline":"#847469","on-secondary-container":"#686361","primary":"#7d481c","on-surface-variant":"#52443b","on-error":"#ffffff","tertiary":"#8e3e00","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#763300","surface-container-high":"#eae8e5","primary-container":"#9a6032","outline-variant":"#d7c3b6","surface-bright":"#fbf9f6","on-tertiary":"#ffffff","on-secondary-fixed":"#1e1b19","secondary-fixed-dim":"#ccc5c2","tertiary-fixed-dim":"#ffb68e","on-secondary":"#ffffff","inverse-on-surface":"#f2f0ed","on-surface":"#1b1c1a","surface-tint":"#885124","secondary-container":"#e9e1dd","on-background":"#1b1c1a","inverse-surface":"#30312f","error-container":"#ffdad6","on-primary-fixed":"#301400","surface-container-highest":"#e4e2df","surface":"#fbf9f6","inverse-primary":"#ffb782","surface-container-low":"#f5f3f0","surface-dim":"#dbdad7","primary-fixed":"#ffdcc5","tertiary-fixed":"#ffdbca","on-primary":"#ffffff","error":"#ba1a1a","primary-fixed-dim":"#ffb782","on-secondary-fixed-variant":"#4a4643","surface-variant":"#e4e2df","on-tertiary-container":"#ffeee7","background":"#fbf9f6","secondary":"#625d5b","on-tertiary-fixed":"#331200","on-primary-container":"#ffeee4","secondary-fixed":"#e9e1dd","on-primary-fixed-variant":"#6c3a0f","tertiary-container":"#b25207"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-md":"1rem","margin-mobile":"1rem","space-sm":"0.5rem","space-lg":"1.5rem",gutter:"1.5rem","gutter-mobile":"1rem",margin:"2.5rem","space-xl":"2.5rem","space-xs":"0.25rem"},fontFamily:{"headline-md":["Playfair Display"],"numerical-data":["Inter"],"title-sm":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"headline-lg-mobile":["Playfair Display"],"display-lg":["Playfair Display"],"display-lg-mobile":["Playfair Display"],"title-md":["Inter"],"headline-lg":["Playfair Display"],"headline-sm":["Playfair Display"],"body-lg":["Inter"],"body-sm":["Inter"]},fontSize:{"headline-md":["24px",{lineHeight:"32px",fontWeight:"500"}],"numerical-data":["20px",{lineHeight:"24px",letterSpacing:"-0.02em",fontWeight:"500"}],"title-sm":["14px",{lineHeight:"20px",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.06em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"0",fontWeight:"600"}],"display-lg":["44px",{lineHeight:"52px",letterSpacing:"-0.02em",fontWeight:"600"}],"display-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"500"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface-bright/90 backdrop-blur-md shadow-[0_1px_8px_rgba(28,25,23,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg flex-shrink-0"><div class="flex items-center gap-space-sm"><img alt="Humidor Stock Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VsMlyPfl75yomx9PGtHPPRKFXZ8cqMmBEMQmDxEzutdeWolAk1XmpXDDyMnWVE5OehmHWi9p9565aurEO7hJ-0ptkejxeFLbE-LzqQHdRFfYiK82l91SEHhOJu_Hop3kNqd_PoJUckMnLaEPEQ4eC4noGEG5ab6sWiY9W23H_p1gt965cZSRtEcjvl3bC8dBw61oNPNO6_Vu0ah-pS0X-K79LOwLuuTmLNg3f3FpqGWF5KMeAtF1MY1w"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-medium">Humidor Stock</span></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Humidor Óptimo: <span class="font-numerical-data text-body-sm font-semibold text-on-surface">70% HR / 20°C</span></span></div></div><nav class="hidden lg:flex items-center gap-space-sm" data-active-classes="bg-secondary-container text-on-secondary-fixed font-title-sm text-title-sm px-space-md py-space-xs rounded-lg shadow-[0_1px_3px_rgba(28,25,23,0.06)]"><a aria-current="page" class="transition-colors bg-secondary-container text-on-secondary-fixed font-title-sm text-title-sm px-space-md py-space-xs rounded-lg shadow-[0_1px_3px_rgba(28,25,23,0.06)]" data-path="inventario-activo" href="#">Inventario Activo</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface px-space-md py-space-xs rounded-lg transition-colors" data-path="movimientos-historial" href="#">Movimientos &amp; Historial</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface px-space-md py-space-xs rounded-lg transition-colors" data-path="alertas-stock" href="#">Alertas de Stock</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface px-space-md py-space-xs rounded-lg transition-colors" data-path="configuracion" href="#">Configuración</a></nav><div class="flex items-center gap-space-md"><div class="relative hidden md:block w-48 lg:w-56 xl:w-64"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-lowest text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container shadow-[0_1px_3px_rgba(28,25,23,0.02)]" placeholder="Buscar vitola, marca..." type="text"/></div><button class="flex items-center gap-space-xs bg-primary-container text-on-primary px-space-md py-2 rounded-lg font-title-sm text-title-sm hover:bg-primary transition-colors shadow-[0_2px_8px_-2px_rgba(154,96,50,0.3)]"><span class="material-symbols-outlined text-[18px]">add</span><span class="hidden sm:inline">Nuevo Tabaco</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full max-w-[1440px] mx-auto px-margin pt-20 flex-grow bg-background"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full">
+<div class="absolute -top-12 right-12 w-96 h-96 rounded-full bg-primary-container/5 blur-3xl pointer-events-none"></div>
+<div class="absolute top-48 -left-16 w-80 h-80 rounded-full bg-tertiary-container/5 blur-3xl pointer-events-none"></div>
+<!-- Editorial Header & Summary Telemetry Banner -->
+<div class="pt-8 pb-6 flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-on-surface-variant mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">Archivo Central</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Bóveda N° 02 — Cedro Estacionado</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Inventario de Tabacos y Puros</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-1">
+          Monitoreo volumétrico y auditoría en tiempo real para vitolas seleccionadas de guarda personal y exhibición.
+        </p>
+</div>
+<!-- Live Sync Status Chip -->
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded-xl self-start lg:self-auto shadow-sm">
+<div class="relative flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="absolute w-4 h-4 rounded-full bg-primary-container/30 animate-ping"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Sincronización Humidor</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface" id="syncStatus">Activo · Guardado automático</span>
+</div>
+</div>
+</div>
+<!-- 4-Metric Horizon Stats Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter mb-space-xl lg:grid-cols-3">
+<!-- Total Unidades -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group"><div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Total de Cajas</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">inventory_2</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-numerical-data text-display-lg text-on-surface font-semibold tracking-tight" id="metricTotalBoxes">3</span>
+<span class="font-body-md text-body-md text-on-surface-variant">cajas y estuches</span>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs">
+<span class="inline-flex items-center text-primary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">inventory</span> Cajas selladas en bóveda
+</span>
+<span class="text-outline-variant font-label-sm text-label-sm">· 104 puros totales</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-container/20 group-hover:bg-primary-container transition-colors"></div></div>
+<!-- Modelos Registrados -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Modelos Registrados</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">category</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-numerical-data text-display-lg text-on-surface font-semibold tracking-tight" id="metricActiveVitolas">4</span>
+<span class="font-body-md text-body-md text-on-surface-variant">vitolas activas</span>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>100% denominación Habanos D.O.P.</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-container/20 group-hover:bg-primary-container transition-colors"></div>
+</div>
+<!-- Valor Estimado -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Valor Estimado</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-numerical-data text-display-lg text-on-surface font-semibold tracking-tight" id="metricTotalValue">$5,204</span>
+<span class="font-body-md text-body-md text-on-surface-variant">USD</span>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">trending_up</span>
+<span>Precios ajustados de mercado 2024</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-container/20 group-hover:bg-primary-container transition-colors"></div>
+</div>
+<!-- Nivel de Alerta -->
+</div>
+<!-- Action & Filter Bar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm mb-space-lg flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Search & Filters -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-md flex-grow">
+<!-- Search Input -->
+<div class="relative w-full sm:w-80">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low text-on-surface placeholder:text-outline text-body-md font-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container/20 transition-all" id="cigarSearchInput" placeholder="Buscar por vitola, marca o calibre..." type="text"/>
+</div>
+<!-- Filter Pills Segment -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0" id="filterPillsContainer">
+<button class="filter-pill active-pill px-space-md py-1.5 rounded-lg font-title-sm text-title-sm bg-on-surface text-on-primary shadow-sm transition-all whitespace-nowrap" data-filter="all">
+            Todos <span class="ml-1 opacity-70">(4)</span>
+</button>
+<button class="filter-pill px-space-md py-1.5 rounded-lg font-title-sm text-title-sm bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-filter="Cohiba">
+            Cohiba
+          </button>
+<button class="filter-pill px-space-md py-1.5 rounded-lg font-title-sm text-title-sm bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-filter="Montecristo">
+            Montecristo
+          </button>
+<button class="filter-pill px-space-md py-1.5 rounded-lg font-title-sm text-title-sm bg-surface-container-low text-on-surface-variant hover:text-tertiary hover:bg-surface-container transition-all whitespace-nowrap flex items-center gap-1" data-filter="low-stock">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+            Stock Bajo
+          </button>
+<button class="filter-pill px-space-md py-1.5 rounded-lg font-title-sm text-title-sm bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" data-filter="boxes">
+            Cajas vs Sueltos
+          </button>
+</div>
+</div>
+<!-- Right Group: View Toggles & Add CTA -->
+<div class="flex items-center gap-space-md justify-between sm:justify-end flex-shrink-0">
+<!-- View Toggle Buttons -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg">
+<button class="p-1.5 rounded bg-surface-container-lowest text-on-surface shadow-sm transition-all" id="viewTableBtn" title="Vista Tabla Detallada">
+<span class="material-symbols-outlined text-[20px] block">table_rows</span>
+</button>
+<button class="p-1.5 rounded text-on-surface-variant hover:text-on-surface transition-all" id="viewCardBtn" title="Vista Cuadrícula de Tarjetas">
+<span class="material-symbols-outlined text-[20px] block">grid_view</span>
+</button>
+</div>
+<!-- Primary CTA to Open Drawer/Modal -->
+<button class="flex items-center gap-space-xs bg-primary text-on-primary px-space-md py-2 rounded-lg font-title-sm text-title-sm hover:bg-primary-container active:scale-[0.98] transition-all shadow-sm" id="openAddModalBtn">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Registrar Entrada / Nuevo Tabaco</span>
+</button>
+</div>
+</div>
+<!-- Main Inventory Container -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-xl items-start lg:grid-cols-3">
+<!-- Main Cigar Table / Gallery Section (8 cols on desktop) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md" id="cigarListContainer"><div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Total de Cajas</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">inventory_2</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-numerical-data text-display-lg text-on-surface font-semibold tracking-tight" id="metricTotalBoxes">3</span>
+<span class="font-body-md text-body-md text-on-surface-variant">cajas y estuches</span>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs">
+<span class="inline-flex items-center text-primary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">inventory</span> Cajas selladas en bóveda
+</span>
+<span class="text-outline-variant font-label-sm text-label-sm">· 104 puros totales</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-container/20 group-hover:bg-primary-container transition-colors"></div></div>
+<!-- Right Column: Quick Register Form & Activity Stream (4 cols on desktop) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Inline Quick Add Box -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-md pb-space-sm border-b border-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">post_add</span>
+<h2 class="font-title-md text-title-md text-on-surface">Entrada Rápida</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Formulario Bóveda</span>
+</div>
+<form class="flex flex-col gap-space-sm" id="quickAddCigarForm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Nombre del Puro / Vitola</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface text-body-sm font-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container" id="formName" placeholder="Ej. Partagás Serie D No. 4" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Marca</label>
+<select class="w-full px-3 py-2 bg-surface-container-low text-on-surface text-body-sm font-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container" id="formBrand">
+<option value="Cohiba">Cohiba</option>
+<option value="Montecristo">Montecristo</option>
+<option value="Partagas">Partagás</option>
+<option value="Romeo y Julieta">Romeo y Julieta</option>
+<option value="Hoyo de Monterrey">Hoyo de Monterrey</option>
+<option value="Trinidad">Trinidad</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Precio Unitario ($)</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface text-body-sm font-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container" id="formPrice" placeholder="38.00" required="" step="0.5" type="number"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Cantidad Inicial</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface text-body-sm font-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container" id="formQuantity" min="1" placeholder="25" required="" type="number"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Alerta Mínima</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface text-body-sm font-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container" id="formMinStock" min="1" placeholder="10" required="" type="number"/>
+</div>
+</div>
+<button class="mt-space-sm w-full bg-primary text-on-primary py-2.5 rounded-lg font-title-sm text-title-sm hover:bg-primary-container transition-all flex items-center justify-center gap-1.5 shadow-sm" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Guardar en Humidor</span>
+</button>
+</form>
+</div>
+<!-- Mini Log of Recent Stock Updates -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-md pb-space-sm border-b border-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">history</span>
+<h2 class="font-title-md text-title-md text-on-surface">Movimientos Recientes</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hoy</span>
+</div>
+<div class="flex flex-col gap-space-sm" id="activityLogsList">
+<!-- Event 1 -->
+<div class="flex items-start gap-space-sm p-2 rounded-lg bg-surface-container-low/50">
+<div class="w-7 h-7 rounded-full bg-error-container text-on-error-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</div>
+<div class="flex flex-col flex-grow min-w-0">
+<span class="font-title-sm text-body-sm text-on-surface truncate">-2 Cohiba Robusto vendido</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lounge VIP · Hace 42 min</span>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="flex items-start gap-space-sm p-2 rounded-lg bg-surface-container-low/50">
+<div class="w-7 h-7 rounded-full bg-primary-container/15 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+</div>
+<div class="flex flex-col flex-grow min-w-0">
+<span class="font-title-sm text-body-sm text-on-surface truncate">+10 Montecristo Wide Edmundo recepción</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Distribuidor Oficial · Hace 3h</span>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="flex items-start gap-space-sm p-2 rounded-lg bg-surface-container-low/50">
+<div class="w-7 h-7 rounded-full bg-surface-container text-on-surface flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">thermostat</span>
+</div>
+<div class="flex flex-col flex-grow min-w-0">
+<span class="font-title-sm text-body-sm text-on-surface truncate">Calibración higrométrica completada</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Boveda 69% Pack · 09:15 AM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Telemetry Ambient Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary-container shadow-xs">
+<span class="material-symbols-outlined text-[24px]">air</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block">Humedad en Madera</span>
+<span class="font-numerical-data text-title-sm text-on-surface font-semibold">69.2% HR Constante</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-semibold">Estado Ideal</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Temp: 19.8°C</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Backdrop & Modal Window -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-xs z-50 hidden items-center justify-center p-4" id="modalBackdrop">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-2xl shadow-xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+<div class="p-space-lg border-b border-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">add_box</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Registrar Vitola en Humidor</h2>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg" id="closeModalBtn">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<form class="p-space-lg flex flex-col gap-space-md" id="modalAddCigarForm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Nombre Completo y Vitola</label>
+<input class="w-full px-3 py-2.5 bg-surface-container-low text-on-surface font-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-container/20" id="modalCigarName" placeholder="Ej: Hoyo de Monterrey Epicure No. 2" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Marca</label>
+<select class="w-full px-3 py-2.5 bg-surface-container-low text-on-surface font-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-container/20" id="modalCigarBrand">
+<option value="Cohiba">Cohiba</option>
+<option value="Montecristo">Montecristo</option>
+<option value="Partagas">Partagás</option>
+<option value="Hoyo de Monterrey">Hoyo de Monterrey</option>
+<option value="Trinidad">Trinidad</option>
+<option value="Romeo y Julieta">Romeo y Julieta</option>
+<option value="H. Upmann">H. Upmann</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Precio Unitario ($ USD)</label>
+<input class="w-full px-3 py-2.5 bg-surface-container-low text-on-surface font-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-container/20" id="modalCigarPrice" placeholder="45.00" required="" step="0.5" type="number"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Cantidad Inicial (u)</label>
+<input class="w-full px-3 py-2.5 bg-surface-container-low text-on-surface font-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-container/20" id="modalCigarQty" min="1" placeholder="25" required="" type="number"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Umbral Stock Bajo</label>
+<input class="w-full px-3 py-2.5 bg-surface-container-low text-on-surface font-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-container/20" id="modalCigarMin" min="1" placeholder="10" required="" type="number"/>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-end gap-space-sm border-t border-surface-container-low">
+<button class="px-space-md py-2.5 text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm rounded-lg" id="cancelModalBtn" type="button">
+            Cancelar
+          </button>
+<button class="px-space-lg py-2.5 bg-primary text-on-primary font-title-sm text-title-sm rounded-lg hover:bg-primary-container transition-all flex items-center gap-1.5 shadow-sm" type="submit">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span>Confirmar Ingreso</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Interactive JavaScript Logic -->
+<script>
+    (function () {
+      // Recompute and synchronize header metrics
+      function recalculateMetrics() {
+        const cards = document.querySelectorAll('.cigar-card');
+        let totalUnits = 0;
+        let totalValue = 0;
+        let lowStockCount = 0;
+
+        cards.forEach((card) => {
+          const countDisplay = card.querySelector('.count-display');
+          const units = parseInt(countDisplay.textContent.trim(), 10) || 0;
+          const price = parseFloat(card.getAttribute('data-price')) || 0;
+          const minStock = parseInt(card.getAttribute('data-min')) || 10;
+
+          totalUnits += units;
+          totalValue += units * price;
+
+          if (units < minStock) {
+            lowStockCount += 1;
+          }
+
+          // Update individual card subtotal
+          const subtotalElem = card.querySelector('.item-subtotal');
+          if (subtotalElem) {
+            subtotalElem.textContent = '$' + (units * price).toLocaleString('en-US', {
+              minimumFractionDigits: 0,
+              maximumFractionDigits: 0
+            });
+          }
+        });
+
+        // Push updates to DOM
+        const metricUnits = document.getElementById('metricTotalUnits');
+        const metricVal = document.getElementById('metricTotalValue');
+        const metricLow = document.getElementById('metricLowStockCount');
+        const metricActive = document.getElementById('metricActiveVitolas');
+
+        if (metricUnits) metricUnits.textContent = totalUnits;
+        if (metricVal) metricVal.textContent = '$' + totalValue.toLocaleString('en-US');
+        if (metricLow) metricLow.textContent = lowStockCount;
+        if (metricActive) metricActive.textContent = cards.length;
+      }
+
+      // Add mini log entry to the list
+      function addActivityLog(type, message) {
+        const list = document.getElementById('activityLogsList');
+        if (!list) return;
+
+        const row = document.createElement('div');
+        row.className = 'flex items-start gap-space-sm p-2 rounded-lg bg-surface-container-low/50 animate-in fade-in duration-300';
+        
+        const isUp = type === 'up';
+        const iconName = isUp ? 'arrow_upward' : 'arrow_downward';
+        const iconClasses = isUp
+          ? 'bg-primary-container/15 text-primary'
+          : 'bg-error-container text-on-error-container';
+
+        row.innerHTML = `
+          <div class="w-7 h-7 rounded-full ${iconClasses} flex items-center justify-center flex-shrink-0 mt-0.5">
+            <span class="material-symbols-outlined text-[16px]">${iconName}</span>
+          </div>
+          <div class="flex flex-col flex-grow min-w-0">
+            <span class="font-title-sm text-body-sm text-on-surface truncate">${message}</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">Ahora mismo · Usuario</span>
+          </div>
+        `;
+
+        list.insertBefore(row, list.firstChild);
+        // keep only recent 6
+        if (list.children.length > 6) {
+          list.removeChild(list.lastChild);
+        }
+      }
+
+      // Bind dynamic steppers
+      function setupSteppers(scope) {
+        const steppers = scope.querySelectorAll('.cigar-card');
+        steppers.forEach((card) => {
+          const decrementBtn = card.querySelector('[data-action="decrement"]');
+          const incrementBtn = card.querySelector('[data-action="increment"]');
+          const display = card.querySelector('.count-display');
+          const saveNotice = card.querySelector('.save-indicator');
+          const cigarName = card.getAttribute('data-name') || 'Vitola';
+          const minStock = parseInt(card.getAttribute('data-min')) || 10;
+
+          function triggerVisualFeedback(type) {
+            if (!display) return;
+            if (type === 'increment') {
+              display.classList.add('text-primary-container', 'scale-110');
+              setTimeout(() => display.classList.remove('text-primary-container', 'scale-110'), 250);
+            } else {
+              display.classList.add('text-tertiary', 'scale-90');
+              setTimeout(() => display.classList.remove('text-tertiary', 'scale-90'), 250);
+            }
+
+            if (saveNotice) {
+              saveNotice.classList.remove('opacity-0');
+              saveNotice.classList.add('opacity-100');
+              setTimeout(() => {
+                saveNotice.classList.remove('opacity-100');
+                saveNotice.classList.add('opacity-0');
+              }, 1200);
+            }
+          }
+
+          if (decrementBtn && !decrementBtn.dataset.bound) {
+            decrementBtn.dataset.bound = 'true';
+            decrementBtn.addEventListener('click', () => {
+              let cur = parseInt(display.textContent.trim(), 10) || 0;
+              if (cur > 0) {
+                cur -= 1;
+                display.textContent = cur;
+                card.setAttribute('data-stock', cur);
+                triggerVisualFeedback('decrement');
+                recalculateMetrics();
+                addActivityLog('down', `-1 ${cigarName} retirado`);
+
+                // Check low stock state styling
+                if (cur < minStock) {
+                  display.classList.add('text-tertiary', 'font-bold');
+                }
+              }
+            });
+          }
+
+          if (incrementBtn && !incrementBtn.dataset.bound) {
+            incrementBtn.dataset.bound = 'true';
+            incrementBtn.addEventListener('click', () => {
+              let cur = parseInt(display.textContent.trim(), 10) || 0;
+              cur += 1;
+              display.textContent = cur;
+              card.setAttribute('data-stock', cur);
+              triggerVisualFeedback('increment');
+              recalculateMetrics();
+              addActivityLog('up', `+1 ${cigarName} agregado`);
+
+              // Check recover from low stock
+              if (cur >= minStock) {
+                display.classList.remove('text-tertiary');
+              }
+            });
+          }
+        });
+      }
+
+      // Filter pills behavior
+      function setupFilters() {
+        const pills = document.querySelectorAll('.filter-pill');
+        const searchInput = document.getElementById('cigarSearchInput');
+        const cards = document.querySelectorAll('.cigar-card');
+
+        function applyFilter(filterType, query) {
+          const q = (query || '').toLowerCase().trim();
+
+          cards.forEach((card) => {
+            const brand = (card.getAttribute('data-brand') || '').toLowerCase();
+            const textContent = card.innerText.toLowerCase();
+            const stock = parseInt(card.getAttribute('data-stock'), 10) || 0;
+            const minStock = parseInt(card.getAttribute('data-min'), 10) || 10;
+
+            let matchesCategory = false;
+            if (filterType === 'all') {
+              matchesCategory = true;
+            } else if (filterType === 'Cohiba') {
+              matchesCategory = brand.includes('cohiba');
+            } else if (filterType === 'Montecristo') {
+              matchesCategory = brand.includes('montecristo');
+            } else if (filterType === 'low-stock') {
+              matchesCategory = stock < minStock;
+            } else if (filterType === 'boxes') {
+              matchesCategory = true; // Show all with box/loose tags
+            }
+
+            const matchesQuery = q === '' || textContent.includes(q);
+
+            if (matchesCategory && matchesQuery) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        }
+
+        pills.forEach((pill) => {
+          pill.addEventListener('click', () => {
+            pills.forEach((p) => {
+              p.classList.remove('bg-on-surface', 'text-on-primary', 'shadow-sm');
+              p.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+            });
+            pill.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+            pill.classList.add('bg-on-surface', 'text-on-primary', 'shadow-sm');
+
+            const filterType = pill.getAttribute('data-filter');
+            applyFilter(filterType, searchInput ? searchInput.value : '');
+          });
+        });
+
+        if (searchInput) {
+          searchInput.addEventListener('input', (e) => {
+            const activePill = document.querySelector('.filter-pill.bg-on-surface');
+            const filterType = activePill ? activePill.getAttribute('data-filter') : 'all';
+            applyFilter(filterType, e.target.value);
+          });
+        }
+      }
+
+      // View switches (Table row vs Card grid)
+      function setupViewToggles() {
+        const tableBtn = document.getElementById('viewTableBtn');
+        const cardBtn = document.getElementById('viewCardBtn');
+        const list = document.getElementById('cigarListContainer');
+
+        if (!tableBtn || !cardBtn || !list) return;
+
+        cardBtn.addEventListener('click', () => {
+          cardBtn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+          cardBtn.classList.remove('text-on-surface-variant');
+          tableBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+          tableBtn.classList.add('text-on-surface-variant');
+
+          list.classList.remove('flex', 'flex-col');
+          list.classList.add('grid', 'grid-cols-1', 'sm:grid-cols-2');
+        });
+
+        tableBtn.addEventListener('click', () => {
+          tableBtn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+          tableBtn.classList.remove('text-on-surface-variant');
+          cardBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+          cardBtn.classList.add('text-on-surface-variant');
+
+          list.classList.remove('grid', 'grid-cols-1', 'sm:grid-cols-2');
+          list.classList.add('flex', 'flex-col');
+        });
+      }
+
+      // Modal handling
+      function setupModal() {
+        const openBtn = document.getElementById('openAddModalBtn');
+        const backdrop = document.getElementById('modalBackdrop');
+        const closeBtn = document.getElementById('closeModalBtn');
+        const cancelBtn = document.getElementById('cancelModalBtn');
+        const modalForm = document.getElementById('modalAddCigarForm');
+
+        function openModal() {
+          backdrop.classList.remove('hidden');
+          backdrop.classList.add('flex');
+        }
+
+        function closeModal() {
+          backdrop.classList.add('hidden');
+          backdrop.classList.remove('flex');
+        }
+
+        if (openBtn) openBtn.addEventListener('click', openModal);
+        if (closeBtn) closeBtn.addEventListener('click', closeModal);
+        if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+
+        backdrop.addEventListener('click', (e) => {
+          if (e.target === backdrop) closeModal();
+        });
+
+        // Handle modal form insertion
+        if (modalForm) {
+          modalForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('modalCigarName').value;
+            const brand = document.getElementById('modalCigarBrand').value;
+            const price = parseFloat(document.getElementById('modalCigarPrice').value) || 30.00;
+            const qty = parseInt(document.getElementById('modalCigarQty').value, 10) || 1;
+            const minStock = parseInt(document.getElementById('modalCigarMin').value, 10) || 5;
+
+            createNewCigarEntry(name, brand, price, qty, minStock);
+            modalForm.reset();
+            closeModal();
+            addActivityLog('up', `Nuevo tabaco registrado: ${name} (+${qty})`);
+          });
+        }
+
+        // Handle right side inline form
+        const inlineForm = document.getElementById('quickAddCigarForm');
+        if (inlineForm) {
+          inlineForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('formName').value;
+            const brand = document.getElementById('formBrand').value;
+            const price = parseFloat(document.getElementById('formPrice').value) || 35.00;
+            const qty = parseInt(document.getElementById('formQuantity').value, 10) || 1;
+            const minStock = parseInt(document.getElementById('formMinStock').value, 10) || 8;
+
+            createNewCigarEntry(name, brand, price, qty, minStock);
+            inlineForm.reset();
+            addActivityLog('up', `Entrada directa en humidor: ${name} (+${qty})`);
+          });
+        }
+      }
+
+      function createNewCigarEntry(name, brand, price, qty, minStock) {
+        const container = document.getElementById('cigarListContainer');
+        if (!container) return;
+
+        const isLow = qty < minStock;
+        const statusBadge = isLow
+          ? `<span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2 py-0.5 rounded uppercase tracking-wider font-semibold flex items-center gap-1">
+              <span class="material-symbols-outlined text-[14px]">warning</span> Stock Bajo
+            </span>`
+          : `<span class="bg-surface-container-low text-primary-container font-label-sm text-label-sm px-2 py-0.5 rounded uppercase tracking-wider font-semibold">Stock Normal</span>`;
+
+        const newCard = document.createElement('div');
+        newCard.className = `cigar-card bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-lg relative overflow-hidden animate-in fade-in duration-300`;
+        newCard.setAttribute('data-brand', brand);
+        newCard.setAttribute('data-price', price.toFixed(2));
+        newCard.setAttribute('data-stock', qty);
+        newCard.setAttribute('data-min', minStock);
+        newCard.setAttribute('data-name', name);
+
+        newCard.innerHTML = `
+          <div class="flex items-start gap-space-md">
+            <div class="w-14 h-24 sm:w-16 sm:h-28 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-low relative shadow-inner">
+              <img
+                src="placeholder"
+                data-alt="Collection cigar handmade with authentic wrapper leaf in Spanish cedar showcase"
+                class="w-full h-full object-cover"
+              />
+              <span class="absolute bottom-1 right-1 bg-surface-container-lowest/90 backdrop-blur-xs font-label-sm text-label-sm px-1 rounded text-on-surface-variant">50g</span>
+            </div>
+
+            <div class="flex flex-col">
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <span class="font-headline-sm text-headline-sm text-on-surface">${name}</span>
+                ${statusBadge}
+              </div>
+              <div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2 flex-wrap">
+                <span class="font-semibold text-primary">${brand}</span>
+                <span class="text-outline-variant">•</span>
+                <span>Vitola de Salida</span>
+                <span class="text-outline-variant">•</span>
+                <span>Cuba D.O.P.</span>
+              </div>
+              <div class="mt-2 text-on-surface-variant font-label-sm text-label-sm flex items-center gap-3">
+                <span class="flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[16px] text-primary-container">inventory</span>
+                  Caja / Sueltos
+                </span>
+                <span class="text-outline-variant">•</span>
+                <span class="breakdown-text">${qty} unidades en humidor</span>
+                <span class="text-outline-variant">•</span>
+                <span class="font-numerical-data text-body-sm font-semibold text-on-surface">$${price.toFixed(2)} / u.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between md:justify-end gap-space-lg pt-space-sm md:pt-0 border-t md:border-t-0 border-surface-container-low">
+            <div class="flex flex-col items-end">
+              <div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Unidades Disponibles</div>
+              <div class="stepper-plate bg-surface-container-low p-1 rounded-xl flex items-center gap-1 shadow-inner">
+                <button
+                  type="button"
+                  data-action="decrement"
+                  class="stepper-btn w-9 h-9 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container active:scale-95 transition-all flex items-center justify-center font-title-sm text-title-sm shadow-sm"
+                  aria-label="Restar una unidad"
+                >
+                  <span class="material-symbols-outlined text-[18px]">remove</span>
+                </button>
+                <div class="w-14 text-center">
+                  <span class="count-display font-numerical-data text-headline-sm font-semibold text-on-surface transition-colors">${qty}</span>
+                </div>
+                <button
+                  type="button"
+                  data-action="increment"
+                  class="stepper-btn w-9 h-9 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container active:scale-95 transition-all flex items-center justify-center font-title-sm text-title-sm shadow-sm"
+                  aria-label="Sumar una unidad"
+                >
+                  <span class="material-symbols-outlined text-[18px]">add</span>
+                </button>
+              </div>
+              <span class="save-indicator opacity-0 font-label-sm text-label-sm text-primary-container transition-opacity duration-300 mt-1">Guardado</span>
+            </div>
+
+            <div class="text-right hidden sm:block min-w-[80px]">
+              <span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Valor Total</span>
+              <span class="item-subtotal font-numerical-data text-title-md font-semibold text-on-surface">$${(qty * price).toLocaleString('en-US', { minimumFractionDigits: 0 })}</span>
+            </div>
+          </div>
+        `;
+
+        container.insertBefore(newCard, container.firstChild);
+        setupSteppers(newCard);
+        recalculateMetrics();
+      }
+
+      // Initialize all triggers
+      document.addEventListener('DOMContentLoaded', () => {
+        setupSteppers(document);
+        setupFilters();
+        setupViewToggles();
+        setupModal();
+        recalculateMetrics();
+      });
+
+      // Immediate call in case DOM is already parsed
+      setupSteppers(document);
+      setupFilters();
+      setupViewToggles();
+      setupModal();
+      recalculateMetrics();
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl shadow-[0_-1px_4px_rgba(28,25,23,0.02)]"><div class="max-w-[1440px] mx-auto px-margin py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface-variant">Humidor Stock</span><span class="text-outline-variant">•</span><span class="font-body-sm text-body-sm text-on-surface-variant">Archivo y Gestión de Puros de Colección</span></div><div class="flex items-center gap-space-lg"><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Monitoreo Cedro Español</span><span class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Humidor Stock. Todos los derechos reservados.</span></div></div></footer></body></html>

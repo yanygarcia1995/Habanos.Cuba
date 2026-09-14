@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error-container":"#93000a","surface-container":"#efeeeb","outline":"#847469","on-secondary-container":"#686361","primary":"#7d481c","on-surface-variant":"#52443b","on-error":"#ffffff","tertiary":"#8e3e00","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#763300","surface-container-high":"#eae8e5","primary-container":"#9a6032","outline-variant":"#d7c3b6","surface-bright":"#fbf9f6","on-tertiary":"#ffffff","on-secondary-fixed":"#1e1b19","secondary-fixed-dim":"#ccc5c2","tertiary-fixed-dim":"#ffb68e","on-secondary":"#ffffff","inverse-on-surface":"#f2f0ed","on-surface":"#1b1c1a","surface-tint":"#885124","secondary-container":"#e9e1dd","on-background":"#1b1c1a","inverse-surface":"#30312f","error-container":"#ffdad6","on-primary-fixed":"#301400","surface-container-highest":"#e4e2df","surface":"#fbf9f6","inverse-primary":"#ffb782","surface-container-low":"#f5f3f0","surface-dim":"#dbdad7","primary-fixed":"#ffdcc5","tertiary-fixed":"#ffdbca","on-primary":"#ffffff","error":"#ba1a1a","primary-fixed-dim":"#ffb782","on-secondary-fixed-variant":"#4a4643","surface-variant":"#e4e2df","on-tertiary-container":"#ffeee7","background":"#fbf9f6","secondary":"#625d5b","on-tertiary-fixed":"#331200","on-primary-container":"#ffeee4","secondary-fixed":"#e9e1dd","on-primary-fixed-variant":"#6c3a0f","tertiary-container":"#b25207"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-md":"1rem","margin-mobile":"1rem","space-sm":"0.5rem","space-lg":"1.5rem",gutter:"1.5rem","gutter-mobile":"1rem",margin:"2.5rem","space-xl":"2.5rem","space-xs":"0.25rem"},fontFamily:{"headline-md":["Playfair Display"],"numerical-data":["Inter"],"title-sm":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"headline-lg-mobile":["Playfair Display"],"display-lg":["Playfair Display"],"display-lg-mobile":["Playfair Display"],"title-md":["Inter"],"headline-lg":["Playfair Display"],"headline-sm":["Playfair Display"],"body-lg":["Inter"],"body-sm":["Inter"]},fontSize:{"headline-md":["24px",{lineHeight:"32px",fontWeight:"500"}],"numerical-data":["20px",{lineHeight:"24px",letterSpacing:"-0.02em",fontWeight:"500"}],"title-sm":["14px",{lineHeight:"20px",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.06em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"0",fontWeight:"600"}],"display-lg":["44px",{lineHeight:"52px",letterSpacing:"-0.02em",fontWeight:"600"}],"display-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"500"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface-bright/90 backdrop-blur-md shadow-[0_1px_8px_rgba(28,25,23,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg flex-shrink-0"><div class="flex items-center gap-space-sm"><img alt="Humidor Stock Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VsMlyPfl75yomx9PGtHPPRKFXZ8cqMmBEMQmDxEzutdeWolAk1XmpXDDyMnWVE5OehmHWi9p9565aurEO7hJ-0ptkejxeFLbE-LzqQHdRFfYiK82l91SEHhOJu_Hop3kNqd_PoJUckMnLaEPEQ4eC4noGEG5ab6sWiY9W23H_p1gt965cZSRtEcjvl3bC8dBw61oNPNO6_Vu0ah-pS0X-K79LOwLuuTmLNg3f3FpqGWF5KMeAtF1MY1w"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-medium">Humidor Stock</span></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg"><span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Humidor Óptimo: <span class="font-numerical-data text-body-sm font-semibold text-on-surface">70% HR / 20°C</span></span></div></div><nav class="hidden lg:flex items-center gap-space-sm" data-active-classes="bg-secondary-container text-on-secondary-fixed font-title-sm text-title-sm px-space-md py-space-xs rounded-lg shadow-[0_1px_3px_rgba(28,25,23,0.06)]"><a aria-current="page" class="transition-colors bg-secondary-container text-on-secondary-fixed font-title-sm text-title-sm px-space-md py-space-xs rounded-lg shadow-[0_1px_3px_rgba(28,25,23,0.06)]" data-path="inventario-activo" href="#">Inventario Activo</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface px-space-md py-space-xs rounded-lg transition-colors" data-path="movimientos-historial" href="#">Movimientos &amp; Historial</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface px-space-md py-space-xs rounded-lg transition-colors" data-path="alertas-stock" href="#">Alertas de Stock</a><a class="font-title-sm text-title-sm text-on-surface-variant hover:text-on-surface px-space-md py-space-xs rounded-lg transition-colors" data-path="configuracion" href="#">Configuración</a></nav><div class="flex items-center gap-space-md"><div class="relative hidden md:block w-48 lg:w-56 xl:w-64"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-lowest text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container shadow-[0_1px_3px_rgba(28,25,23,0.02)]" placeholder="Buscar vitola, marca..." type="text"/></div><button class="flex items-center gap-space-xs bg-primary-container text-on-primary px-space-md py-2 rounded-lg font-title-sm text-title-sm hover:bg-primary transition-colors shadow-[0_2px_8px_-2px_rgba(154,96,50,0.3)]"><span class="material-symbols-outlined text-[18px]">add</span><span class="hidden sm:inline">Nuevo Tabaco</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full max-w-[1440px] mx-auto px-margin pt-20 flex-grow bg-background"><div class="flex flex-col w-full pb-space-xl">
+<!-- Navegación y Encabezado de Archivo -->
+<div class="w-full flex flex-col md:flex-row md:items-center md:justify-between py-space-md gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">Archivo Central</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Bóveda de Guarda</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Registro de Entrada</span>
+</div>
+<a class="inline-flex items-center gap-space-xs px-space-md py-2 bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg transition-all duration-200 self-start md:self-auto shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="font-title-sm text-title-sm">Volver al Inventario Principal</span>
+</a>
+</div>
+<!-- Título Editorial Principal -->
+<div class="pt-space-md pb-space-lg">
+<div class="flex flex-wrap items-center gap-space-sm mb-space-xs">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm rounded uppercase tracking-wider">Protocolo de Guarda #REG-2024-88</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+<span class="font-label-sm text-label-sm uppercase text-outline">Recepción Oficial</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Registro de Entrada de Tabacos y Cajas</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mt-1">
+      Ingreso detallado a bóveda de guarda, carga de fotografías reales y especificaciones técnicas para la preservación de lote.
+    </p>
+</div>
+<form class="w-full grid grid-cols-1 lg:grid-cols-12 gap-space-lg" id="entryForm" onsubmit="event.preventDefault(); handleSaveEntry();">
+<!-- Columna Izquierda: Galería e Imágenes Reales (Lg: 5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Panel de Fotos Reales -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_2px_12px_-2px_rgba(28,25,23,0.04)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[22px]">photo_camera</span>
+<h2 class="font-title-md text-title-md text-on-surface">Fotografías de Comprobación</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase">Alta Resolución</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant -mt-2">
+          Documente sellos holográficos de denominación de origen, estado de las capas y código de fábrica.
+        </p>
+<!-- Dropzone Interactivo Real -->
+<label class="group relative cursor-pointer flex flex-col items-center justify-center p-space-lg bg-surface-container-low hover:bg-surface-container rounded-xl transition-all duration-200 text-center" for="imageFileInput">
+<input accept="image/*" class="sr-only" id="imageFileInput" multiple="" onchange="handleFileSelect(event)" type="file"/>
+<div class="w-12 h-12 rounded-full bg-surface-container-highest group-hover:bg-primary-container group-hover:text-on-primary flex items-center justify-center text-on-surface-variant transition-colors mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[24px]">add_a_photo</span>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">Seleccionar o Arrastrar Fotografías</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Desde su cámara o biblioteca (PNG, JPG hasta 15MB)</span>
+</label>
+<!-- Grid de Fotos Añadidas / Pre-cargadas -->
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Archivos Adjuntos (<span id="photoCount">3</span>)</span>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold">Clic en estrella para foto principal</span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm" id="photosGrid">
+<!-- Foto 1 Pre-cargada: Caja cerrada de cedro -->
+<div class="relative group rounded-lg overflow-hidden aspect-square bg-surface-container shadow-sm flex flex-col" data-index="0">
+<img class="w-full h-full object-cover" data-alt="A pristine luxury wooden cedar cigar box standing slightly open on a dark mahogany humidor shelf, soft warm studio lighting, showcasing the authentic natural wood grain and golden metal hinges, macro editorial photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv9VLzK2rPSkYUR-chvrpcCGb5euyA7SgQ0sZXpnEjik_shPrgTsj5YFde2fdrdsiDuTxF3JTE2JjnEl1szfBQjuu90-4R_zMnh-iizx7eQMZ1PpRsIGkQX-ew__QIrsGNr8ROmDFqIVxUj45ro1ao5vMbdt0e56M33lD8mU9bt-YkNfc9IVrhM7th8KMIBc5N26TN-TDr8ATeTGMBBh8O8U5rYZFiQNJSvC0eySJ6hNzOBV9xrhra"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30 opacity-90 transition-opacity flex flex-col justify-between p-1.5">
+<div class="flex justify-between items-center">
+<button class="p-1 rounded-full bg-black/40 text-amber-300 hover:scale-110 transition-transform" onclick="setPrimaryPhoto(0)" title="Foto principal" type="button">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</button>
+<button class="p-1 rounded-full bg-black/40 text-white hover:bg-error transition-colors" onclick="removePhoto(0)" title="Eliminar foto" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<span class="font-label-sm text-[10px] text-white bg-primary-container/80 px-1 py-0.5 rounded text-center truncate">Principal (Caja)</span>
+</div>
+</div>
+<!-- Foto 2 Pre-cargada: Vitola con anilla en detalle -->
+<div class="relative group rounded-lg overflow-hidden aspect-square bg-surface-container shadow-sm flex flex-col" data-index="1">
+<img class="w-full h-full object-cover" data-alt="Close-up macro shot of a pristine hand-rolled premium cigar with an exquisite gold embossed band resting on a polished Spanish cedar surface, silky oily wrapper with delicate veins, dramatic warm side lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKV7gvgRii-Bfsc1Gd2Iwqh2iYGe-qA4il4xQM8bIdhYwzT1OBYQRaQ-Uqs7rvzKdeR3YduLIxu3zmfz_IAJ1xXfgElVq4dd4z8KdtdZ4CK_GX3B0hPe2Kl516dbdXr0IiJAeJknfEKo6Xv7YFwFf60sbF3RPZHMd_wtf93bn2a_HUviRBr73wG2UlzcXL9iz4_QbKklcmPKv2Ii0wSEgHWcBS7mqLOISGdl8VK18iBUaYKr7-XrAW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30 opacity-90 transition-opacity flex flex-col justify-between p-1.5">
+<div class="flex justify-between items-center">
+<button class="p-1 rounded-full bg-black/40 text-white/80 hover:text-amber-300 hover:scale-110 transition-transform" onclick="setPrimaryPhoto(1)" title="Hacer principal" type="button">
+<span class="material-symbols-outlined text-[16px]">star</span>
+</button>
+<button class="p-1 rounded-full bg-black/40 text-white hover:bg-error transition-colors" onclick="removePhoto(1)" title="Eliminar foto" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<span class="font-label-sm text-[10px] text-white bg-black/50 px-1 py-0.5 rounded text-center truncate">Vitola &amp; Anilla</span>
+</div>
+</div>
+<!-- Foto 3 Pre-cargada: Sello de garantía Habanos -->
+<div class="relative group rounded-lg overflow-hidden aspect-square bg-surface-container shadow-sm flex flex-col" data-index="2">
+<img class="w-full h-full object-cover" data-alt="Detailed macro view of an authentic green iridescent warranty seal and barcode label on the corner of a luxury Cuban cigar box, fine engraving lines, metallic micro-text, realistic collector documentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6WOv-D7qybmgnEjSW-qm5fLY6Rr8C-Q5FPjbIpBEhIanvbWXvHroM_nDM4RWECmYHcATM5rJDRj3G9ayJj6Oiyej-dA-YmU3wn91U4jkT-OLNEwpFDiZ6aNwWgEMiBvttJJKO3gWFjrLxlX7mURi3lTcfPaqm9E8q5P63RzUT2AeFVPZ81nU0MM4-oaQxZpi1-EuOUOLWVdxsXJRp9oatoJSJK6RWjw63eqMrPZOWb91ZcTFZWbcY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30 opacity-90 transition-opacity flex flex-col justify-between p-1.5">
+<div class="flex justify-between items-center">
+<button class="p-1 rounded-full bg-black/40 text-white/80 hover:text-amber-300 hover:scale-110 transition-transform" onclick="setPrimaryPhoto(2)" title="Hacer principal" type="button">
+<span class="material-symbols-outlined text-[16px]">star</span>
+</button>
+<button class="p-1 rounded-full bg-black/40 text-white hover:bg-error transition-colors" onclick="removePhoto(2)" title="Eliminar foto" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<span class="font-label-sm text-[10px] text-white bg-black/50 px-1 py-0.5 rounded text-center truncate">Sello Garantía</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Telemetría & Ubicación Sugerida -->
+<div class="mt-space-xs p-space-md bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">shelves</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm uppercase text-outline">Bandeja de Asignación</p>
+<p class="font-title-sm text-title-sm text-on-surface">Bóveda Norte • Gaveta Cedro #3</p>
+</div>
+</div>
+<span class="font-numerical-data text-body-sm font-semibold text-primary-container bg-surface-container-lowest px-2 py-1 rounded shadow-sm">70% HR</span>
+</div>
+</div>
+<!-- Resumen Dinámico de Lote (Mini Visualización) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_2px_12px_-2px_rgba(28,25,23,0.04)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Cálculo Financiero de Entrada</span>
+<span class="material-symbols-outlined text-outline text-[18px]">account_balance_wallet</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-2">
+<div class="bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-sm text-[10px] uppercase text-outline">Inversión Total Costo</span>
+<p class="font-numerical-data text-headline-sm text-primary font-semibold" id="summaryTotalCost">$0.00</p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-sm text-[10px] uppercase text-outline">Valor Estimado Venta</span>
+<p class="font-numerical-data text-headline-sm text-on-surface font-semibold" id="summaryTotalSale">$0.00</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span>Margen Bruto Proyectado:</span>
+<span class="font-numerical-data font-semibold text-tertiary" id="summaryMargin">0.0%</span>
+</div>
+</div>
+</div>
+<!-- Columna Derecha: Datos Comerciales y Opcionales (Lg: 7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Bloque Central: Datos Comerciales y Cantidades -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-[0_2px_12px_-2px_rgba(28,25,23,0.04)] flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[24px]">inventory_2</span>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Datos Comerciales y Cantidades</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Definición de producto, costos de adquisición y fijación de precio</p>
+</div>
+</div>
+<span class="px-2 py-1 bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm rounded uppercase tracking-wider font-semibold">Obligatorio</span>
+</div>
+<!-- Campos de Identidad de la Vitola -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Nombre del Puro / Vitola de Salida -->
+<div class="md:col-span-2 flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface flex items-center justify-between" for="cigarName">
+<span>Nombre del Puro / Vitola Comercial <span class="text-error">*</span></span>
+<span class="font-label-sm text-label-sm text-outline font-normal">Ej: Serie D No. 4, Siglo VI, Lancero</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">smoking_rooms</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary transition-all" id="cigarName" placeholder="p. ej. Partagás Serie D No. 4" required="" type="text"/>
+</div>
+</div>
+<!-- Marca -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface" for="cigarBrand">Marca / Casa Productora <span class="text-error">*</span></label>
+<div class="relative">
+<select class="w-full px-3 py-2.5 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary appearance-none cursor-pointer" id="cigarBrand" required="">
+<option disabled="" selected="" value="">Seleccione la manufactura...</option>
+<option value="Partagas">Partagás (Cuba)</option>
+<option value="Cohiba">Cohiba (Cuba)</option>
+<option value="Montecristo">Montecristo (Cuba)</option>
+<option value="Romeo y Julieta">Romeo y Julieta (Cuba)</option>
+<option value="Hoyo de Monterrey">Hoyo de Monterrey (Cuba)</option>
+<option value="Davidoff">Davidoff (Rep. Dominicana)</option>
+<option value="Arturo Fuente">Arturo Fuente (Rep. Dominicana)</option>
+<option value="Padron">Padrón (Nicaragua)</option>
+<option value="Liga Privada">Drew Estate / Liga Privada (Nicaragua)</option>
+<option value="Oliva">Oliva Cigar Co. (Nicaragua)</option>
+<option value="Otra">Otra Manufactura Especial</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Presentación de la Caja -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface" for="cigarPresentation">Tipo de Presentación <span class="text-error">*</span></label>
+<div class="relative">
+<select class="w-full px-3 py-2.5 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary appearance-none cursor-pointer" id="cigarPresentation" onchange="handlePresentationPreset(this.value)" required="">
+<option selected="" value="25">Habilitada Corriente (Caja x 25)</option>
+<option value="10">Caja Barnizada (Caja x 10)</option>
+<option value="50">Gabinete SLB (Cabinet x 50)</option>
+<option value="3">Petaca / Tubos de Bolsillo (x 3)</option>
+<option value="5">Petaca / Tubos de Bolsillo (x 5)</option>
+<option value="1">Unidad Suelta / Vitola Individual</option>
+<option value="custom">Especial / Edición Numismática (Personalizada)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Bloque Específico: Cantidad por Caja y Número de Cajas -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Unidades de Inventario y Cubicación</span>
+<span class="font-label-sm text-label-sm text-outline">Balance de existencias</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md items-end">
+<!-- Cantidad de Tabacos de la Caja -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface" for="unitsPerBox">
+                Unidades por Caja <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full pl-3 pr-8 py-2.5 bg-surface-container-lowest text-on-surface font-numerical-data text-body-lg font-semibold rounded-lg focus:outline-none focus:ring-1 focus:ring-primary" id="unitsPerBox" max="100" min="1" oninput="calculateTotalStock()" required="" type="number" value="25"/>
+<span class="absolute right-3 text-outline text-body-sm pointer-events-none">uds</span>
+</div>
+</div>
+<!-- Número de Cajas Ingresadas -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface" for="boxesCount">
+                Cajas Ingresadas <span class="text-error">*</span>
+</label>
+<!-- Stepper Control de Cajas -->
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1">
+<button class="w-8 h-8 rounded bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface active:bg-secondary-container transition-colors" onclick="adjustBoxes(-1)" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<input class="w-full text-center bg-transparent font-numerical-data text-body-lg font-semibold text-on-surface focus:outline-none" id="boxesCount" max="500" min="1" oninput="calculateTotalStock()" required="" type="number" value="2"/>
+<button class="w-8 h-8 rounded bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface active:bg-secondary-container transition-colors" onclick="adjustBoxes(1)" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+<!-- Stock Total Calculado Automáticamente -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-primary">
+                Total Puros Resultante
+              </label>
+<div class="py-2.5 px-3 bg-secondary-container text-on-secondary-fixed rounded-lg flex items-center justify-between">
+<span class="material-symbols-outlined text-[20px] text-primary">all_inbox</span>
+<span class="font-numerical-data text-numerical-data font-bold" id="calculatedTotalStock">50 Puros</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Campos Financieros Solicitados: Precio de Costo y Precio de Venta -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- PRECIO DE COSTO ($ / USD) -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-title-sm text-title-sm text-on-surface" for="costPrice">
+                PRECIO DE COSTO (USD $) <span class="text-error">*</span>
+</label>
+<span class="font-label-sm text-[10px] text-outline uppercase">Por caja completa</span>
+</div>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-primary font-numerical-data font-semibold">$</span>
+<input class="w-full pl-8 pr-4 py-2.5 bg-surface-container-low text-on-surface font-numerical-data text-body-lg font-medium rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="costPrice" min="0" oninput="calculateFinancials()" placeholder="0.00" required="" step="0.01" type="number" value="480.00"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="unitCostDisplay">$19.20 por puro individual</span>
+</div>
+<!-- PRECIO DE VENTA ($ / USD) -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-title-sm text-title-sm text-on-surface" for="salePrice">
+                PRECIO DE VENTA (USD $) <span class="text-error">*</span>
+</label>
+<span class="font-label-sm text-[10px] text-outline uppercase">Por caja completa</span>
+</div>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-tertiary font-numerical-data font-semibold">$</span>
+<input class="w-full pl-8 pr-4 py-2.5 bg-surface-container-low text-on-surface font-numerical-data text-body-lg font-medium rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="salePrice" min="0" oninput="calculateFinancials()" placeholder="0.00" required="" step="0.01" type="number" value="790.00"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="unitSaleDisplay">$31.60 por puro individual</span>
+</div>
+</div>
+</div>
+<!-- Apartado Opcional: Características del Tabaco y Guarda -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_2px_12px_-2px_rgba(28,25,23,0.04)] overflow-hidden transition-all duration-300">
+<!-- Cabecera del Acordeón -->
+<button class="w-full p-space-lg flex items-center justify-between text-left hover:bg-surface-container-low/50 transition-colors" onclick="toggleOptionalSection()" type="button">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">tune</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-title-md text-title-md text-on-surface">Características del Tabaco y Guarda</h3>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm rounded uppercase tracking-wider">Opcional</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Especificaciones botánicas, cepo, box code y perfil organoléptico</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase" id="optionalIndicatorText">Expandir detalles</span>
+<span class="material-symbols-outlined transition-transform duration-200" id="optionalChevron">expand_more</span>
+</div>
+</button>
+<!-- Contenido Desplegable -->
+<div class="p-space-lg pt-0 flex flex-col gap-space-md" id="optionalContent">
+<!-- Cepo y Longitud (Vitola de Galera) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface flex items-center justify-between" for="ringGauge">
+<span>Cepo (Ring Gauge)</span>
+<span class="font-label-sm text-outline">1/64 de pulgada</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">radio_button_unchecked</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low text-on-surface font-numerical-data text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="ringGauge" placeholder="ej: 50" type="number"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface flex items-center justify-between" for="lengthMm">
+<span>Longitud (mm)</span>
+<span class="font-label-sm text-outline">Milímetros</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">straighten</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low text-on-surface font-numerical-data text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="lengthMm" placeholder="ej: 124" type="number"/>
+</div>
+</div>
+</div>
+<!-- Fortaleza del Puro (Chips seleccionables) -->
+<div class="flex flex-col gap-2">
+<label class="font-title-sm text-title-sm text-on-surface">Fortaleza de la Liga</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs">
+<button class="strength-pill px-3 py-2 bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md rounded-lg text-center transition-all" onclick="selectStrength(this, 'Suave')" type="button">
+                Suave (1/5)
+              </button>
+<button class="strength-pill px-3 py-2 bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md rounded-lg text-center transition-all" onclick="selectStrength(this, 'Media')" type="button">
+                Media (2/5)
+              </button>
+<button class="strength-pill px-3 py-2 bg-primary-container text-on-primary font-label-md text-label-md rounded-lg text-center shadow-sm" onclick="selectStrength(this, 'Media-Fuerte')" type="button">
+                Media-Fuerte (3/5)
+              </button>
+<button class="strength-pill px-3 py-2 bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md rounded-lg text-center transition-all" onclick="selectStrength(this, 'Fuerte')" type="button">
+                Fuerte (5/5)
+              </button>
+</div>
+<input id="selectedStrength" type="hidden" value="Media-Fuerte"/>
+</div>
+<!-- Componentes Botánicos (Capa / Capote / Tripa) -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface" for="leafWrapper">Capa (Wrapper)</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary" id="leafWrapper" placeholder="ej: Habana Colorado Maduro" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface" for="leafBinder">Capote (Binder)</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary" id="leafBinder" placeholder="ej: Vuelta Abajo, Cuba" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface" for="leafFiller">Tripa (Filler)</label>
+<input class="w-full px-3 py-2 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary" id="leafFiller" placeholder="ej: Seco, Ligero, Volado" type="text"/>
+</div>
+</div>
+<!-- Box Code y Año de Cosecha -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface flex items-center justify-between" for="boxCode">
+<span>Box Code (Fábrica &amp; Mes/Año)</span>
+<span class="font-label-sm text-outline">Sello inferior</span>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">verified</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low text-on-surface font-numerical-data text-body-md uppercase rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="boxCode" placeholder="ej: UAO MAY 21" type="text" value="UAO MAY 21"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface" for="harvestYear">Año de Cosecha / Añejamiento</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">calendar_today</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="harvestYear" placeholder="ej: Cosecha 2018 (3 años guarda)" type="text"/>
+</div>
+</div>
+</div>
+<!-- Notas de Cata y Aromas -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface" for="tastingNotes">Notas de Cata y Aromas de Salida</label>
+<textarea class="w-full px-3 py-2.5 bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary" id="tastingNotes" placeholder="ej: Cedro español marcado, cuero envejecido, notas terrosas, toque de cacao amargo y pimienta blanca en el tercio final..." rows="2"></textarea>
+</div>
+</div>
+</div>
+<!-- Barra de Acciones al Pie -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-[0_2px_12px_-2px_rgba(28,25,23,0.04)] flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant text-body-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">lock</span>
+<span>Registro encriptado en libro mayor de bóveda</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-space-md py-2.5 bg-surface-container-low hover:bg-surface-container text-on-surface font-title-sm text-title-sm rounded-lg transition-colors text-center" onclick="handleCancel()" type="button">
+            Cancelar y Regresar
+          </button>
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-space-xs px-space-lg py-2.5 bg-primary-container hover:bg-primary text-on-primary font-title-sm text-title-sm rounded-lg transition-all shadow-[0_4px_12px_-2px_rgba(154,96,50,0.35)] active:scale-[0.99]" id="saveButton" type="submit">
+<span class="material-symbols-outlined text-[20px]">archive</span>
+<span>Guardar Entrada en Bóveda</span>
+</button>
+</div>
+</div>
+</div>
+</form>
+<!-- Modal / Notificación de Confirmación de Éxito Interactivo -->
+<div class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden flex items-center justify-center p-4" id="successModal">
+<div class="bg-surface-container-lowest max-w-lg w-full rounded-xl p-space-lg shadow-2xl flex flex-col items-center text-center animate-in fade-in zoom-in duration-200">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-primary flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<span class="px-2.5 py-1 bg-surface-container-low text-primary-container font-label-sm text-label-sm uppercase tracking-widest rounded mb-2">Ingreso Confirmado</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Lote Almacenado con Éxito</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg max-w-md" id="successDescription">
+        Se han registrado 2 cajas (50 unidades) de Partagás Serie D No. 4 en la gaveta asignada con sus comprobantes fotográficos.
+      </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm w-full">
+<button class="w-full px-space-md py-2.5 bg-surface-container text-on-surface hover:bg-surface-container-high font-title-sm text-title-sm rounded-lg transition-colors" onclick="resetFormForNewEntry()" type="button">
+          + Registrar Otra Caja
+        </button>
+<button class="w-full px-space-md py-2.5 bg-primary-container text-on-primary hover:bg-primary font-title-sm text-title-sm rounded-lg transition-colors shadow-sm" onclick="redirectToInventory()" type="button">
+          Ir a Inventario Activo
+        </button>
+</div>
+</div>
+</div>
+<script>
+    // Estado local para fotos
+    let loadedPhotos = [
+      { id: 0, title: 'Principal (Caja)', isPrimary: true },
+      { id: 1, title: 'Vitola & Anilla', isPrimary: false },
+      { id: 2, title: 'Sello Garantía', isPrimary: false }
+    ];
+
+    // Selección interactiva de fortaleza
+    function selectStrength(button, strengthValue) {
+      document.querySelectorAll('.strength-pill').forEach(btn => {
+        btn.className = 'strength-pill px-3 py-2 bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-md text-label-md rounded-lg text-center transition-all';
+      });
+      button.className = 'strength-pill px-3 py-2 bg-primary-container text-on-primary font-label-md text-label-md rounded-lg text-center shadow-sm';
+      document.getElementById('selectedStrength').value = strengthValue;
+    }
+
+    // Toggle de sección opcional
+    let isOptionalOpen = true;
+    function toggleOptionalSection() {
+      const content = document.getElementById('optionalContent');
+      const chevron = document.getElementById('optionalChevron');
+      const text = document.getElementById('optionalIndicatorText');
+      isOptionalOpen = !isOptionalOpen;
+
+      if (isOptionalOpen) {
+        content.classList.remove('hidden');
+        chevron.style.transform = 'rotate(0deg)';
+        text.innerText = 'Expandir detalles';
+      } else {
+        content.classList.add('hidden');
+        chevron.style.transform = 'rotate(-90deg)';
+        text.innerText = 'Mostrar campos';
+      }
+    }
+
+    // Manejo de presets de presentación
+    function handlePresentationPreset(val) {
+      if (val !== 'custom') {
+        const unitsInput = document.getElementById('unitsPerBox');
+        unitsInput.value = parseInt(val, 10);
+        calculateTotalStock();
+      }
+    }
+
+    // Ajustador de Stepper (+/-)
+    function adjustBoxes(delta) {
+      const input = document.getElementById('boxesCount');
+      let currentVal = parseInt(input.value || 1, 10);
+      let newVal = Math.max(1, currentVal + delta);
+      input.value = newVal;
+      calculateTotalStock();
+    }
+
+    // Cálculo automático de stock total y resúmenes financieros
+    function calculateTotalStock() {
+      const unitsPerBox = parseInt(document.getElementById('unitsPerBox').value || 0, 10);
+      const boxesCount = parseInt(document.getElementById('boxesCount').value || 0, 10);
+      const totalUnits = unitsPerBox * boxesCount;
+      
+      const badge = document.getElementById('calculatedTotalStock');
+      badge.textContent = totalUnits + (totalUnits === 1 ? ' Puro' : ' Puros');
+      
+      calculateFinancials();
+    }
+
+    function calculateFinancials() {
+      const unitsPerBox = parseInt(document.getElementById('unitsPerBox').value || 1, 10);
+      const boxesCount = parseInt(document.getElementById('boxesCount').value || 1, 10);
+      const costPerBox = parseFloat(document.getElementById('costPrice').value || 0);
+      const salePerBox = parseFloat(document.getElementById('salePrice').value || 0);
+
+      const totalCost = costPerBox * boxesCount;
+      const totalSale = salePerBox * boxesCount;
+
+      // Actualizar unitarios
+      const unitCost = unitsPerBox > 0 ? (costPerBox / unitsPerBox) : 0;
+      const unitSale = unitsPerBox > 0 ? (salePerBox / unitsPerBox) : 0;
+
+      document.getElementById('unitCostDisplay').textContent = `$${unitCost.toFixed(2)} por puro individual`;
+      document.getElementById('unitSaleDisplay').textContent = `$${unitSale.toFixed(2)} por puro individual`;
+
+      // Actualizar tarjeta resumen
+      document.getElementById('summaryTotalCost').textContent = `$${totalCost.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+      document.getElementById('summaryTotalSale').textContent = `$${totalSale.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+
+      if (totalSale > 0) {
+        const marginPct = ((totalSale - totalCost) / totalSale) * 100;
+        document.getElementById('summaryMargin').textContent = `${marginPct.toFixed(1)}%`;
+      } else {
+        document.getElementById('summaryMargin').textContent = '0.0%';
+      }
+    }
+
+    // Subida y lectura real de archivos de imagen desde dispositivo
+    function handleFileSelect(event) {
+      const files = event.target.files;
+      if (!files || !files.length) return;
+
+      const grid = document.getElementById('photosGrid');
+
+      Array.from(files).forEach((file) => {
+        if (!file.type.startsWith('image/')) return;
+
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const newId = Date.now() + Math.random();
+          const photoWrapper = document.createElement('div');
+          photoWrapper.className = 'relative group rounded-lg overflow-hidden aspect-square bg-surface-container shadow-sm flex flex-col animate-in fade-in';
+          photoWrapper.id = `photo-card-${newId}`;
+
+          photoWrapper.innerHTML = `
+            <img src="${e.target.result}" alt="Foto cargada" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30 opacity-90 transition-opacity flex flex-col justify-between p-1.5">
+              <div class="flex justify-between items-center">
+                <button type="button" onclick="setPrimaryCustomPhoto('${newId}')" class="p-1 rounded-full bg-black/40 text-white/80 hover:text-amber-300 hover:scale-110 transition-transform" title="Hacer principal">
+                  <span class="material-symbols-outlined text-[16px]">star</span>
+                </button>
+                <button type="button" onclick="removePhotoCard('photo-card-${newId}')" class="p-1 rounded-full bg-black/40 text-white hover:bg-error transition-colors" title="Eliminar foto">
+                  <span class="material-symbols-outlined text-[16px]">close</span>
+                </button>
+              </div>
+              <span class="font-label-sm text-[10px] text-white bg-black/50 px-1 py-0.5 rounded text-center truncate">${file.name}</span>
+            </div>
+          `;
+
+          grid.appendChild(photoWrapper);
+          updateCount();
+        };
+        reader.readAsDataURL(file);
+      });
+
+      // Resetear el valor para permitir subir la misma foto nuevamente si se desea
+      event.target.value = '';
+    }
+
+    function removePhotoCard(elementId) {
+      const el = document.getElementById(elementId);
+      if (el) {
+        el.remove();
+        updateCount();
+      }
+    }
+
+    function removePhoto(index) {
+      const el = document.querySelector(`[data-index="${index}"]`);
+      if (el) {
+        el.remove();
+        updateCount();
+      }
+    }
+
+    function updateCount() {
+      const grid = document.getElementById('photosGrid');
+      const count = grid.children.length;
+      document.getElementById('photoCount').textContent = count;
+    }
+
+    function setPrimaryPhoto(index) {
+      // Remover estrella de otros
+      document.querySelectorAll('#photosGrid .material-symbols-outlined').forEach(icon => {
+        if (icon.textContent.trim() === 'star') {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          icon.parentElement.classList.remove('text-amber-300');
+          icon.parentElement.classList.add('text-white/80');
+        }
+      });
+      // Activar en seleccionado
+      const target = document.querySelector(`[data-index="${index}"]`);
+      if (target) {
+        const starBtn = target.querySelector('button[title="Foto principal"], button[title="Hacer principal"]');
+        const starIcon = starBtn.querySelector('.material-symbols-outlined');
+        starIcon.style.fontVariationSettings = "'FILL' 1";
+        starBtn.classList.remove('text-white/80');
+        starBtn.classList.add('text-amber-300');
+      }
+    }
+
+    function setPrimaryCustomPhoto(id) {
+      document.querySelectorAll('#photosGrid .material-symbols-outlined').forEach(icon => {
+        if (icon.textContent.trim() === 'star') {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          icon.parentElement.classList.remove('text-amber-300');
+          icon.parentElement.classList.add('text-white/80');
+        }
+      });
+      const card = document.getElementById(`photo-card-${id}`);
+      if (card) {
+        const starBtn = card.querySelector('button[title="Hacer principal"]');
+        const starIcon = starBtn.querySelector('.material-symbols-outlined');
+        starIcon.style.fontVariationSettings = "'FILL' 1";
+        starBtn.classList.remove('text-white/80');
+        starBtn.classList.add('text-amber-300');
+      }
+    }
+
+    // Manejo de Submit e Interacción
+    function handleSaveEntry() {
+      const cigarName = document.getElementById('cigarName').value;
+      const brand = document.getElementById('cigarBrand').value;
+      const boxes = document.getElementById('boxesCount').value;
+      const unitsPerBox = document.getElementById('unitsPerBox').value;
+      const totalUnits = parseInt(boxes, 10) * parseInt(unitsPerBox, 10);
+
+      const desc = document.getElementById('successDescription');
+      desc.textContent = `Se han registrado exitosamente ${boxes} cajas (${totalUnits} unidades de "${cigarName}" de ${brand || 'Casa Seleccionada'}) en la Bóveda Norte con sus comprobantes y ficha técnica.`;
+
+      document.getElementById('successModal').classList.remove('hidden');
+    }
+
+    function resetFormForNewEntry() {
+      document.getElementById('entryForm').reset();
+      document.getElementById('boxesCount').value = "1";
+      document.getElementById('unitsPerBox').value = "25";
+      calculateTotalStock();
+      document.getElementById('successModal').classList.add('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function redirectToInventory() {
+      document.getElementById('successModal').classList.add('hidden');
+      window.location.href = '#inventario-activo';
+    }
+
+    function handleCancel() {
+      if (confirm('¿Desea cancelar el registro actual? Los datos ingresados no se guardarán.')) {
+        window.history.back();
+      }
+    }
+
+    // Inicializar cálculos al cargar
+    window.addEventListener('DOMContentLoaded', () => {
+      calculateTotalStock();
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl shadow-[0_-1px_4px_rgba(28,25,23,0.02)]"><div class="max-w-[1440px] mx-auto px-margin py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface-variant">Humidor Stock</span><span class="text-outline-variant">•</span><span class="font-body-sm text-body-sm text-on-surface-variant">Archivo y Gestión de Puros de Colección</span></div><div class="flex items-center gap-space-lg"><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Monitoreo Cedro Español</span><span class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Humidor Stock. Todos los derechos reservados.</span></div></div></footer></body></html>
