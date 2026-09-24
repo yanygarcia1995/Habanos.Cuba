@@ -1,0 +1,815 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@600&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#aa7d22", "on-secondary-fixed": "#331107", "secondary": "#835244", "surface-dim": "#dbdad7", "secondary-container": "#fdbdab", "on-primary-fixed-variant": "#5a4137", "on-surface-variant": "#504440", "surface-container-low": "#f5f3f0", "tertiary-container": "#291a00", "surface-container": "#efeeeb", "on-primary-fixed": "#2a170f", "tertiary": "#040200", "error-container": "#ffdad6", "tertiary-fixed": "#ffdea8", "outline-variant": "#d3c3be", "outline": "#827470", "secondary-fixed": "#ffdbd0", "primary-container": "#2c1810", "secondary-fixed-dim": "#f7b8a5", "tertiary-fixed-dim": "#f2be5d", "surface": "#fbf9f6", "primary": "#090100", "primary-fixed-dim": "#e3bfb2", "surface-bright": "#fbf9f6", "inverse-surface": "#30312f", "on-secondary-container": "#794a3c", "on-tertiary-fixed-variant": "#5e4200", "on-tertiary": "#ffffff", "on-error": "#ffffff", "on-primary": "#ffffff", "background": "#fbf9f6", "surface-variant": "#e4e2df", "on-secondary": "#ffffff", "inverse-on-surface": "#f2f0ed", "on-error-container": "#93000a", "on-primary-container": "#9e7e73", "on-surface": "#1b1c1a", "primary-fixed": "#ffdbce", "on-background": "#1b1c1a", "error": "#ba1a1a", "surface-container-highest": "#e4e2df", "surface-tint": "#74584e", "on-tertiary-fixed": "#271900", "inverse-primary": "#e3bfb2", "surface-container-lowest": "#ffffff", "surface-container-high": "#eae8e5", "on-secondary-fixed-variant": "#673b2e" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "margin-desktop": "2.5rem", "gutter-desktop": "1.5rem", "margin-tablet": "1.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter": "1.25rem", "margin": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-counter": ["Plus Jakarta Sans"], "display-lg": ["Noto Serif"], "body-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Noto Serif"], "headline-md": ["Noto Serif"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Noto Serif"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-counter": ["20px", { "lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "700" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-6 px-4 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-2"><img alt="Tabacos &amp; Co. Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-LN9gk8B7CUQMd2vFqkSuE27KFCl9pvbQncyIlHP0OxX9IP7unP7meN9yCM7XIRYFaSHe4OCOZRokWInh29QTXtVYmXmXjqOm2GKEHNiPtV5Hg0GezImj63lbaIL3-l5S3nQ4ddISySabSJr7Tt4fyJizPw-CiGSAvaVb2ABmc8j1Kd2kCcARW3EkKHpenEklRpeZhhwGwSJZLGV5aGH28NLDy5F5XrWoor4rqW0mnfxJUYy6Sq8j"><div class="flex flex-col"><span class="font-headline-md text-headline-md text-primary tracking-tight">Tabacos &amp; Co.</span><span class="font-body-sm text-body-sm text-secondary uppercase tracking-widest text-[10px]">Humidor Master</span></div></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-title-md"><a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="inventario-principal" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="">Inventario Principal</span></a><a aria-current="page" class="flex items-center gap-3 px-4 py-3 rounded-lg transition-all bg-primary-container text-on-primary font-title-md" data-path="entradas-salidas-rapidas" href="#"><span class="material-symbols-outlined text-[20px]">swap_vert</span><span class="">Entradas / Salidas</span></a><a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="configuracion" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="">Configuración</span></a></nav></div><div class="flex flex-col gap-4 px-2 pt-4"><div class="flex items-center gap-3 pt-2"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-semibold">Maestro Tabaquero</span><span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Bodega Central</span></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-20 bg-surface/90 backdrop-blur-xl z-40 px-gutter-desktop flex items-center justify-between gap-6 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-4 flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full pl-10 pr-10 py-2 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg shadow-[0_1px_3px_rgba(44,24,16,0.04)] focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Buscar por marca, vitola, SKU o código de barra..." type="text"><span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline cursor-pointer hover:text-on-surface text-[20px]">qr_code_scanner</span></div></div><div class="hidden xl:flex items-center gap-6 px-4 py-2 bg-surface-container-low rounded-lg"><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Cajas en Stock</span><span class="font-title-lg text-title-lg text-primary tabular-nums">1,428</span></div><div class="w-px h-8 bg-surface-container-highest"></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Valor Estimado</span><span class="font-title-lg text-title-lg text-primary tabular-nums">$148,250</span></div><div class="w-px h-8 bg-surface-container-highest"></div><div class="flex flex-col"><span class="font-label-md text-label-md text-error uppercase tracking-wider">Alertas Mínimo</span><span class="font-title-lg text-title-lg text-error tabular-nums">6 Cajas</span></div></div><div class="flex items-center gap-3"><button class="flex items-center gap-2 bg-primary-container text-on-primary px-4 py-2.5 rounded-lg shadow-sm hover:bg-primary transition-colors font-label-lg text-label-lg" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span class="">+ Nueva Caja / Producto</span></button><button class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-20 w-full min-h-screen bg-surface px-gutter-desktop py-space-lg"><div class="flex flex-col w-full">
+<div class="fixed top-24 right-10 z-50 transform transition-all duration-300 ease-out flex items-center gap-3 px-5 py-3.5 rounded-xl bg-primary text-on-primary shadow-xl opacity-0 translate-y-[-20px] pointer-events-none" id="toast-notification">
+<div class="w-7 h-7 rounded-full bg-on-tertiary-container/30 flex items-center justify-center text-tertiary-fixed">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-primary" id="toast-title">Venta registrada</span>
+<span class="font-body-sm text-body-sm text-surface-dim" id="toast-desc">-1 Caja(s) de Cohiba Behike 54. Nuevo stock: 20</span>
+</div>
+<button class="ml-4 text-outline-variant hover:text-on-primary" onclick="dismissToast()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-8 pb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Operación en Mostrador</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Turno Activo: Almacén Principal</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight">Entradas y Salidas Rápidas</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Ajuste instantáneo para despacho a clientes o descarga de albaranes de proveedores con un solo clic.
+        </p>
+</div>
+<div class="flex items-center gap-4 self-start md:self-auto">
+<div class="bg-surface-container-low px-4 py-2.5 rounded-xl flex items-center gap-3 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">calendar_today</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">Fecha Contable</span>
+<span class="font-title-md text-title-md text-primary" id="current-date">Hoy, 24 Octubre</span>
+</div>
+</div>
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface font-label-lg text-label-lg shadow-sm" id="btn-undo-header" onclick="undoLastAction()">
+<span class="material-symbols-outlined text-[20px]">undo</span>
+<span class="">Deshacer Último</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-4 bg-surface-container-lowest p-6 rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Total Despachado</span>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-secondary tabular-nums" id="stat-sales-count">51</span>
+<span class="font-body-md text-body-md text-on-surface-variant">cajas</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Ventas mostrador y club</span>
+</div>
+<div class="w-14 h-14 rounded-xl bg-secondary-fixed/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[30px]">point_of_sale</span>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-lowest p-6 rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Total Ingresado</span>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-tertiary-container tabular-nums" id="stat-receipts-count">125</span>
+<span class="font-body-md text-body-md text-on-surface-variant">cajas</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">3 recepciones de proveedor</span>
+</div>
+<div class="w-14 h-14 rounded-xl bg-tertiary-fixed/60 flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-[30px]">local_shipping</span>
+</div>
+</div>
+<div class="md:col-span-4 bg-primary text-on-primary p-6 rounded-xl shadow-md flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-label-md text-label-md uppercase tracking-wider text-surface-dim">Neto Humidor Hoy</span>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-tertiary-fixed tabular-nums" id="stat-balance-net">+74</span>
+<span class="font-body-md text-body-md text-surface-dim">unidades netas</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline-variant">Capacidad humidor: 84%</span>
+</div>
+<div class="w-14 h-14 rounded-xl bg-surface-container-highest/20 flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[30px]">layers</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col gap-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">Terminal de Movimiento</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Seleccione el modo operativo para priorizar el flujo de trabajo</p>
+</div>
+<div class="inline-flex p-1 bg-surface-container rounded-xl self-start sm:self-auto">
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-lg font-label-lg text-label-lg transition-all bg-primary-container text-on-primary shadow-sm" id="tab-mode-salida" onclick="switchMode('salida')">
+<span class="material-symbols-outlined text-[18px]">remove_shopping_cart</span>
+<span class="">Venta / Salida (-)</span>
+</button>
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-lg font-label-lg text-label-lg transition-all text-on-surface-variant hover:text-on-surface" id="tab-mode-entrada" onclick="switchMode('entrada')">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+<span class="">Recepción / Entrada (+)</span>
+</button>
+</div>
+</div>
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-[22px]">search</span>
+<input class="w-full pl-12 pr-12 py-3.5 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-xl focus:outline-none focus:bg-surface focus:shadow-md transition-all placeholder:text-outline" id="cigar-quick-search" oninput="filterCigarList(this.value)" placeholder="Buscar por vitola, marca, SKU o código de barra..." type="text">
+<button class="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors" onclick="simulateBarcodeScan()" title="Escanear Código de Barras">
+<span class="material-symbols-outlined text-[18px]">qr_code_scanner</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">local_fire_department</span>
+<span class="font-title-md text-title-md text-primary">Cajas de Mayor Rotación</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Acción táctil rápida</span>
+</div>
+<div class="flex flex-col gap-3" id="quick-action-list">
+<div class="cigar-row p-3.5 bg-surface-container-low hover:bg-surface-container rounded-xl transition-all flex flex-col sm:flex-row items-center justify-between gap-4" data-name="Cohiba Behike 54" data-price="$1,450" data-sku="COH-BH-54" data-stock="20">
+<div class="flex items-center gap-3.5 w-full sm:w-auto min-w-0">
+<img class="w-14 h-14 object-cover rounded-lg flex-shrink-0 bg-surface-container-highest" data-alt="A pristine luxury wooden cigar box of Cohiba Behike 54 with black lacquer finish and golden emblem, captured in warm ambient cellar light with rich mahogany and cedar tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT_ADh-hJLHKaEErO_VS8y-MHDJ9M7tjYQRbnS8rchwfMcwxfIwLBEGbxh5BmDI3MUN8UUQ6q-W6IRBKEbJijG1ZIYGc-lRxuo45jd3fSvIjMuq3sDGgEv-7ot1plTPL7Jmvd07KbAga2IoGXCf4t9ZIxdBhRjedFHgQKf02Vur4D35L2TNBIb38DFjUVWOP-orDPBZcjsHWD1Pr_kJjvaakJXTHcapNiJ9ufTImWy-XroTEZU4jr1">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-primary truncate">Cohiba Behike 54</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-md text-label-md uppercase text-[10px] tracking-wider">Cuba</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm">
+<span class="">SKU: COH-BH-54</span>
+<span class="">•</span>
+<span class="">Caja x10</span>
+<span class="">•</span>
+<span class="text-primary font-semibold">$1,450 / caja</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-4">
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-on-surface-variant">En Humidor</span>
+<span class="stock-badge font-title-lg text-title-lg text-primary tabular-nums">20 cajas</span>
+</div>
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-xl shadow-sm">
+<button class="btn-step-sub flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-transform active:scale-95" onclick="registerMovement('COH-BH-54', 'Cohiba Behike 54', -1)" title="Restar 1 caja">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<span class="w-12 text-center font-label-counter text-label-counter text-primary tabular-nums">1</span>
+<button class="btn-step-add flex items-center justify-center w-10 h-10 rounded-lg bg-primary-container hover:bg-primary text-on-primary transition-transform active:scale-95" onclick="registerMovement('COH-BH-54', 'Cohiba Behike 54', 1)" title="Sumar 1 caja">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="cigar-row p-3.5 bg-surface-container-low hover:bg-surface-container rounded-xl transition-all flex flex-col sm:flex-row items-center justify-between gap-4" data-name="Romeo y Julieta Wide Churchills" data-price="$480" data-sku="RYJ-WC-25" data-stock="32">
+<div class="flex items-center gap-3.5 w-full sm:w-auto min-w-0">
+<img class="w-14 h-14 object-cover rounded-lg flex-shrink-0 bg-surface-container-highest" data-alt="Traditional cedar wooden box of Romeo y Julieta Wide Churchills cigars open slightly showing red embossed brand label, surrounded by natural tobacco leaves in soft warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7x9lMj0bmrYMIxSRtFhy_XpzXWjt1kxCXLL_cBG5JfJSu4bdat6sP3yADlb6jbnyMExAB9vhPpk3Ej4xzmpWtogE-6-ELQkQisa-FE4Oj5fC2P1RTWC8ZQ6fXiN7mLLZVwad5aeNFbsjC-1jyqWAH2wZv9d8eW0hl1E-1wNaPGdJSVzE0YsaXJ4ZUGyMG7BOL7wMd57oRvPDzmj2PBAogDlRQs9WNXgD9MioyAtUIG5DXTqPDsJTy">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-primary truncate">Romeo y Julieta Wide Churchills</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-md text-label-md uppercase text-[10px] tracking-wider">Habana</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm">
+<span class="">SKU: RYJ-WC-25</span>
+<span class="">•</span>
+<span class="">Caja x25</span>
+<span class="">•</span>
+<span class="text-primary font-semibold">$480 / caja</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-4">
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-on-surface-variant">En Humidor</span>
+<span class="stock-badge font-title-lg text-title-lg text-primary tabular-nums">32 cajas</span>
+</div>
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-xl shadow-sm">
+<button class="btn-step-sub flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-transform active:scale-95" onclick="registerMovement('RYJ-WC-25', 'Romeo y Julieta Wide Churchills', -1)" title="Restar 1 caja">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<span class="w-12 text-center font-label-counter text-label-counter text-primary tabular-nums">1</span>
+<button class="btn-step-add flex items-center justify-center w-10 h-10 rounded-lg bg-primary-container hover:bg-primary text-on-primary transition-transform active:scale-95" onclick="registerMovement('RYJ-WC-25', 'Romeo y Julieta Wide Churchills', 1)" title="Sumar 1 caja">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="cigar-row p-3.5 bg-surface-container-low hover:bg-surface-container rounded-xl transition-all flex flex-col sm:flex-row items-center justify-between gap-4" data-name="Montecristo Edmundo" data-price="$520" data-sku="MON-ED-02" data-stock="9">
+<div class="flex items-center gap-3.5 w-full sm:w-auto min-w-0">
+<img class="w-14 h-14 object-cover rounded-lg flex-shrink-0 bg-surface-container-highest" data-alt="Close-up of a rustic Spanish cedar box filled with Montecristo Edmundo cigars, showing golden fleur-de-lis rings and natural oily wrapper leaves under spotlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAqPhQY55rbgtCfRu4V2CBW4PTnPCPBV2KA90cZdTSyZf-QQskgWj6ZC6PTnDq-9GPKEXMdI-BruGlh912HeyyKeJB0IamSZapg8pCm0H-1i1o9xjTZ41KRp4XB-t-sOVKPnImGKIbBBsIE8V-clHEW6UtDVjJJKcN_59hFQ1Vt0a9XFj45PoCGV4X9tHbiyu_0AVdaagO76ocbKylCmXBJrg2d8hE0svAkXMaEkHvChByLLAwE8nv">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-primary truncate">Montecristo Edmundo</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md uppercase text-[10px] tracking-wider">Pocas Cajas</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm">
+<span class="">SKU: MON-ED-02</span>
+<span class="">•</span>
+<span class="">Caja x25</span>
+<span class="">•</span>
+<span class="text-primary font-semibold">$520 / caja</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-4">
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-error">Bajo Mínimo</span>
+<span class="stock-badge font-title-lg text-title-lg text-error tabular-nums">9 cajas</span>
+</div>
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-xl shadow-sm">
+<button class="btn-step-sub flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-transform active:scale-95" onclick="registerMovement('MON-ED-02', 'Montecristo Edmundo', -1)" title="Restar 1 caja">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<span class="w-12 text-center font-label-counter text-label-counter text-primary tabular-nums">1</span>
+<button class="btn-step-add flex items-center justify-center w-10 h-10 rounded-lg bg-primary-container hover:bg-primary text-on-primary transition-transform active:scale-95" onclick="registerMovement('MON-ED-02', 'Montecristo Edmundo', 1)" title="Sumar 1 caja">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="cigar-row p-3.5 bg-surface-container-low hover:bg-surface-container rounded-xl transition-all flex flex-col sm:flex-row items-center justify-between gap-4" data-name="Padrón 1926 Serie No. 9" data-price="$760" data-sku="PAD-1926-SER" data-stock="24">
+<div class="flex items-center gap-3.5 w-full sm:w-auto min-w-0">
+<img class="w-14 h-14 object-cover rounded-lg flex-shrink-0 bg-surface-container-highest" data-alt="Artisanal Nicaragua cigar presentation box of Padron 1926 Serie natural wrapper cigars, elegant dark wood packaging on velvet lounge counter with antique brass accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDao5J_nQrvDA1pqdvIrVVlt8L9RMJVnUBDpVlYfe6ZaOoE5nj8wziqjANB2eAzHwUln1A3FVJfk49DisNVNpaSS1u4_ylu6gi_0ux3V9K87kXwHaC57ThbzDu5QyYZIg7W7wkKWNVD1-Gss41ELezizqSExa8owSerKKuTGpucMbIdgoJD9gkq1gG47AvgL_AfYubzHLZlXBgS7w_A74xLEnCjjlcc8fdsEDuyAOhidlVDy2ckmAzU">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-primary truncate">Padrón 1926 Serie No. 9</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-md text-label-md uppercase text-[10px] tracking-wider">Nicaragua</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm">
+<span class="">SKU: PAD-1926-SER</span>
+<span class="">•</span>
+<span class="">Caja x24</span>
+<span class="">•</span>
+<span class="text-primary font-semibold">$760 / caja</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-4">
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-on-surface-variant">En Humidor</span>
+<span class="stock-badge font-title-lg text-title-lg text-primary tabular-nums">24 cajas</span>
+</div>
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-xl shadow-sm">
+<button class="btn-step-sub flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-transform active:scale-95" onclick="registerMovement('PAD-1926-SER', 'Padrón 1926 Serie No. 9', -1)" title="Restar 1 caja">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<span class="w-12 text-center font-label-counter text-label-counter text-primary tabular-nums">1</span>
+<button class="btn-step-add flex items-center justify-center w-10 h-10 rounded-lg bg-primary-container hover:bg-primary text-on-primary transition-transform active:scale-95" onclick="registerMovement('PAD-1926-SER', 'Padrón 1926 Serie No. 9', 1)" title="Sumar 1 caja">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="cigar-row p-3.5 bg-surface-container-low hover:bg-surface-container rounded-xl transition-all flex flex-col sm:flex-row items-center justify-between gap-4" data-name="Davidoff Aniversario Special R" data-price="$890" data-sku="DAV-ANV-SPE" data-stock="15">
+<div class="flex items-center gap-3.5 w-full sm:w-auto min-w-0">
+<img class="w-14 h-14 object-cover rounded-lg flex-shrink-0 bg-surface-container-highest" data-alt="Luxurious white and gold lacquered cigar box of Davidoff Aniversario Special R, clean minimalist Swiss design set against a warm Spanish cedar tray." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo-NK0toZ44PMNzV1s1MEqesCxV-NoXxdpkyNR2HKDeQfjOno7v6kY7aLr2bapkHWhh9q_fHYhu-lRfU-tWG2wC9J7FE0ZabXO4CILYEvTLgSFshBjioRZRDiXN9ZlIesmnzqly5ztT07OPSsvhZA5p9gzXGJfXpbrN3KZhoZic2l6YsXAtaj1m3udB6ttIVruV-KBMuWflGTQraKVk7NPyVk-11l0XX3qBlr8_rqQ_nC8ukQPcc3A">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-primary truncate">Davidoff Aniversario Special R</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-md text-label-md uppercase text-[10px] tracking-wider">Rep. Dom.</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm">
+<span class="">SKU: DAV-ANV-SPE</span>
+<span class="">•</span>
+<span class="">Caja x25</span>
+<span class="">•</span>
+<span class="text-primary font-semibold">$890 / caja</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-4">
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md text-on-surface-variant">En Humidor</span>
+<span class="stock-badge font-title-lg text-title-lg text-primary tabular-nums">15 cajas</span>
+</div>
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-xl shadow-sm">
+<button class="btn-step-sub flex items-center justify-center w-10 h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-transform active:scale-95" onclick="registerMovement('DAV-ANV-SPE', 'Davidoff Aniversario Special R', -1)" title="Restar 1 caja">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<span class="w-12 text-center font-label-counter text-label-counter text-primary tabular-nums">1</span>
+<button class="btn-step-add flex items-center justify-center w-10 h-10 rounded-lg bg-primary-container hover:bg-primary text-on-primary transition-transform active:scale-95" onclick="registerMovement('DAV-ANV-SPE', 'Davidoff Aniversario Special R', 1)" title="Sumar 1 caja">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-5 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary">Sincronización con Humidor Master</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Registro auditado por usuario con marca de tiempo instantánea</span>
+</div>
+</div>
+<span class="px-3 py-1 bg-surface-container-lowest text-secondary font-label-md text-label-md rounded-full shadow-sm">En Línea</span>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col gap-5 flex-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">history</span>
+<h2 class="font-headline-md text-headline-md text-primary">Actividad de Hoy</h2>
+</div>
+<button class="text-secondary hover:text-primary transition-colors flex items-center gap-1 font-label-md text-label-md" onclick="undoLastAction()">
+<span class="material-symbols-outlined text-[16px]">undo</span>
+<span class="">Deshacer</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md uppercase tracking-wider px-2 border-b border-surface-variant pb-2">
+<span class="">Movimiento / Cigarro</span>
+<span class="">Stock Resultante</span>
+</div>
+<div class="flex flex-col gap-2.5 overflow-y-auto max-h-[580px] pr-1" id="activity-log-container"><div class="activity-item p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3 transition-all" data-sku="COH-BH-54" data-qty="-1">
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="w-10 h-10 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[20px]">arrow_downward</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="font-label-lg text-label-lg text-primary truncate">Cohiba Behike 54</span>
+              <span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md text-[10px]">
+                -1 Caja
+              </span>
+            </div>
+            <div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+              <span class="">14:07</span>
+              <span class="">•</span>
+              <span class="">Venta Rápida</span>
+              <span class="">•</span>
+              <span class="text-secondary font-medium">M. Tabaquero</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-end flex-shrink-0">
+          <span class="font-label-md text-label-md text-on-surface-variant">Quedan</span>
+          <span class="font-title-md text-title-md text-primary tabular-nums">20 cajas</span>
+        </div>
+      </div><div class="activity-item p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3 transition-all" data-sku="COH-BH-54" data-qty="-1">
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="w-10 h-10 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[20px]">arrow_downward</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="font-label-lg text-label-lg text-primary truncate">Cohiba Behike 54</span>
+              <span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md text-[10px]">
+                -1 Caja
+              </span>
+            </div>
+            <div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+              <span class="">14:07</span>
+              <span class="">•</span>
+              <span class="">Venta Rápida</span>
+              <span class="">•</span>
+              <span class="text-secondary font-medium">M. Tabaquero</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-end flex-shrink-0">
+          <span class="font-label-md text-label-md text-on-surface-variant">Quedan</span>
+          <span class="font-title-md text-title-md text-primary tabular-nums">21 cajas</span>
+        </div>
+      </div><div class="activity-item p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3 transition-all" data-sku="COH-BH-54" data-qty="1">
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="w-10 h-10 rounded-lg bg-tertiary-fixed/60 text-on-tertiary-container flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[20px]">arrow_upward</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="font-label-lg text-label-lg text-primary truncate">Cohiba Behike 54</span>
+              <span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-container font-label-md text-label-md text-[10px]">
+                +1 Caja
+              </span>
+            </div>
+            <div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+              <span class="">14:07</span>
+              <span class="">•</span>
+              <span class="">Recepción Express</span>
+              <span class="">•</span>
+              <span class="text-secondary font-medium">M. Tabaquero</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-end flex-shrink-0">
+          <span class="font-label-md text-label-md text-on-surface-variant">Quedan</span>
+          <span class="font-title-md text-title-md text-primary tabular-nums">22 cajas</span>
+        </div>
+      </div><div class="activity-item p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3 transition-all" data-sku="COH-BH-54" data-qty="-1">
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="w-10 h-10 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[20px]">arrow_downward</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="font-label-lg text-label-lg text-primary truncate">Cohiba Behike 54</span>
+              <span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md text-[10px]">
+                -1 Caja
+              </span>
+            </div>
+            <div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+              <span class="">14:07</span>
+              <span class="">•</span>
+              <span class="">Venta Rápida</span>
+              <span class="">•</span>
+              <span class="text-secondary font-medium">M. Tabaquero</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-end flex-shrink-0">
+          <span class="font-label-md text-label-md text-on-surface-variant">Quedan</span>
+          <span class="font-title-md text-title-md text-primary tabular-nums">21 cajas</span>
+        </div>
+      </div><div class="activity-item p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3 transition-all" data-sku="COH-BH-54" data-qty="1">
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="w-10 h-10 rounded-lg bg-tertiary-fixed/60 text-on-tertiary-container flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[20px]">arrow_upward</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="font-label-lg text-label-lg text-primary truncate">Cohiba Behike 54</span>
+              <span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-container font-label-md text-label-md text-[10px]">
+                +1 Caja
+              </span>
+            </div>
+            <div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+              <span class="">14:07</span>
+              <span class="">•</span>
+              <span class="">Recepción Express</span>
+              <span class="">•</span>
+              <span class="text-secondary font-medium">M. Tabaquero</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-end flex-shrink-0">
+          <span class="font-label-md text-label-md text-on-surface-variant">Quedan</span>
+          <span class="font-title-md text-title-md text-primary tabular-nums">22 cajas</span>
+        </div>
+      </div><div class="activity-item p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3 transition-all" data-sku="COH-BH-54" data-qty="1">
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="w-10 h-10 rounded-lg bg-tertiary-fixed/60 text-on-tertiary-container flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[20px]">arrow_upward</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="font-label-lg text-label-lg text-primary truncate">Cohiba Behike 54</span>
+              <span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-container font-label-md text-label-md text-[10px]">
+                +1 Caja
+              </span>
+            </div>
+            <div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+              <span class="">14:07</span>
+              <span class="">•</span>
+              <span class="">Recepción Express</span>
+              <span class="">•</span>
+              <span class="text-secondary font-medium">M. Tabaquero</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-end flex-shrink-0">
+          <span class="font-label-md text-label-md text-on-surface-variant">Quedan</span>
+          <span class="font-title-md text-title-md text-primary tabular-nums">21 cajas</span>
+        </div>
+      </div><div class="activity-item p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3 transition-all" data-sku="COH-BH-54" data-qty="1">
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="w-10 h-10 rounded-lg bg-tertiary-fixed/60 text-on-tertiary-container flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[20px]">arrow_upward</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="font-label-lg text-label-lg text-primary truncate">Cohiba Behike 54</span>
+              <span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-container font-label-md text-label-md text-[10px]">
+                +1 Caja
+              </span>
+            </div>
+            <div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+              <span class="">14:07</span>
+              <span class="">•</span>
+              <span class="">Recepción Express</span>
+              <span class="">•</span>
+              <span class="text-secondary font-medium">M. Tabaquero</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-end flex-shrink-0">
+          <span class="font-label-md text-label-md text-on-surface-variant">Quedan</span>
+          <span class="font-title-md text-title-md text-primary tabular-nums">20 cajas</span>
+        </div>
+      </div><div class="activity-item p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3 transition-all" data-sku="COH-BH-54" data-qty="1">
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="w-10 h-10 rounded-lg bg-tertiary-fixed/60 text-on-tertiary-container flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[20px]">arrow_upward</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="font-label-lg text-label-lg text-primary truncate">Cohiba Behike 54</span>
+              <span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-container font-label-md text-label-md text-[10px]">
+                +1 Caja
+              </span>
+            </div>
+            <div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+              <span class="">14:07</span>
+              <span class="">•</span>
+              <span class="">Recepción Express</span>
+              <span class="">•</span>
+              <span class="text-secondary font-medium">M. Tabaquero</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-end flex-shrink-0">
+          <span class="font-label-md text-label-md text-on-surface-variant">Quedan</span>
+          <span class="font-title-md text-title-md text-primary tabular-nums">19 cajas</span>
+        </div>
+      </div>
+<div class="activity-item p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3 transition-all" data-id="act-1" data-name="Cohiba Behike 54" data-qty="-1" data-sku="COH-BH-54">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">arrow_downward</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-primary truncate">Cohiba Behike 54</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md text-[10px]">-1 Caja</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="">14:42</span>
+<span class="">•</span>
+<span class="">Venta Salón</span>
+<span class="">•</span>
+<span class="text-secondary font-medium">M. Tabaquero</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-label-md text-label-md text-on-surface-variant">Quedan</span>
+<span class="font-title-md text-title-md text-primary tabular-nums">18 cajas</span>
+</div>
+</div>
+<div class="activity-item p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3 transition-all" data-id="act-2" data-name="Davidoff Aniversario Special R" data-qty="10" data-sku="DAV-ANV-SPE">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed/60 flex items-center justify-center flex-shrink-0 text-on-tertiary-container">
+<span class="material-symbols-outlined text-[20px]">arrow_upward</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-primary truncate">Davidoff Aniversario Special R</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-container font-label-md text-label-md text-[10px]">+10 Cajas</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="">13:15</span>
+<span class="">•</span>
+<span class="">Albarán #8921</span>
+<span class="">•</span>
+<span class="text-secondary font-medium">M. Tabaquero</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-label-md text-label-md text-on-surface-variant">Quedan</span>
+<span class="font-title-md text-title-md text-primary tabular-nums">15 cajas</span>
+</div>
+</div>
+<div class="activity-item p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3 transition-all" data-id="act-3" data-name="Romeo y Julieta Wide Churchills" data-qty="-2" data-sku="RYJ-WC-25">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">arrow_downward</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-primary truncate">Romeo y Julieta Wide Churchills</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md text-[10px]">-2 Cajas</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="">11:28</span>
+<span class="">•</span>
+<span class="">Cliente VIP</span>
+<span class="">•</span>
+<span class="text-secondary font-medium">M. Tabaquero</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-label-md text-label-md text-on-surface-variant">Quedan</span>
+<span class="font-title-md text-title-md text-primary tabular-nums">32 cajas</span>
+</div>
+</div>
+<div class="activity-item p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3 transition-all" data-id="act-4" data-name="Padrón 1926 Serie No. 9" data-qty="-1" data-sku="PAD-1926-SER">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">arrow_downward</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-primary truncate">Padrón 1926 Serie No. 9</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md text-[10px]">-1 Caja</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="">10:04</span>
+<span class="">•</span>
+<span class="">Venta Mostrador</span>
+<span class="">•</span>
+<span class="text-secondary font-medium">M. Tabaquero</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-label-md text-label-md text-on-surface-variant">Quedan</span>
+<span class="font-title-md text-title-md text-primary tabular-nums">24 cajas</span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<script>
+    let currentOperationMode = 'salida';
+    let movementHistory = [];
+    let toastTimeout = null;
+
+    function switchMode(mode) {
+      currentOperationMode = mode;
+      const tabSalida = document.getElementById('tab-mode-salida');
+      const tabEntrada = document.getElementById('tab-mode-entrada');
+
+      if (mode === 'salida') {
+        tabSalida.className = 'flex items-center gap-2 px-5 py-2.5 rounded-lg font-label-lg text-label-lg transition-all bg-primary-container text-on-primary shadow-sm';
+        tabEntrada.className = 'flex items-center gap-2 px-5 py-2.5 rounded-lg font-label-lg text-label-lg transition-all text-on-surface-variant hover:text-on-surface';
+      } else {
+        tabEntrada.className = 'flex items-center gap-2 px-5 py-2.5 rounded-lg font-label-lg text-label-lg transition-all bg-primary-container text-on-primary shadow-sm';
+        tabSalida.className = 'flex items-center gap-2 px-5 py-2.5 rounded-lg font-label-lg text-label-lg transition-all text-on-surface-variant hover:text-on-surface';
+      }
+    }
+
+    function showToast(title, description) {
+      const toast = document.getElementById('toast-notification');
+      const toastTitle = document.getElementById('toast-title');
+      const toastDesc = document.getElementById('toast-desc');
+
+      if (toastTimeout) clearTimeout(toastTimeout);
+
+      toastTitle.textContent = title;
+      toastDesc.textContent = description;
+
+      toast.classList.remove('opacity-0', 'translate-y-[-20px]', 'pointer-events-none');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      toastTimeout = setTimeout(() => {
+        dismissToast();
+      }, 4000);
+    }
+
+    function dismissToast() {
+      const toast = document.getElementById('toast-notification');
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'translate-y-[-20px]', 'pointer-events-none');
+    }
+
+    function registerMovement(sku, name, delta) {
+      const row = document.querySelector(`.cigar-row[data-sku="${sku}"]`);
+      if (!row) return;
+
+      let currentStock = parseInt(row.getAttribute('data-stock'), 10);
+      const newStock = Math.max(0, currentStock + delta);
+      row.setAttribute('data-stock', newStock);
+
+      const badge = row.querySelector('.stock-badge');
+      if (badge) {
+        badge.textContent = `${newStock} cajas`;
+        if (newStock <= 10) {
+          badge.className = 'stock-badge font-title-lg text-title-lg text-error tabular-nums';
+        } else {
+          badge.className = 'stock-badge font-title-lg text-title-lg text-primary tabular-nums';
+        }
+      }
+
+      const salesElem = document.getElementById('stat-sales-count');
+      const receiptsElem = document.getElementById('stat-receipts-count');
+      const netElem = document.getElementById('stat-balance-net');
+
+      let currentSales = parseInt(salesElem.textContent, 10) || 0;
+      let currentReceipts = parseInt(receiptsElem.textContent, 10) || 0;
+
+      if (delta < 0) {
+        currentSales += Math.abs(delta);
+        salesElem.textContent = currentSales;
+      } else {
+        currentReceipts += delta;
+        receiptsElem.textContent = currentReceipts;
+      }
+
+      const netBalance = currentReceipts - currentSales;
+      netElem.textContent = `${netBalance > 0 ? '+' : ''}${netBalance}`;
+
+      const actionRecord = {
+        sku: sku,
+        name: name,
+        delta: delta,
+        prevStock: currentStock,
+        newStock: newStock,
+        time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      };
+
+      movementHistory.push(actionRecord);
+
+      const logContainer = document.getElementById('activity-log-container');
+      const isPositive = delta > 0;
+      const logItem = document.createElement('div');
+      logItem.className = 'activity-item p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3 transition-all animate-pulse';
+      logItem.setAttribute('data-sku', sku);
+      logItem.setAttribute('data-qty', delta);
+
+      logItem.innerHTML = `
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="w-10 h-10 rounded-lg ${isPositive ? 'bg-tertiary-fixed/60 text-on-tertiary-container' : 'bg-secondary-fixed text-on-secondary-fixed'} flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[20px]">${isPositive ? 'arrow_upward' : 'arrow_downward'}</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="font-label-lg text-label-lg text-primary truncate">${name}</span>
+              <span class="px-2 py-0.5 rounded-full ${isPositive ? 'bg-tertiary-fixed text-on-tertiary-container' : 'bg-secondary-fixed text-on-secondary-fixed'} font-label-md text-label-md text-[10px]">
+                ${isPositive ? '+' : ''}${delta} ${Math.abs(delta) === 1 ? 'Caja' : 'Cajas'}
+              </span>
+            </div>
+            <div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+              <span>${actionRecord.time}</span>
+              <span>•</span>
+              <span>${isPositive ? 'Recepción Express' : 'Venta Rápida'}</span>
+              <span>•</span>
+              <span class="text-secondary font-medium">M. Tabaquero</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-end flex-shrink-0">
+          <span class="font-label-md text-label-md text-on-surface-variant">Quedan</span>
+          <span class="font-title-md text-title-md text-primary tabular-nums">${newStock} cajas</span>
+        </div>
+      `;
+
+      logContainer.insertBefore(logItem, logContainer.firstChild);
+      setTimeout(() => logItem.classList.remove('animate-pulse'), 800);
+
+      const actionName = delta < 0 ? 'Venta registrada' : 'Ingreso registrado';
+      const actionDesc = `${delta < 0 ? delta : '+' + delta} Caja(s) de ${name}. Nuevo stock: ${newStock}`;
+      showToast(actionName, actionDesc);
+    }
+
+    function undoLastAction() {
+      if (movementHistory.length === 0) {
+        showToast('Nada que deshacer', 'No se registran movimientos recientes en esta sesión');
+        return;
+      }
+
+      const last = movementHistory.pop();
+      const row = document.querySelector(`.cigar-row[data-sku="${last.sku}"]`);
+
+      if (row) {
+        row.setAttribute('data-stock', last.prevStock);
+        const badge = row.querySelector('.stock-badge');
+        if (badge) {
+          badge.textContent = `${last.prevStock} cajas`;
+          badge.className = last.prevStock <= 10 
+            ? 'stock-badge font-title-lg text-title-lg text-error tabular-nums'
+            : 'stock-badge font-title-lg text-title-lg text-primary tabular-nums';
+        }
+      }
+
+      const salesElem = document.getElementById('stat-sales-count');
+      const receiptsElem = document.getElementById('stat-receipts-count');
+      const netElem = document.getElementById('stat-balance-net');
+
+      let currentSales = parseInt(salesElem.textContent, 10) || 0;
+      let currentReceipts = parseInt(receiptsElem.textContent, 10) || 0;
+
+      if (last.delta < 0) {
+        currentSales -= Math.abs(last.delta);
+        salesElem.textContent = Math.max(0, currentSales);
+      } else {
+        currentReceipts -= last.delta;
+        receiptsElem.textContent = Math.max(0, currentReceipts);
+      }
+
+      const netBalance = currentReceipts - currentSales;
+      netElem.textContent = `${netBalance > 0 ? '+' : ''}${netBalance}`;
+
+      const logContainer = document.getElementById('activity-log-container');
+      if (logContainer.firstElementChild) {
+        logContainer.removeChild(logContainer.firstElementChild);
+      }
+
+      showToast('Movimiento Deshecho', `Revertido ajuste de ${last.name}. Stock restaurado a ${last.prevStock}`);
+    }
+
+    function filterCigarList(query) {
+      const q = query.toLowerCase().trim();
+      const rows = document.querySelectorAll('.cigar-row');
+      rows.forEach(row => {
+        const name = (row.getAttribute('data-name') || '').toLowerCase();
+        const sku = (row.getAttribute('data-sku') || '').toLowerCase();
+        if (!q || name.includes(q) || sku.includes(q)) {
+          row.style.display = 'flex';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    function simulateBarcodeScan() {
+      const searchInput = document.getElementById('cigar-quick-search');
+      searchInput.value = 'COH-BH-54';
+      filterCigarList('COH-BH-54');
+      showToast('Escáner Barcode OK', 'Detectado: Cohiba Behike 54 (COH-BH-54)');
+    }
+  </script>
+</div></main></div>
+
+</body></html>
