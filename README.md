@@ -1,1 +1,1139 @@
 # Habanos.Cuba
+<!DOCTYPE html><html lang="es" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-fixed": "#2b1613", "surface-dim": "#dbdad6", "surface": "#fbf9f5", "on-primary-container": "#988479", "error-container": "#ffdad6", "tertiary-fixed": "#ffdad4", "primary-container": "#2b1e16", "on-tertiary-container": "#a1817b", "on-secondary-fixed": "#261900", "surface-bright": "#fbf9f5", "surface-container-highest": "#e4e2de", "surface-variant": "#e4e2de", "outline": "#80756f", "tertiary-container": "#311b18", "background": "#fbf9f5", "surface-container-low": "#f5f3ef", "surface-container-high": "#eae8e4", "tertiary-fixed-dim": "#e3beb8", "secondary": "#775a19", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "on-error": "#ffffff", "secondary-fixed-dim": "#e9c176", "inverse-surface": "#30312e", "outline-variant": "#d2c4bd", "inverse-on-surface": "#f2f0ed", "tertiary": "#160504", "on-background": "#1b1c1a", "on-surface": "#1b1c1a", "on-primary-fixed-variant": "#54433a", "secondary-fixed": "#ffdea5", "inverse-primary": "#d9c2b5", "surface-tint": "#6c5b51", "surface-container": "#efeeea", "secondary-container": "#fed488", "on-surface-variant": "#4e4540", "error": "#ba1a1a", "on-primary-fixed": "#251911", "on-error-container": "#93000a", "primary": "#2b1e16", "on-tertiary-fixed-variant": "#5b403c", "primary-fixed": "#f6ded1", "primary-fixed-dim": "#d9c2b5", "on-secondary-container": "#785a1a", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#5d4201", "on-secondary": "#ffffff" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-xl": "2rem", "space-xs": "0.25rem", "gutter": "1rem", "space-md": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin": "1rem" }, fontFamily: { "body-lg": ["Manrope"], "headline-lg": ["Newsreader"], "label-sm": ["Manrope"], "label-lg": ["Manrope"], "body-sm": ["Manrope"], "body-md": ["Manrope"], "headline-md": ["Newsreader"], "display": ["Newsreader"], "display-mobile": ["Newsreader"], "label-md": ["Manrope"], "headline-sm": ["Manrope"] }, fontSize: { "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "600" }], "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "display-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-primary"><header class="fixed top-0 w-full z-40 pt-safe bg-surface/90 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_1px_8px_rgba(43,30,22,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-2.5 min-w-0"><img alt="Humidor Habana Logo" class="h-9 w-9 object-contain rounded-lg flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XOh_KdSBWIZJ-EbQE4ft3ZeS_XhSIhLBdNtId6xPp7Tb2mUm3KE-0-J9D28FswEU_tA-kPgccDtyYLS-349lzm0tlIc46dTs-qmDj-qA8MFeJAtNrNEoGe3WShgrcdEeCEu0mZ7YxKYEQLmCvQcNcF8FsVwuEbJJ3hR7c8zRoj3auGMBMZTYxCna-tVVLOIjpTVYqwPH4ufoofZgc7_ciOaetZ0WT3loPR7yqOA54KBnAYxQxcxZt2_aqA"><div class="flex flex-col min-w-0"><span class="font-label-sm text-[11px] text-secondary uppercase tracking-[0.16em] leading-none font-bold">Humidor Habana</span><span class="font-headline-sm text-headline-sm text-primary font-semibold truncate">Inventario</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-6 gap-space-md">
+<!-- Micro Humidor Environment Badge & Metrics Overview -->
+<section class="flex flex-col gap-space-sm mt-space-sm">
+<!-- Bento Grid Metrics -->
+<div class="grid grid-cols-3 gap-2">
+<!-- Total Stock -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">inventory</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Cajas</span>
+</div>
+<div class="mt-2">
+<span class="font-display-mobile text-headline-lg text-primary tracking-tight font-medium" id="metric-total-boxes">71</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">en cava</span>
+</div>
+</div>
+<!-- Estimated Valuation -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">payments</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Valor</span>
+</div>
+<div class="mt-2">
+<span class="font-display-mobile text-headline-lg text-primary tracking-tight font-medium" id="metric-total-val">$20.540</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">costo est.</span>
+</div>
+</div>
+<!-- Vitolas / Marcas Activas -->
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]">category</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Marcas</span>
+</div>
+<div class="mt-2">
+<div class="flex items-baseline gap-1">
+<span class="font-display-mobile text-headline-lg text-primary font-medium" id="metric-total-brands">6</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">líneas</span>
+</div>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">disponibles</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Search & Filter Controls -->
+<section class="flex flex-col gap-space-sm">
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-12 pl-10 pr-10 bg-surface-container-lowest text-on-surface rounded-xl font-body-md text-body-md placeholder:text-on-surface-variant shadow-sm border border-outline-variant/30 focus:outline-none focus:ring-1 focus:ring-secondary" id="search-input" placeholder="Buscar por marca, vitola o país..." type="search">
+<div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+<button aria-label="Escanear código de barras" class="text-on-surface-variant hover:text-primary active:scale-95 transition-transform p-1" type="button">
+<span class="material-symbols-outlined text-[20px]">barcode_scanner</span>
+</button>
+</div>
+</div>
+<!-- Scrollable Filter Chips -->
+
+</section>
+<!-- WhatsApp Sharing Action Bar -->
+<section class="grid grid-cols-2 gap-space-xs w-full">
+<button class="h-11 px-3 bg-[#25D366] text-white rounded-xl flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-all" id="btn-open-whatsapp">
+<span class="material-symbols-outlined text-[19px]">chat</span>
+<span class="font-label-md text-label-md tracking-tight uppercase font-bold">Abrir WhatsApp</span>
+</button>
+<button class="h-11 px-3 bg-surface-container-lowest border border-outline-variant/60 text-primary rounded-xl flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-all" id="btn-copy-whatsapp">
+<span class="material-symbols-outlined text-[19px] text-secondary">content_copy</span>
+<span class="font-label-md text-label-md tracking-tight uppercase font-bold">Copiar Lista</span>
+</button>
+</section>
+<!-- Quick Primary Action Anchor -->
+<section class="w-full">
+<button class="w-full h-12 bg-primary text-on-primary rounded-xl flex items-center justify-center gap-2 shadow-md hover:bg-primary/95 active:scale-[0.99] transition-all" id="btn-quick-entry">
+<span class="material-symbols-outlined text-[20px]">swap_horizontal_circle</span>
+<span class="font-label-lg text-label-lg tracking-wide uppercase font-semibold">Registrar Entrada / Salida</span>
+</button>
+</section>
+<!-- Cigars Inventory Cards List (Clean, No Status Badges) -->
+<section class="flex flex-col gap-space-md" id="cigar-list">
+<!-- Card 1: Cohiba Siglo VI -->
+<article class="cigar-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-outline-variant/30 flex flex-col gap-space-sm" data-id="cohiba" data-name="cohiba siglo vi" data-origin="habano" data-price-cost="420" data-price-sale="650" id="card-cohiba-siglo-vi">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex gap-space-sm min-w-0">
+<div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Close up artisanal studio macro photograph of Cohiba Siglo VI cigar box in polished cedar wood with golden yellow lacquer and black embossed logo luxury tobacco aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRsSfPRiLdil69RgSSA-TQxRcogqvHoKfs8ezbXoziunvnMBjPv_FmhE59GIxqNk0jffz3PVWCyNwKGTj2yeWfKy6V0sxH70X6B1mmS3qKq2kwuvu1HJ0j0E8H2eoGUTLXGFKOM2JF4fsOsLuhB5XtASiKVHuOE4p8FZbO8kBbScaR1Qu7cKHTyAP9qkUdDifWoQWSAkIUfUDKeF6Kj774FQzI2O78pkzPbTeUzzdzHUWz6d8IAsviWA">
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-wider">Cuba • D.O.P</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-tight truncate">Cohiba Siglo VI</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cañonazo (52 × 150 mm) • Caja × 25 u.</span>
+</div>
+</div>
+</div>
+<!-- Stock Stepper Control Unit -->
+<div class="bg-surface-container-low p-2 rounded-xl flex items-center justify-between border border-surface-container-high/80">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[17px]">inventory_2</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Stock Cava</span>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Restar una caja" class="btn-decrement w-10 h-10 rounded-lg bg-surface-container-lowest border border-outline-variant/60 text-primary flex items-center justify-center hover:bg-surface-container active:scale-90 transition-all shadow-sm focus:outline-none disabled:opacity-30 disabled:pointer-events-none">
+<span class="material-symbols-outlined text-[20px] font-bold">remove</span>
+</button>
+<div class="min-w-[56px] text-center px-1">
+<span class="cigar-qty font-display-mobile text-headline-md text-primary font-bold leading-tight block">16</span>
+<span class="text-[10px] text-on-surface-variant uppercase font-semibold tracking-wide block -mt-1">cajas</span>
+</div>
+<button aria-label="Sumar una caja" class="btn-increment w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:opacity-95 active:scale-90 transition-all shadow-sm focus:outline-none">
+<span class="material-symbols-outlined text-[20px] font-bold">add</span>
+</button>
+</div>
+</div>
+<!-- Financial Matrix -->
+<div class="grid grid-cols-3 bg-surface-container-low p-2 rounded-lg text-center items-center">
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">Compra</span>
+<span class="card-cost font-label-lg text-label-lg text-on-surface font-semibold">$420</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">Venta</span>
+<span class="card-sale font-label-lg text-label-lg text-on-surface font-semibold">$650</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-secondary uppercase font-bold">Margen</span>
+<span class="card-margin font-label-lg text-label-lg text-secondary font-bold">+$230</span>
+<span class="card-pct text-[10px] text-secondary block -mt-1">35.4%</span>
+</div>
+</div>
+</article>
+<!-- Card 2: Montecristo No. 4 -->
+<article class="cigar-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-outline-variant/30 flex flex-col gap-space-sm" data-id="montecristo" data-name="montecristo no. 4" data-origin="habano" data-price-cost="210" data-price-sale="340" id="card-montecristo-no-4">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex gap-space-sm min-w-0">
+<div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Vintage wood cigar box of Montecristo No. 4 with classic triangular crossed swords seal and textured warm brown wrapper cigars in atmospheric humidor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD-FiAcTMBGD77nAifs77zmuw0pYpWCgyyd_vq7FZG0o3czj7N7RcIK9j_rtGpduSDnPEVO7ZbUB6pktIJi-H0iHRmQBiiZEVGHaNbDi2id8i6ESqwd31_C3wGbaqaOk1xEkypUP2uLT-5zjseYmlpcvwK5IVBLgeMZaeu-WZSFxXgDXhV4aly_sdSSIiAqDTVaYaKmzAKtlIt15N7tVavZc67giQJIYMvd1SqYEg3Zs1d4Gs9cIOYjw">
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-wider">Cuba • D.O.P</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-tight truncate">Montecristo No. 4</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mareva (42 × 129 mm) • Caja × 25 u.</span>
+</div>
+</div>
+</div>
+<!-- Stock Stepper Control Unit -->
+<div class="bg-surface-container-low p-2 rounded-xl flex items-center justify-between border border-surface-container-high/80">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[17px]">inventory_2</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Stock Cava</span>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Restar una caja" class="btn-decrement w-10 h-10 rounded-lg bg-surface-container-lowest border border-outline-variant/60 text-primary flex items-center justify-center hover:bg-surface-container active:scale-90 transition-all shadow-sm focus:outline-none disabled:opacity-30 disabled:pointer-events-none">
+<span class="material-symbols-outlined text-[20px] font-bold">remove</span>
+</button>
+<div class="min-w-[56px] text-center px-1">
+<span class="cigar-qty font-display-mobile text-headline-md text-primary font-bold leading-tight block">34</span>
+<span class="text-[10px] text-on-surface-variant uppercase font-semibold tracking-wide block -mt-1">cajas</span>
+</div>
+<button aria-label="Sumar una caja" class="btn-increment w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:opacity-95 active:scale-90 transition-all shadow-sm focus:outline-none">
+<span class="material-symbols-outlined text-[20px] font-bold">add</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-3 bg-surface-container-low p-2 rounded-lg text-center items-center">
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">Compra</span>
+<span class="card-cost font-label-lg text-label-lg text-on-surface font-semibold">$210</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">Venta</span>
+<span class="card-sale font-label-lg text-label-lg text-on-surface font-semibold">$340</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-secondary uppercase font-bold">Margen</span>
+<span class="card-margin font-label-lg text-label-lg text-secondary font-bold">+$130</span>
+<span class="card-pct text-[10px] text-secondary block -mt-1">38.2%</span>
+</div>
+</div>
+</article>
+<!-- Card 3: Partagás Serie D No. 4 -->
+<article class="cigar-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-outline-variant/30 flex flex-col gap-space-sm" data-id="partagas" data-name="partagas serie d no. 4" data-origin="habano" data-price-cost="260" data-price-sale="410" id="card-partagas-serie-d-no-4">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex gap-space-sm min-w-0">
+<div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Classic red and gold adorned Partagas Serie D No. 4 Cuban cigar wooden box with oily Maduro wrapper cigars aligned perfectly inside" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIcrDS_WFnTsmcWdGGlJhM1RRFKK5CkhHMUNmf5sXUUcAzkyigOA7TVFeuPZHmQ2QgI7Rw5BZSVMLTJjcQLPye2DJKXKXimvKndbQAym9V2xP6768UdP1sR3nZCsLyA7xgfIwkyh80RYYGn-AIyltod1s0qHz2jcwDLfYIeqHas5OT9GfmuvhNri9vYMLfca8q1A3HyQgm8_byNNvK1VVg0dfFQrsrvnE0m47d1pRSpk03tPetfalB2Q">
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-wider">Cuba • D.O.P</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-tight truncate">Partagás Serie D No. 4</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Robusto (50 × 124 mm) • Caja × 25 u.</span>
+</div>
+</div>
+</div>
+<!-- Stock Stepper Control Unit -->
+<div class="bg-surface-container-low p-2 rounded-xl flex items-center justify-between border border-surface-container-high/80">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[17px]">inventory_2</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Stock Cava</span>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Restar una caja" class="btn-decrement w-10 h-10 rounded-lg bg-surface-container-lowest border border-outline-variant/60 text-primary flex items-center justify-center hover:bg-surface-container active:scale-90 transition-all shadow-sm focus:outline-none disabled:opacity-30 disabled:pointer-events-none">
+<span class="material-symbols-outlined text-[20px] font-bold">remove</span>
+</button>
+<div class="min-w-[56px] text-center px-1">
+<span class="cigar-qty font-display-mobile text-headline-md text-primary font-bold leading-tight block">4</span>
+<span class="text-[10px] text-on-surface-variant uppercase font-semibold tracking-wide block -mt-1">cajas</span>
+</div>
+<button aria-label="Sumar una caja" class="btn-increment w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:opacity-95 active:scale-90 transition-all shadow-sm focus:outline-none">
+<span class="material-symbols-outlined text-[20px] font-bold">add</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-3 bg-surface-container-low p-2 rounded-lg text-center items-center">
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">Compra</span>
+<span class="card-cost font-label-lg text-label-lg text-on-surface font-semibold">$260</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">Venta</span>
+<span class="card-sale font-label-lg text-label-lg text-on-surface font-semibold">$410</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-secondary uppercase font-bold">Margen</span>
+<span class="card-margin font-label-lg text-label-lg text-secondary font-bold">+$150</span>
+<span class="card-pct text-[10px] text-secondary block -mt-1">36.6%</span>
+</div>
+</div>
+</article>
+<!-- Card 4: Romeo y Julieta Churchill -->
+<article class="cigar-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-outline-variant/30 flex flex-col gap-space-sm" data-id="romeo" data-name="romeo y julieta churchill" data-origin="habano" data-price-cost="180" data-price-sale="290" id="card-romeo-y-julieta-churchill">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex gap-space-sm min-w-0">
+<div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Traditional Romeo y Julieta Churchill cigar box with ornate lithograph in red, gold, and cream showcasing aluminum tubes inside aged cedar humidor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVdKTYBooIdGSwbqsJQxOZRW4bgtDm-QSZATR_lfp8BKxlBwUvJucBWmAXI8Ep3WS_QJQ8DxgHvoLlnabo0POzFmB_3LEWSAr2o9_rnEdT1RhrSv88N-0GCo4Hw9s6aO4Srakn549EGoAB-5NThwapQL1yzhenj686yCf6E-0_BfPdWCG09bS34p90vTuohwYd9CfjOuGiaPKUDQvClL7dbD0kZuHNqNqpC2ZRvCzRjJ9GnipYUmWLsA">
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-wider">Cuba • D.O.P</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-tight truncate">Romeo y Julieta Churchill</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Julieta No. 2 (47 × 178 mm) • Caja × 10 u.</span>
+</div>
+</div>
+</div>
+<!-- Stock Stepper Control Unit -->
+<div class="bg-surface-container-low p-2 rounded-xl flex items-center justify-between border border-surface-container-high/80">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[17px]">inventory_2</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Stock Cava</span>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Restar una caja" class="btn-decrement w-10 h-10 rounded-lg bg-surface-container-lowest border border-outline-variant/60 text-primary flex items-center justify-center hover:bg-surface-container active:scale-90 transition-all shadow-sm focus:outline-none disabled:opacity-30 disabled:pointer-events-none">
+<span class="material-symbols-outlined text-[20px] font-bold">remove</span>
+</button>
+<div class="min-w-[56px] text-center px-1">
+<span class="cigar-qty font-display-mobile text-headline-md text-primary font-bold leading-tight block">2</span>
+<span class="text-[10px] text-on-surface-variant uppercase font-semibold tracking-wide block -mt-1">cajas</span>
+</div>
+<button aria-label="Sumar una caja" class="btn-increment w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:opacity-95 active:scale-90 transition-all shadow-sm focus:outline-none">
+<span class="material-symbols-outlined text-[20px] font-bold">add</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-3 bg-surface-container-low p-2 rounded-lg text-center items-center">
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">Compra</span>
+<span class="card-cost font-label-lg text-label-lg text-on-surface font-semibold">$180</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">Venta</span>
+<span class="card-sale font-label-lg text-label-lg text-on-surface font-semibold">$290</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-secondary uppercase font-bold">Margen</span>
+<span class="card-margin font-label-lg text-label-lg text-secondary font-bold">+$110</span>
+<span class="card-pct text-[10px] text-secondary block -mt-1">37.9%</span>
+</div>
+</div>
+</article>
+<!-- Card 5: Padrón 1964 Anniversary Torpedo -->
+<article class="cigar-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-outline-variant/30 flex flex-col gap-space-sm" data-id="padron" data-name="padron 1964 anniversary torpedo" data-origin="nicaraguense" data-price-cost="310" data-price-sale="480" id="card-padron-1964">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex gap-space-sm min-w-0">
+<div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Artisanal raw cedar chest of Padron 1964 Anniversary Series box-pressed torpedo cigars with dark natural wrapper leaves and security serial numbers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAudsCTy5-Ef7LYgHWkWhZfrG_A264Bg3Q4-jlGvqhpTRCOOnr9ILbKJFWvv7N3zkLH5Tw-RHA_2Uk50_fRNzjs50_d_6BUF-q9nTTqM9s3b8n41L1KiSkn-5TiXbIDzdwBSnkAaQBI64Qtli7U839BBr-fnWXz1tEUILukuG7nVcWQpIkg0rHY7IM706dN9xWrR0VFF4ZA3XUlnx2Im2R3Bpq3Iz8K_gnACBQYM64LVEnZMGtW2CHWfg">
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-wider">Nicaragua • Estelí</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-tight truncate">Padrón 1964 Torpedo</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Box-Pressed (52 × 152 mm) • Caja × 20 u.</span>
+</div>
+</div>
+</div>
+<!-- Stock Stepper Control Unit -->
+<div class="bg-surface-container-low p-2 rounded-xl flex items-center justify-between border border-surface-container-high/80">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[17px]">inventory_2</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Stock Cava</span>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Restar una caja" class="btn-decrement w-10 h-10 rounded-lg bg-surface-container-lowest border border-outline-variant/60 text-primary flex items-center justify-center hover:bg-surface-container active:scale-90 transition-all shadow-sm focus:outline-none disabled:opacity-30 disabled:pointer-events-none">
+<span class="material-symbols-outlined text-[20px] font-bold">remove</span>
+</button>
+<div class="min-w-[56px] text-center px-1">
+<span class="cigar-qty font-display-mobile text-headline-md text-primary font-bold leading-tight block">12</span>
+<span class="text-[10px] text-on-surface-variant uppercase font-semibold tracking-wide block -mt-1">cajas</span>
+</div>
+<button aria-label="Sumar una caja" class="btn-increment w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:opacity-95 active:scale-90 transition-all shadow-sm focus:outline-none">
+<span class="material-symbols-outlined text-[20px] font-bold">add</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-3 bg-surface-container-low p-2 rounded-lg text-center items-center">
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">Compra</span>
+<span class="card-cost font-label-lg text-label-lg text-on-surface font-semibold">$310</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">Venta</span>
+<span class="card-sale font-label-lg text-label-lg text-on-surface font-semibold">$480</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-secondary uppercase font-bold">Margen</span>
+<span class="card-margin font-label-lg text-label-lg text-secondary font-bold">+$170</span>
+<span class="card-pct text-[10px] text-secondary block -mt-1">35.4%</span>
+</div>
+</div>
+</article>
+<!-- Card 6: Arturo Fuente OpusX Robusto -->
+<article class="cigar-card bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-outline-variant/30 flex flex-col gap-space-sm" data-id="opusx" data-name="arturo fuente opusx robusto" data-origin="dominicano" data-price-cost="520" data-price-sale="890" id="card-arturo-fuente-opusx">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex gap-space-sm min-w-0">
+<div class="w-16 h-16 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Chateau de la Fuente luxury lacquered box of Arturo Fuente OpusX Robusto rare Dominican cigars with signature red and gold ornate label bands" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAc9wAjegPLmmFG9TzZpjjoQQ3s955tqFl0s__HY_jezGMSHOi3W1usggk_XdWkzNSo4qjbxQ4MF6v4iz1yKZUehVLBOa1Xcf79nSUkRMOxGUHNGeweE0tI0C4O-cgVHUpKnaAupx_cNa-7rcSMERZMzlIosXGcNbqxRt-l0X3s89zWwSuBLnYLXG_xYtfNG-6hUDXwtK0m8Ts1SaO_USdW31VJO2yJE-h7F7RBe9cQYVpQvb2lF8OiA">
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-wider">Rep. Dominicana</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-tight truncate">Arturo Fuente OpusX</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Robusto (50 × 133 mm) • Caja × 29 u.</span>
+</div>
+</div>
+</div>
+<!-- Stock Stepper Control Unit -->
+<div class="bg-surface-container-low p-2 rounded-xl flex items-center justify-between border border-surface-container-high/80">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[17px]">inventory_2</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Stock Cava</span>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Restar una caja" class="btn-decrement w-10 h-10 rounded-lg bg-surface-container-lowest border border-outline-variant/60 text-primary flex items-center justify-center hover:bg-surface-container active:scale-90 transition-all shadow-sm focus:outline-none disabled:opacity-30 disabled:pointer-events-none">
+<span class="material-symbols-outlined text-[20px] font-bold">remove</span>
+</button>
+<div class="min-w-[56px] text-center px-1">
+<span class="cigar-qty font-display-mobile text-headline-md text-primary font-bold leading-tight block">3</span>
+<span class="text-[10px] text-on-surface-variant uppercase font-semibold tracking-wide block -mt-1">cajas</span>
+</div>
+<button aria-label="Sumar una caja" class="btn-increment w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center hover:opacity-95 active:scale-90 transition-all shadow-sm focus:outline-none">
+<span class="material-symbols-outlined text-[20px] font-bold">add</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-3 bg-surface-container-low p-2 rounded-lg text-center items-center">
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">Compra</span>
+<span class="card-cost font-label-lg text-label-lg text-on-surface font-semibold">$520</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">Venta</span>
+<span class="card-sale font-label-lg text-label-lg text-on-surface font-semibold">$890</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-secondary uppercase font-bold">Margen</span>
+<span class="card-margin font-label-lg text-label-lg text-secondary font-bold">+$370</span>
+<span class="card-pct text-[10px] text-secondary block -mt-1">41.6%</span>
+</div>
+</div>
+</article>
+</section>
+<!-- Empty State Placeholder (hidden by default) -->
+<div class="hidden flex-col items-center justify-center p-space-xl text-center bg-surface-container-low rounded-xl mt-space-sm border border-outline-variant/30" id="empty-state">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-[32px]">inventory_2</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Sin resultados en cava</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-[240px]">No se encontraron cajas con los términos o filtros seleccionados.</p>
+<button class="mt-space-md px-4 py-2 bg-primary text-on-primary font-label-md text-label-md rounded-lg active:scale-95 transition-all" id="btn-reset-filters">
+      Restablecer Filtros
+    </button>
+</div>
+<!-- Bottom Sheet Modal 1: Registrar Entrada / Salida (60% screen height) -->
+<div class="fixed inset-0 z-50 bg-[#160504]/60 backdrop-blur-sm flex-col justify-end transition-opacity duration-300 hidden" id="entry-modal">
+<div class="fixed inset-0 -z-10 modal-backdrop-closer" id="entry-backdrop-closer"></div>
+<div class="bg-surface-container-lowest rounded-t-3xl p-5 flex flex-col h-[60vh] max-h-[60vh] shadow-2xl border-t border-outline-variant/30 overflow-hidden transform transition-transform duration-300">
+<!-- Header with Drag Handle & Close -->
+<div class="flex flex-col items-center mb-3 flex-shrink-0">
+<div class="w-12 h-1 rounded-full bg-outline-variant mb-3"></div>
+<div class="flex items-center justify-between w-full">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">swap_horizontal_circle</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-none">Registrar Entrada / Salida</h3>
+<span class="text-[11px] text-on-surface-variant">Ajuste rápido de cajas en cava</span>
+</div>
+</div>
+<button aria-label="Cerrar modal" class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant active:scale-95 transition-all" id="modal-close">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Scrollable Form Body -->
+<div class="flex-1 overflow-y-auto pr-1 flex flex-col gap-3">
+<!-- Operation Toggle (Entrada vs Salida) -->
+<div class="flex rounded-xl bg-surface-container p-1 flex-shrink-0">
+<button class="flex-1 py-2 font-label-md text-label-md text-center rounded-lg bg-primary text-on-primary shadow-sm font-bold transition-all flex items-center justify-center gap-1.5" id="tab-entry" type="button">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+<span class="">Entrada (Compra)</span>
+</button>
+<button class="flex-1 py-2 font-label-md text-label-md text-center rounded-lg text-on-surface-variant font-bold transition-all flex items-center justify-center gap-1.5" id="tab-exit" type="button">
+<span class="material-symbols-outlined text-[16px]">do_not_disturb_on</span>
+<span class="">Salida (Venta)</span>
+</button>
+</div>
+<!-- Vitola Selector -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider" for="modal-select-cigar">Seleccionar Vitola</label>
+<select class="h-11 px-3 bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md border border-outline-variant/40 focus:outline-none focus:ring-1 focus:ring-secondary" id="modal-select-cigar">
+<option value="cohiba">Cohiba Siglo VI (Caja × 25)</option>
+<option value="montecristo">Montecristo No. 4 (Caja × 25)</option>
+<option value="partagas">Partagás Serie D No. 4 (Caja × 25)</option>
+<option value="romeo">Romeo y Julieta Churchill (Caja × 10)</option>
+<option value="padron">Padrón 1964 Anniversary Torpedo (Caja × 20)</option>
+<option value="opusx">Arturo Fuente OpusX Robusto (Caja × 29)</option>
+</select>
+</div>
+<!-- Precios Compra / Venta editables -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider" for="modal-cost-input">Precio Costo / Caja</label>
+<div class="relative flex items-center">
+<span class="absolute left-3 font-headline-sm text-body-md text-secondary font-bold select-none">$</span>
+<input class="w-full h-11 pl-7 pr-3 bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md border border-outline-variant/40 focus:outline-none focus:ring-1 focus:ring-secondary placeholder:text-on-surface-variant/60 font-semibold" id="modal-cost-input" min="0" placeholder="420" step="5" type="number" value="420">
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider" for="modal-sale-input">Precio Venta / Caja</label>
+<div class="relative flex items-center">
+<span class="absolute left-3 font-headline-sm text-body-md text-secondary font-bold select-none">$</span>
+<input class="w-full h-11 pl-7 pr-3 bg-surface-container-low rounded-xl text-on-surface font-body-md text-body-md border border-outline-variant/40 focus:outline-none focus:ring-1 focus:ring-secondary placeholder:text-on-surface-variant/60 font-semibold" id="modal-sale-input" min="0" placeholder="650" step="5" type="number" value="650">
+</div>
+</div>
+</div>
+<!-- Cantidad de cajas -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider">Cantidad (Cajas)</label>
+<div class="flex items-center h-11 bg-surface-container-low rounded-xl border border-outline-variant/40 px-1">
+<button aria-label="Disminuir" class="w-9 h-9 rounded-lg bg-surface-container-lowest text-primary flex items-center justify-center active:scale-95 shadow-xs" id="btn-modal-qty-minus" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<input class="w-full text-center bg-transparent border-0 font-display-mobile text-headline-sm text-primary font-bold focus:ring-0 p-0" id="modal-qty-input" min="1" type="number" value="1">
+<button aria-label="Aumentar" class="w-9 h-9 rounded-lg bg-primary text-on-primary flex items-center justify-center active:scale-95 shadow-xs" id="btn-modal-qty-plus" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Confirm Button (Pinned to Bottom of Sheet) -->
+<div class="pt-2 border-t border-outline-variant/20 flex-shrink-0">
+<button class="w-full h-12 bg-primary text-on-primary rounded-xl font-label-lg text-label-lg tracking-wide uppercase font-semibold active:scale-[0.99] transition-all flex items-center justify-center gap-2 shadow-md" id="modal-submit" type="button">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span id="modal-submit-label" class="">Confirmar Entrada</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Sheet Modal 2: Historial de Movimientos (60% screen height) -->
+<div class="fixed inset-0 z-50 bg-[#160504]/60 backdrop-blur-sm hidden flex-col justify-end transition-opacity duration-300" id="movimientos-modal">
+<div class="fixed inset-0 -z-10 modal-backdrop-closer" id="movimientos-backdrop-closer"></div>
+<div class="bg-surface-container-lowest rounded-t-3xl p-5 flex flex-col h-[60vh] max-h-[60vh] shadow-2xl border-t border-outline-variant/30 overflow-hidden transform transition-transform duration-300">
+<!-- Header with Drag Handle & Close -->
+<div class="flex flex-col items-center mb-3 flex-shrink-0">
+<div class="w-12 h-1 rounded-full bg-outline-variant mb-3"></div>
+<div class="flex items-center justify-between w-full">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">swap_horiz</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-none">Movimientos Recientes</h3>
+<span class="text-[11px] text-on-surface-variant">Historial de entradas y salidas de cajas</span>
+</div>
+</div>
+<button aria-label="Cerrar modal" class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant active:scale-95 transition-all" id="movimientos-modal-close">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Movimientos Filters Micro Bar -->
+<div class="flex items-center gap-1.5 pb-2 border-b border-outline-variant/20 flex-shrink-0">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-on-surface-variant font-bold">Filtrar:</span>
+<button class="mov-filter-chip px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-[11px] font-semibold active:scale-95 transition-all" data-type="all">Todos</button>
+<button class="mov-filter-chip px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-semibold active:scale-95 transition-all" data-type="entrada">+ Entradas</button>
+<button class="mov-filter-chip px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-semibold active:scale-95 transition-all" data-type="salida">- Salidas</button>
+</div>
+<!-- Scrollable Movements List -->
+<div class="flex-1 overflow-y-auto pr-1 flex flex-col gap-2 pt-2" id="movimientos-list">
+<!-- Item 1: Entrada Cohiba -->
+<div class="mov-item p-2.5 bg-surface-container-low rounded-xl border border-outline-variant/30 flex items-center justify-between" data-type="entrada">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed/50 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[14px] text-primary leading-tight font-semibold truncate">Cohiba Siglo VI</span>
+<span class="text-[11px] text-on-surface-variant">Hoy, 11:30 • Entrada de inventario</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 ml-2">
+<span class="font-headline-sm text-[14px] text-secondary font-bold">+5 cajas</span>
+<span class="text-[11px] text-on-surface-variant font-medium">$2,100 total</span>
+</div>
+</div>
+<!-- Item 2: Salida Montecristo -->
+<div class="mov-item p-2.5 bg-surface-container-low rounded-xl border border-outline-variant/30 flex items-center justify-between" data-type="salida">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[14px] text-primary leading-tight font-semibold truncate">Montecristo No. 4</span>
+<span class="text-[11px] text-on-surface-variant">Ayer, 18:45 • Salida por venta</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 ml-2">
+<span class="font-headline-sm text-[14px] text-primary font-bold">-2 cajas</span>
+<span class="text-[11px] text-secondary font-semibold">$680 venta</span>
+</div>
+</div>
+<!-- Item 3: Salida Romeo y Julieta -->
+<div class="mov-item p-2.5 bg-surface-container-low rounded-xl border border-outline-variant/30 flex items-center justify-between" data-type="salida">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[14px] text-primary leading-tight font-semibold truncate">Romeo y Julieta Churchill</span>
+<span class="text-[11px] text-on-surface-variant">24 Oct, 16:10 • Salida por venta</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 ml-2">
+<span class="font-headline-sm text-[14px] text-primary font-bold">-1 caja</span>
+<span class="text-[11px] text-secondary font-semibold">$290 venta</span>
+</div>
+</div>
+<!-- Item 4: Entrada Padrón -->
+<div class="mov-item p-2.5 bg-surface-container-low rounded-xl border border-outline-variant/30 flex items-center justify-between" data-type="entrada">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed/50 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[14px] text-primary leading-tight font-semibold truncate">Padrón 1964 Torpedo</span>
+<span class="text-[11px] text-on-surface-variant">22 Oct, 09:20 • Entrada de inventario</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 ml-2">
+<span class="font-headline-sm text-[14px] text-secondary font-bold">+6 cajas</span>
+<span class="text-[11px] text-on-surface-variant font-medium">$1,860 total</span>
+</div>
+</div>
+<!-- Item 5: Salida Partagás -->
+<div class="mov-item p-2.5 bg-surface-container-low rounded-xl border border-outline-variant/30 flex items-center justify-between" data-type="salida">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[14px] text-primary leading-tight font-semibold truncate">Partagás Serie D No. 4</span>
+<span class="text-[11px] text-on-surface-variant">20 Oct, 19:00 • Salida por venta</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 ml-2">
+<span class="font-headline-sm text-[14px] text-primary font-bold">-3 cajas</span>
+<span class="text-[11px] text-secondary font-semibold">$1,230 venta</span>
+</div>
+</div>
+</div>
+<!-- Footer button to close and return to inventory -->
+<div class="pt-2 border-t border-outline-variant/20 flex-shrink-0">
+<button class="w-full h-11 bg-primary text-on-primary rounded-xl font-label-md text-label-md tracking-wider uppercase font-semibold active:scale-[0.99] transition-all flex items-center justify-center gap-1.5 shadow-sm" id="btn-return-inventory" type="button">
+<span class="material-symbols-outlined text-[17px]">inventory_2</span>
+<span class="">Volver al Inventario</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Micro-interaction Toast -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 bg-[#160504] text-white px-4 py-2.5 rounded-full font-label-md text-label-md shadow-2xl flex items-center gap-2 transition-opacity duration-300 z-50 whitespace-nowrap border border-white/10 opacity-0 pointer-events-none" id="toast">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">add_circle</span>
+<span id="toast-text" class="">+1 caja registrada</span>
+</div>
+</div>
+<script>
+  (function initCavaInventory() {
+    // 1. Centralized Reactive Inventory State
+    const inventoryState = {
+      cohiba: {
+        id: 'cohiba',
+        name: 'Cohiba Siglo VI',
+        vitola: 'Cañonazo (52 × 150 mm) • Caja × 25 u.',
+        stock: 16,
+        buy: 420,
+        sale: 650,
+        origin: 'habano'
+      },
+      montecristo: {
+        id: 'montecristo',
+        name: 'Montecristo No. 4',
+        vitola: 'Mareva (42 × 129 mm) • Caja × 25 u.',
+        stock: 34,
+        buy: 210,
+        sale: 340,
+        origin: 'habano'
+      },
+      partagas: {
+        id: 'partagas',
+        name: 'Partagás Serie D No. 4',
+        vitola: 'Robusto (50 × 124 mm) • Caja × 25 u.',
+        stock: 4,
+        buy: 260,
+        sale: 410,
+        origin: 'habano'
+      },
+      romeo: {
+        id: 'romeo',
+        name: 'Romeo y Julieta Churchill',
+        vitola: 'Julieta No. 2 (47 × 178 mm) • Caja × 10 u.',
+        stock: 2,
+        buy: 180,
+        sale: 290,
+        origin: 'habano'
+      },
+      padron: {
+        id: 'padron',
+        name: 'Padrón 1964 Torpedo',
+        vitola: 'Box-Pressed (52 × 152 mm) • Caja × 20 u.',
+        stock: 12,
+        buy: 310,
+        sale: 480,
+        origin: 'nicaraguense'
+      },
+      opusx: {
+        id: 'opusx',
+        name: 'Arturo Fuente OpusX',
+        vitola: 'Robusto (50 × 133 mm) • Caja × 29 u.',
+        stock: 3,
+        buy: 520,
+        sale: 890,
+        origin: 'dominicano'
+      }
+    };
+
+    // DOM Elements
+    const searchInput = document.getElementById('search-input');
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const emptyState = document.getElementById('empty-state');
+    const resetFiltersBtn = document.getElementById('btn-reset-filters');
+    const toast = document.getElementById('toast');
+    const toastText = document.getElementById('toast-text');
+    
+    // Quick entry modal elements
+    const entryModal = document.getElementById('entry-modal');
+    const btnQuickEntry = document.getElementById('btn-quick-entry');
+    const modalClose = document.getElementById('modal-close');
+    const entryBackdropCloser = document.getElementById('entry-backdrop-closer');
+    const modalSubmit = document.getElementById('modal-submit');
+    const tabEntry = document.getElementById('tab-entry');
+    const tabExit = document.getElementById('tab-exit');
+    const modalSubmitLabel = document.getElementById('modal-submit-label');
+    const selectCigar = document.getElementById('modal-select-cigar');
+    const costInput = document.getElementById('modal-cost-input');
+    const saleInput = document.getElementById('modal-sale-input');
+    const btnModalQtyMinus = document.getElementById('btn-modal-qty-minus');
+    const btnModalQtyPlus = document.getElementById('btn-modal-qty-plus');
+    const modalQtyInput = document.getElementById('modal-qty-input');
+
+    // Movimientos bottom sheet elements
+    const movimientosModal = document.getElementById('movimientos-modal');
+    const navMovimientos = document.getElementById('nav-movimientos');
+    const navInventario = document.getElementById('nav-inventario');
+    const movimientosModalClose = document.getElementById('movimientos-modal-close');
+    const movimientosBackdropCloser = document.getElementById('movimientos-backdrop-closer');
+    const btnReturnInventory = document.getElementById('btn-return-inventory');
+    const movFilterChips = document.querySelectorAll('.mov-filter-chip');
+    const movList = document.getElementById('movimientos-list');
+
+    // Metrics counters
+    const metricBoxes = document.getElementById('metric-total-boxes');
+    const metricVal = document.getElementById('metric-total-val');
+    const metricBrands = document.getElementById('metric-total-brands');
+
+    // WhatsApp buttons
+    const btnOpenWhatsapp = document.getElementById('btn-open-whatsapp');
+    const btnCopyWhatsapp = document.getElementById('btn-copy-whatsapp');
+
+    let currentFilter = 'all';
+    let currentOperationMode = 'entrada'; // 'entrada' | 'salida'
+    let toastTimeout = null;
+
+    function showToast(message, icon = 'check_circle') {
+      if (!toast) return;
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastText.textContent = message;
+      const iconEl = toast.querySelector('.material-symbols-outlined');
+      if (iconEl) iconEl.textContent = icon;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toastTimeout = setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2200);
+    }
+
+    // 2. Central Math Synchronization Engine
+    function recalculateAll() {
+      let totalStock = 0;
+      let totalCostVal = 0;
+      let activeBrandsCount = 0;
+
+      Object.values(inventoryState).forEach(item => {
+        totalStock += item.stock;
+        totalCostVal += (item.stock * item.buy);
+        if (item.stock > 0) {
+          activeBrandsCount++;
+        }
+
+        // Update corresponding DOM Card
+        const card = document.querySelector(`.cigar-card[data-id="${item.id}"]`);
+        if (card) {
+          card.setAttribute('data-price-cost', item.buy);
+          card.setAttribute('data-price-sale', item.sale);
+
+          const qtyEl = card.querySelector('.cigar-qty');
+          if (qtyEl) qtyEl.innerText = item.stock;
+
+          const decBtn = card.querySelector('.btn-decrement');
+          if (decBtn) decBtn.disabled = (item.stock <= 0);
+
+          const costEl = card.querySelector('.card-cost');
+          if (costEl) costEl.innerText = `$${item.buy.toLocaleString('es-ES')}`;
+
+          const saleEl = card.querySelector('.card-sale');
+          if (saleEl) saleEl.innerText = `$${item.sale.toLocaleString('es-ES')}`;
+
+          const marginVal = item.sale - item.buy;
+          const marginMarginEl = card.querySelector('.card-margin');
+          if (marginMarginEl) {
+            marginMarginEl.innerText = `${marginVal >= 0 ? '+' : ''}$${marginVal.toLocaleString('es-ES')}`;
+          }
+
+          const pctEl = card.querySelector('.card-pct');
+          if (pctEl) {
+            const pct = item.sale > 0 ? ((marginVal / item.sale) * 100).toFixed(1) : '0.0';
+            pctEl.innerText = `${pct}%`;
+          }
+        }
+      });
+
+      // Update Top Metrics
+      if (metricBoxes) {
+        metricBoxes.innerText = totalStock;
+      }
+      if (metricVal) {
+        metricVal.innerText = `$${totalCostVal.toLocaleString('es-ES')}`;
+      }
+      if (metricBrands) {
+        metricBrands.innerText = activeBrandsCount;
+      }
+
+      applyFilterAndSearch();
+    }
+
+    function applyFilterAndSearch() {
+      const query = (searchInput?.value || '').trim().toLowerCase();
+      let visibleCount = 0;
+      const cards = document.querySelectorAll('.cigar-card');
+
+      cards.forEach(card => {
+        const name = (card.getAttribute('data-name') || '').toLowerCase();
+        const origin = (card.getAttribute('data-origin') || '').toLowerCase();
+
+        const matchesSearch = !query || name.includes(query) || origin.includes(query);
+        let matchesChip = true;
+
+        if (currentFilter === 'habano') {
+          matchesChip = (origin === 'habano');
+        } else if (currentFilter === 'nicaraguense') {
+          matchesChip = (origin === 'nicaraguense');
+        } else if (currentFilter === 'dominicano') {
+          matchesChip = (origin === 'dominicano');
+        }
+
+        if (matchesSearch && matchesChip) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (visibleCount === 0) {
+        emptyState?.classList.remove('hidden');
+        emptyState?.classList.add('flex');
+      } else {
+        emptyState?.classList.add('hidden');
+        emptyState?.classList.remove('flex');
+      }
+    }
+
+    // Direct Quantity Steppers
+    document.querySelectorAll('.cigar-card').forEach(card => {
+      const id = card.getAttribute('data-id');
+      const decBtn = card.querySelector('.btn-decrement');
+      const incBtn = card.querySelector('.btn-increment');
+
+      if (decBtn) {
+        decBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (inventoryState[id] && inventoryState[id].stock > 0) {
+            inventoryState[id].stock--;
+            recalculateAll();
+            showToast(`-1 caja: ${inventoryState[id].name} (Stock: ${inventoryState[id].stock})`, 'remove_circle');
+          }
+        });
+      }
+
+      if (incBtn) {
+        incBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (inventoryState[id]) {
+            inventoryState[id].stock++;
+            recalculateAll();
+            showToast(`+1 caja: ${inventoryState[id].name} (Stock: ${inventoryState[id].stock})`, 'add_circle');
+          }
+        });
+      }
+    });
+
+    // Filter Chips Event Listeners
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach(c => {
+          c.classList.remove('bg-primary', 'text-on-primary');
+          c.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        chip.classList.add('bg-primary', 'text-on-primary');
+
+        currentFilter = chip.getAttribute('data-filter') || 'all';
+        applyFilterAndSearch();
+      });
+    });
+
+    if (searchInput) {
+      searchInput.addEventListener('input', applyFilterAndSearch);
+    }
+
+    if (resetFiltersBtn) {
+      resetFiltersBtn.addEventListener('click', () => {
+        if (searchInput) searchInput.value = '';
+        currentFilter = 'all';
+        filterChips.forEach((c, idx) => {
+          if (idx === 0) {
+            c.classList.add('bg-primary', 'text-on-primary');
+            c.classList.remove('bg-surface-container', 'text-on-surface-variant');
+          } else {
+            c.classList.remove('bg-primary', 'text-on-primary');
+            c.classList.add('bg-surface-container', 'text-on-surface-variant');
+          }
+        });
+        applyFilterAndSearch();
+      });
+    }
+
+    // Modal Vitola Change: sync price inputs
+    function syncModalPricesWithSelected() {
+      if (!selectCigar || !costInput || !saleInput) return;
+      const selectedId = selectCigar.value;
+      const item = inventoryState[selectedId];
+      if (item) {
+        costInput.value = item.buy;
+        saleInput.value = item.sale;
+      }
+    }
+
+    if (selectCigar) {
+      selectCigar.addEventListener('change', syncModalPricesWithSelected);
+    }
+
+    // Modal 1: Bottom Sheet for Quick Entry/Exit
+    function openEntryModal() {
+      if (!entryModal) return;
+      syncModalPricesWithSelected();
+      if (modalQtyInput) modalQtyInput.value = '1';
+      entryModal.classList.remove('hidden');
+      entryModal.classList.add('flex');
+    }
+
+    function closeEntryModal() {
+      if (!entryModal) return;
+      entryModal.classList.add('hidden');
+      entryModal.classList.remove('flex');
+    }
+
+    if (btnQuickEntry) btnQuickEntry.addEventListener('click', openEntryModal);
+    if (modalClose) modalClose.addEventListener('click', closeEntryModal);
+    if (entryBackdropCloser) entryBackdropCloser.addEventListener('click', closeEntryModal);
+
+    // Entry vs Exit tabs in modal
+    if (tabEntry && tabExit) {
+      tabEntry.addEventListener('click', () => {
+        currentOperationMode = 'entrada';
+        tabEntry.className = 'flex-1 py-2 font-label-md text-label-md text-center rounded-lg bg-primary text-on-primary shadow-sm font-bold transition-all flex items-center justify-center gap-1.5';
+        tabExit.className = 'flex-1 py-2 font-label-md text-label-md text-center rounded-lg text-on-surface-variant font-bold transition-all flex items-center justify-center gap-1.5';
+        if (modalSubmitLabel) modalSubmitLabel.textContent = 'Confirmar Entrada';
+      });
+
+      tabExit.addEventListener('click', () => {
+        currentOperationMode = 'salida';
+        tabExit.className = 'flex-1 py-2 font-label-md text-label-md text-center rounded-lg bg-primary text-on-primary shadow-sm font-bold transition-all flex items-center justify-center gap-1.5';
+        tabEntry.className = 'flex-1 py-2 font-label-md text-label-md text-center rounded-lg text-on-surface-variant font-bold transition-all flex items-center justify-center gap-1.5';
+        if (modalSubmitLabel) modalSubmitLabel.textContent = 'Confirmar Salida';
+      });
+    }
+
+    if (btnModalQtyMinus && modalQtyInput) {
+      btnModalQtyMinus.addEventListener('click', () => {
+        let val = parseInt(modalQtyInput.value || '1', 10);
+        if (val > 1) modalQtyInput.value = val - 1;
+      });
+    }
+    if (btnModalQtyPlus && modalQtyInput) {
+      btnModalQtyPlus.addEventListener('click', () => {
+        let val = parseInt(modalQtyInput.value || '1', 10);
+        modalQtyInput.value = val + 1;
+      });
+    }
+
+    // Add record to Movimientos
+    function addMovementRecord(type, cigarName, qty, unitPrice) {
+      if (!movList) return;
+      const now = new Date();
+      const timeStr = `Hoy, ${now.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' })}`;
+      const totalAmount = qty * unitPrice;
+      const isEntrada = type === 'entrada';
+
+      const itemDiv = document.createElement('div');
+      itemDiv.className = `mov-item p-2.5 bg-surface-container-low rounded-xl border border-outline-variant/30 flex items-center justify-between`;
+      itemDiv.setAttribute('data-type', type);
+
+      itemDiv.innerHTML = `
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="w-8 h-8 rounded-lg ${isEntrada ? 'bg-secondary-fixed/50 text-secondary' : 'bg-surface-container-highest text-primary'} flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[18px]">${isEntrada ? 'add' : 'remove'}</span>
+          </div>
+          <div class="flex flex-col min-w-0">
+            <span class="font-headline-sm text-[14px] text-primary leading-tight font-semibold truncate">${cigarName}</span>
+            <span class="text-[11px] text-on-surface-variant">${timeStr} • ${isEntrada ? 'Entrada de inventario' : 'Salida por venta'}</span>
+          </div>
+        </div>
+        <div class="flex flex-col items-end flex-shrink-0 ml-2">
+          <span class="font-headline-sm text-[14px] ${isEntrada ? 'text-secondary' : 'text-primary'} font-bold">${isEntrada ? '+' : '-'}${qty} ${qty === 1 ? 'caja' : 'cajas'}</span>
+          <span class="text-[11px] ${isEntrada ? 'text-on-surface-variant' : 'text-secondary'} font-${isEntrada ? 'medium' : 'semibold'}">$${totalAmount.toLocaleString('es-ES')} ${isEntrada ? 'total' : 'venta'}</span>
+        </div>
+      `;
+
+      movList.insertBefore(itemDiv, movList.firstChild);
+    }
+
+    if (modalSubmit) {
+      modalSubmit.addEventListener('click', () => {
+        const cigarKey = selectCigar?.value || 'cohiba';
+        const qtyVal = parseInt(modalQtyInput?.value || '1', 10);
+        const item = inventoryState[cigarKey];
+
+        if (!item || qtyVal <= 0) return;
+
+        const newCost = parseFloat(costInput?.value) || item.buy;
+        const newSale = parseFloat(saleInput?.value) || item.sale;
+        item.buy = newCost;
+        item.sale = newSale;
+
+        let appliedQty = qtyVal;
+        if (currentOperationMode === 'entrada') {
+          item.stock += qtyVal;
+          addMovementRecord('entrada', item.name, qtyVal, item.buy);
+          showToast(`Entrada confirmada: +${qtyVal} cajas de ${item.name}`, 'add_circle');
+        } else {
+          if (item.stock < qtyVal) {
+            appliedQty = item.stock;
+          }
+          item.stock = Math.max(0, item.stock - qtyVal);
+          addMovementRecord('salida', item.name, appliedQty, item.sale);
+          showToast(`Salida confirmada: -${appliedQty} cajas de ${item.name}`, 'remove_circle');
+        }
+
+        recalculateAll();
+        closeEntryModal();
+      });
+    }
+
+    // Modal 2: Bottom Sheet for Movimientos (60% screen height)
+    function openMovimientosModal() {
+      if (!movimientosModal) return;
+      movimientosModal.classList.remove('hidden');
+      movimientosModal.classList.add('flex');
+    }
+
+    function closeMovimientosModal() {
+      if (!movimientosModal) return;
+      movimientosModal.classList.add('hidden');
+      movimientosModal.classList.remove('flex');
+    }
+
+    if (navMovimientos) {
+      navMovimientos.addEventListener('click', (e) => {
+        e.preventDefault();
+        openMovimientosModal();
+      });
+    }
+
+    if (navInventario) {
+      navInventario.addEventListener('click', (e) => {
+        e.preventDefault();
+        closeMovimientosModal();
+        closeEntryModal();
+      });
+    }
+
+    if (movimientosModalClose) movimientosModalClose.addEventListener('click', closeMovimientosModal);
+    if (movimientosBackdropCloser) movimientosBackdropCloser.addEventListener('click', closeMovimientosModal);
+    if (btnReturnInventory) btnReturnInventory.addEventListener('click', closeMovimientosModal);
+
+    // Movimientos filters
+    movFilterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        movFilterChips.forEach(c => {
+          c.classList.remove('bg-primary', 'text-on-primary');
+          c.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        chip.classList.add('bg-primary', 'text-on-primary');
+
+        const filterType = chip.getAttribute('data-type');
+        const items = movList?.querySelectorAll('.mov-item');
+        items?.forEach(item => {
+          if (filterType === 'all' || item.getAttribute('data-type') === filterType) {
+            item.classList.remove('hidden');
+            item.classList.add('flex');
+          } else {
+            item.classList.add('hidden');
+            item.classList.remove('flex');
+          }
+        });
+      });
+    });
+
+    // WhatsApp list generator (Strictly computed from real-time state)
+    function getInventoryText() {
+      const dateStr = new Date().toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric' });
+      let lines = [`📋 *HUMIDOR HABANA - INVENTARIO VIGENTE* (${dateStr})`, '--------------------------------'];
+      
+      let totalBoxes = 0;
+      Object.values(inventoryState).forEach(item => {
+        totalBoxes += item.stock;
+        lines.push(`• *${item.name}*: ${item.stock} cajas | $${item.sale} c/u`);
+      });
+
+      lines.push('--------------------------------');
+      lines.push(`📦 *Total en Cava:* ${totalBoxes} cajas`);
+      lines.push('🏛️ _Humidor Habana - Gestión de Cava Exclusiva_');
+      return lines.join('\n');
+    }
+
+    if (btnCopyWhatsapp) {
+      btnCopyWhatsapp.addEventListener('click', () => {
+        const text = getInventoryText();
+        navigator.clipboard.writeText(text).then(() => {
+          showToast('¡Lista copiada al portapapeles!', 'content_paste');
+        }).catch(() => {
+          showToast('Lista lista para WhatsApp', 'check_circle');
+        });
+      });
+    }
+
+    if (btnOpenWhatsapp) {
+      btnOpenWhatsapp.addEventListener('click', () => {
+        const text = encodeURIComponent(getInventoryText());
+        window.open(`https://wa.me/?text=${text}`, '_blank');
+      });
+    }
+
+    // Close modals with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeEntryModal();
+        closeMovimientosModal();
+      }
+    });
+
+    // Initialize all math, display values, and reactive listeners
+    recalculateAll();
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-40 pb-safe bg-surface/90 backdrop-blur-xl border-t border-outline-variant/30 shadow-[0_-2px_12px_rgba(43,30,22,0.06)]" data-active-classes="text-primary font-bold"><div class="h-16 px-margin flex items-stretch justify-around"><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-h-[44px] gap-0.5 transition-colors text-primary font-bold" data-path="inventario" href="#" id="nav-inventario"><span class="material-symbols-outlined text-[22px]">inventory_2</span><span class="font-label-md text-label-md">Inventario</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] gap-0.5 text-on-surface-variant transition-colors hover:text-primary active:scale-95" data-path="movimientos" href="#" id="nav-movimientos"><span class="material-symbols-outlined text-[22px]">swap_horiz</span><span class="font-label-md text-label-md font-semibold">Movimientos</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] gap-0.5 text-on-surface-variant transition-colors hover:text-primary" data-path="resumen" href="#" id="nav-resumen"><span class="material-symbols-outlined text-[22px]">pie_chart</span><span class="font-label-md text-label-md font-semibold">Resumen</span></a></div></nav>
+
+
+</body></html>
